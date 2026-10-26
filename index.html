@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Federico Ponso — Consulente Espropri | Dalla parte dell'espropriato!</title>
-  <meta name="description" content="Stai subendo un esproprio? Federico Ponso ti aiuta gratuitamente a capire cosa ti sta accadendo e come ottenere la giusta indennità. Dalla parte dell'espropriato!">
+  <meta name="description" content="Stai subendo un esproprio? Federico Ponso ti aiuta gratuitamente a comprendere cosa ti sta accadendo e cosa puoi fare per difendere i tuoi diritti. Dalla parte dell'espropriato!">
   <meta property="og:title" content="Federico Ponso — Consulente Espropri | Dalla parte dell'espropriato!">
-  <meta property="og:description" content="Ti aiuto gratuitamente a comprendere cosa ti sta accadendo e cosa puoi fare per difendere i tuoi diritti e ottenere il vero valore del tuo bene.">
+  <meta property="og:description" content="Ti aiuto gratuitamente a comprendere cosa ti sta accadendo e cosa puoi fare per tutelare i tuoi diritti in caso di esproprio per pubblica utilità.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://nicolavaligi.github.io/federico-ponso-espropri/">
   <link rel="canonical" href="https://nicolavaligi.github.io/federico-ponso-espropri/">
@@ -18,7 +18,7 @@
     "slogan": "Dalla parte dell'espropriato!",
     "url": "https://nicolavaligi.github.io/federico-ponso-espropri/",
     "image": "https://nicolavaligi.github.io/federico-ponso-espropri/federico-ponso.jpg",
-    "description": "Consulenza tecnica gratuita e assistenza specializzata per i cittadini che subiscono un esproprio per pubblica utilità.",
+    "description": "Consulenza tecnica gratuita e informazioni chiare per i cittadini che subiscono un esproprio per pubblica utilità.",
     "areaServed": "IT"
   }
   </script>
@@ -27,20 +27,17 @@
       --blue-primary: #155eab;
       --blue-dark: #0d3c73;
       --blue-light: #eef6fc;
-      --blue-soft: #f5f9fd;
+      --blue-soft: #f6fafe;
       --blue-border: #cfe3f5;
       --green-cta: #1e8e3e;
       --green-cta-hover: #166e2f;
-      --green-light: #e8f5e9;
-      --amber-light: #fff8e6;
-      --amber-border: #f5d488;
       --text-main: #1f2937;
       --text-muted: #4b5563;
       --white: #ffffff;
       --gray-border: #e5e7eb;
       --danger: #c5221f;
       --radius: 10px;
-      --shadow: 0 4px 16px rgba(13, 60, 115, 0.07);
+      --shadow: 0 4px 16px rgba(13, 60, 115, 0.06);
     }
 
     * {
@@ -67,12 +64,12 @@
 
     .container {
       width: 100%;
-      max-width: 1100px;
+      max-width: 1080px;
       margin: 0 auto;
       padding: 0 1.25rem;
     }
 
-    /* Top Bar Chiara */
+    /* Top Bar */
     .top-bar {
       background-color: var(--blue-primary);
       color: var(--white);
@@ -112,15 +109,12 @@
     }
 
     .brand {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
       text-decoration: none;
       color: var(--blue-dark);
     }
 
     .brand-title {
-      font-size: 1.25rem;
+      font-size: 1.3rem;
       font-weight: 700;
       color: var(--blue-dark);
       line-height: 1.15;
@@ -199,7 +193,7 @@
       background-color: var(--blue-light);
     }
 
-    /* Hero Section - Luminosa in stile TutelaEspropri */
+    /* Hero Section */
     .hero {
       background: linear-gradient(180deg, var(--blue-light) 0%, var(--white) 100%);
       padding: 3.5rem 0 3rem;
@@ -219,7 +213,7 @@
       color: var(--white);
       font-weight: 700;
       font-size: 0.85rem;
-      padding: 0.35rem 0.9rem;
+      padding: 0.35rem 0.95rem;
       border-radius: 999px;
       text-transform: uppercase;
       letter-spacing: 0.04em;
@@ -227,7 +221,7 @@
     }
 
     .hero h1 {
-      font-size: clamp(2rem, 3.8vw, 2.85rem);
+      font-size: clamp(2rem, 3.8vw, 2.8rem);
       font-weight: 700;
       color: var(--blue-dark);
       line-height: 1.2;
@@ -236,9 +230,6 @@
 
     .hero h1 span {
       color: var(--blue-primary);
-      text-decoration: underline;
-      text-decoration-color: #90c2f0;
-      text-underline-offset: 4px;
     }
 
     .hero-lead {
@@ -247,15 +238,14 @@
       margin-bottom: 1.5rem;
     }
 
-    /* 2 Box Azione Rapida stile TutelaEspropri */
-    .quick-boxes {
+    .hero-highlight-boxes {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
       margin-top: 1.25rem;
     }
 
-    .quick-box {
+    .hero-box {
       background: var(--white);
       border: 2px solid var(--blue-border);
       border-radius: var(--radius);
@@ -267,14 +257,14 @@
       gap: 0.85rem;
     }
 
-    .quick-box h2 {
-      font-size: 1.15rem;
+    .hero-box h2 {
+      font-size: 1.12rem;
       font-weight: 700;
       color: var(--blue-dark);
     }
 
-    .quick-box p {
-      font-size: 0.9rem;
+    .hero-box p {
+      font-size: 0.92rem;
       color: var(--text-muted);
     }
 
@@ -301,7 +291,7 @@
       border-radius: 50%;
       object-fit: cover;
       border: 4px solid var(--blue-primary);
-      box-shadow: 0 6px 18px rgba(21, 94, 171, 0.18);
+      box-shadow: 0 6px 18px rgba(21, 94, 171, 0.16);
       background-color: var(--blue-light);
     }
 
@@ -321,7 +311,6 @@
       font-size: 0.95rem;
       border: 2px solid var(--white);
       text-decoration: none;
-      title: "Profilo LinkedIn Federico Ponso";
     }
 
     .consultant-card h2 {
@@ -335,7 +324,7 @@
       font-size: 0.92rem;
       font-weight: 700;
       color: var(--blue-primary);
-      margin-bottom: 1rem;
+      margin-bottom: 0.85rem;
     }
 
     .consultant-points {
@@ -375,12 +364,12 @@
 
     .section-title {
       text-align: center;
-      max-width: 720px;
+      max-width: 740px;
       margin: 0 auto 2.25rem;
     }
 
     .section-title h2 {
-      font-size: clamp(1.65rem, 3vw, 2.15rem);
+      font-size: clamp(1.6rem, 2.8vw, 2.1rem);
       font-weight: 700;
       color: var(--blue-dark);
       margin-bottom: 0.5rem;
@@ -412,14 +401,14 @@
       background: var(--blue-light);
       color: var(--blue-primary);
       font-weight: 700;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       padding: 0.25rem 0.65rem;
       border-radius: 6px;
       margin-bottom: 0.75rem;
     }
 
     .step-box h3 {
-      font-size: 1.18rem;
+      font-size: 1.15rem;
       font-weight: 700;
       color: var(--blue-dark);
       margin-bottom: 0.55rem;
@@ -430,174 +419,74 @@
       color: var(--text-main);
     }
 
-    /* Cosa Faccio per Te (4 Card Sintetiche) */
-    .services-grid {
+    /* I 4 Concetti Chiave (Stile TutelaEspropri) */
+    .concepts-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1.25rem;
     }
 
-    .service-card {
-      background: var(--white);
-      border: 1px solid var(--gray-border);
-      border-radius: var(--radius);
-      padding: 1.4rem;
-      display: flex;
-      gap: 1rem;
-      align-items: flex-start;
-      box-shadow: var(--shadow);
-    }
-
-    .service-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 8px;
-      background: var(--blue-light);
-      color: var(--blue-primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.35rem;
-      flex-shrink: 0;
-      font-weight: 700;
-    }
-
-    .service-card h3 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--blue-dark);
-      margin-bottom: 0.35rem;
-    }
-
-    .service-card p {
-      font-size: 0.92rem;
-      color: var(--text-muted);
-    }
-
-    /* Simulatore Semplice per il Cittadino */
-    .calc-box {
-      background: var(--white);
-      border: 2px solid var(--blue-border);
-      border-radius: 12px;
-      padding: 2rem;
-      box-shadow: var(--shadow);
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      align-items: center;
-    }
-
-    .form-group {
-      margin-bottom: 1rem;
-    }
-
-    .form-group label {
-      display: block;
-      font-weight: 700;
-      font-size: 0.9rem;
-      color: var(--blue-dark);
-      margin-bottom: 0.35rem;
-    }
-
-    .form-control {
-      width: 100%;
-      padding: 0.7rem 0.85rem;
-      border: 1px solid #cbd5e1;
-      border-radius: 8px;
-      font-size: 0.95rem;
-      color: var(--text-main);
-      background: var(--white);
-    }
-
-    .form-control:focus {
-      outline: 2px solid var(--blue-primary);
-      border-color: transparent;
-    }
-
-    .check-list-simple {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      margin-top: 0.5rem;
-    }
-
-    .check-item {
-      display: flex;
-      align-items: center;
-      gap: 0.55rem;
-      font-size: 0.9rem;
-      cursor: pointer;
-    }
-
-    .check-item input {
-      width: 17px;
-      height: 17px;
-      accent-color: var(--blue-primary);
-    }
-
-    .calc-result {
-      background: var(--blue-light);
-      border: 2px solid var(--blue-border);
-      border-radius: var(--radius);
-      padding: 1.65rem;
-    }
-
-    .calc-result h3 {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--blue-dark);
-      margin-bottom: 0.75rem;
-    }
-
-    .result-numbers {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.85rem;
-      margin-bottom: 1rem;
-    }
-
-    .num-card {
+    .concept-card {
       background: var(--white);
       border: 1px solid var(--blue-border);
-      border-radius: 8px;
-      padding: 0.85rem;
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
     }
 
-    .num-card.good {
-      background: var(--green-light);
-      border-color: #a7f3d0;
-    }
-
-    .num-card span {
-      display: block;
+    .concept-tag {
+      display: inline-block;
       font-size: 0.78rem;
       font-weight: 700;
       text-transform: uppercase;
-      color: var(--text-muted);
+      color: var(--blue-primary);
+      background: var(--blue-light);
+      padding: 0.22rem 0.6rem;
+      border-radius: 5px;
+      margin-bottom: 0.6rem;
     }
 
-    .num-card strong {
-      font-size: 1.35rem;
+    .concept-card h3 {
+      font-size: 1.2rem;
       font-weight: 700;
       color: var(--blue-dark);
+      margin-bottom: 0.5rem;
     }
 
-    .num-card.good strong {
-      color: var(--green-cta);
+    .concept-card p {
+      font-size: 0.94rem;
+      color: var(--text-main);
     }
 
-    .result-bullets {
-      list-style: none;
-      font-size: 0.88rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.45rem;
-      margin-bottom: 1.15rem;
+    /* 6 Consigli Utili per l'Espropriato */
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.15rem;
+    }
+
+    .tip-item {
+      background: var(--blue-soft);
+      border: 1px solid var(--blue-border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+    }
+
+    .tip-item strong.tip-title {
+      display: block;
+      font-size: 1rem;
+      color: var(--blue-dark);
+      margin-bottom: 0.35rem;
+    }
+
+    .tip-item p {
+      font-size: 0.9rem;
+      color: var(--text-main);
     }
 
     /* FAQ Semplificate */
     .faq-wrap {
-      max-width: 800px;
+      max-width: 820px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -653,7 +542,7 @@
       border-radius: 12px;
       padding: 2.25rem;
       display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
+      grid-template-columns: 0.95fr 1.05fr;
       gap: 2rem;
       align-items: center;
     }
@@ -676,6 +565,33 @@
       border-radius: var(--radius);
       padding: 1.75rem;
       box-shadow: var(--shadow);
+    }
+
+    .form-group {
+      margin-bottom: 0.95rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--blue-dark);
+      margin-bottom: 0.35rem;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.7rem 0.85rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      color: var(--text-main);
+      background: var(--white);
+    }
+
+    .form-control:focus {
+      outline: 2px solid var(--blue-primary);
+      border-color: transparent;
     }
 
     .form-row {
@@ -746,12 +662,11 @@
     @media (max-width: 860px) {
       .hero-grid,
       .three-steps,
-      .services-grid,
-      .calc-box,
+      .concepts-grid,
+      .tips-grid,
       .contact-box,
-      .quick-boxes,
-      .form-row,
-      .result-numbers {
+      .hero-highlight-boxes,
+      .form-row {
         grid-template-columns: 1fr;
       }
       .nav-links {
@@ -762,9 +677,9 @@
 </head>
 <body>
 
-  <!-- Top Bar Chiara -->
+  <!-- Top Bar -->
   <div class="top-bar">
-    🤝 <strong>Dalla parte dell'espropriato!</strong> — Hai ricevuto una lettera o PEC di esproprio? Hai <strong>30 giorni</strong> per tutelarti.
+    🤝 <strong>Dalla parte dell'espropriato!</strong> — Hai ricevuto una lettera o PEC di esproprio? Hai <strong>30 giorni</strong> per tutelare i tuoi diritti.
     <a href="#colloquio-gratuito">Richiedi un colloquio gratuito →</a>
   </div>
 
@@ -772,16 +687,14 @@
   <header class="site-header">
     <div class="container nav-inner">
       <a href="#" class="brand">
-        <div>
-          <span class="brand-title">Federico Ponso</span>
-          <span class="brand-claim">Consulente Espropri · Dalla parte dell'espropriato!</span>
-        </div>
+        <span class="brand-title">Federico Ponso</span>
+        <span class="brand-claim">Consulente Espropri · Dalla parte dell'espropriato!</span>
       </a>
       <nav aria-label="Menu principale">
         <ul class="nav-links">
-          <li><a href="#prime-3-cose">Cosa Fare Subito</a></li>
-          <li><a href="#cosa-faccio">Come Ti Aiuto</a></li>
-          <li><a href="#simulatore">Calcola Indennità</a></li>
+          <li><a href="#prime-3-cose">Le Prime 3 Cose da Fare</a></li>
+          <li><a href="#diritti-espropriato">I Tuoi Diritti</a></li>
+          <li><a href="#consigli-utili">Consigli Utili</a></li>
           <li><a href="#faq">Domande Frequenti</a></li>
         </ul>
       </nav>
@@ -796,24 +709,25 @@
         <span class="claim-pill">Dalla parte dell'espropriato!</span>
         <h1>Stai subendo un esproprio? <span>Ti aiuto gratuitamente</span> a capire cosa fare.</h1>
         <p class="hero-lead">
-          Un esproprio arriva spesso all'improvviso e lascia il cittadino da solo di fronte alla Pubblica Amministrazione. Io lavoro <strong>esclusivamente per difendere i proprietari espropriati</strong>: ti aiuto a capire <strong>cosa ti sta accadendo</strong> e come ottenere la <strong>giusta indennità di mercato</strong> per il tuo terreno, la tua casa o la tua azienda.
+          Un'espropriazione per pubblica utilità arriva spesso in modo improvviso e lascia il proprietario pieno di dubbi: <strong>"Cosa mi espropriano? L'offerta è giusta? Cosa posso fare?"</strong><br><br>
+          Come consulente specializzato <strong>esclusivamente nella difesa dei cittadini espropriati</strong>, ti aiuto gratuitamente a comprendere cosa ti sta accadendo e come ottenere la <strong>giusta indennità prevista dalla legge</strong>.
         </p>
 
-        <div class="quick-boxes">
-          <div class="quick-box">
+        <div class="hero-highlight-boxes">
+          <div class="hero-box">
             <div>
               <h2>📞 Richiedi un colloquio gratuito</h2>
-              <p>Esaminiamo insieme <strong>senza impegno</strong> la lettera che hai ricevuto e verifichiamo se la cifra offerta è corretta.</p>
+              <p>Parla direttamente con me per <strong>esaminare senza impegno la comunicazione ricevuta</strong> e capire subito come muoverti.</p>
             </div>
-            <a href="#colloquio-gratuito" class="btn btn-green" style="width: 100%;">Parla con Federico Ponso</a>
+            <a href="#colloquio-gratuito" class="btn btn-green" style="width: 100%;">Fissa un Colloquio Gratuito</a>
           </div>
 
-          <div class="quick-box">
+          <div class="hero-box">
             <div>
-              <h2>🧮 Calcola l'indennità di esproprio</h2>
-              <p>Scopri in <strong>30 secondi</strong> quali voci di rimborso ti spettano oltre alla prima offerta dell'Ente.</p>
+              <h2>📘 Conosci i tuoi diritti</h2>
+              <p>Scopri in modo semplice e chiaro <strong>le prime 3 cose da fare</strong> e perché <strong>non devi mai accontentarti</strong> della prima offerta dell'Ente.</p>
             </div>
-            <a href="#simulatore" class="btn btn-blue" style="width: 100%;">Vai al Calcolatore Semplice</a>
+            <a href="#prime-3-cose" class="btn btn-blue" style="width: 100%;">Leggi le Informazioni Utili</a>
           </div>
         </div>
       </div>
@@ -825,29 +739,28 @@
             src="federico-ponso.jpg"
             alt="Federico Ponso — Consulente Espropri"
             class="consultant-photo"
-            id="profile-img"
             onerror="this.src='https://ui-avatars.com/api/?name=Federico+Ponso&size=256&background=155eab&color=fff&bold=true'"
           >
-          <a href="https://www.linkedin.com/search/results/people/?keywords=Federico%20Ponso" target="_blank" rel="noopener" class="linkedin-badge" title="Vedi profilo LinkedIn di Federico Ponso">in</a>
+          <a href="https://www.linkedin.com/search/results/people/?keywords=Federico%20Ponso" target="_blank" rel="noopener" class="linkedin-badge" title="Profilo LinkedIn di Federico Ponso">in</a>
         </div>
         <h2>Federico Ponso</h2>
         <div class="consultant-role">Consulente Espropri · "Dalla parte dell'espropriato!"</div>
         <p style="font-size: 0.9rem; color: var(--text-muted);">
-          Un <strong>unico referente di fiducia</strong> al tuo fianco per difendere il valore della tua proprietà.
+          Tutelo <strong>solo i proprietari privati e le aziende</strong> che subiscono un esproprio o una servitù coattiva.
         </p>
 
         <ul class="consultant-points">
           <li>
             <span class="check-green">✔</span>
-            <span><strong>100% dalla parte del cittadino:</strong> assisto solo i proprietari che subiscono un esproprio.</span>
+            <span><strong>Colloquio iniziale gratuito:</strong> analizzo la tua pratica per verificare la correttezza della procedura.</span>
           </li>
           <li>
             <span class="check-green">✔</span>
-            <span><strong>Prima consulenza gratuita:</strong> controllo subito le carte per dirti se conviene procedere.</span>
+            <span><strong>Linguaggio chiaro e diretto:</strong> ti spiego ogni passaggio senza tecnicismi inutili.</span>
           </li>
           <li>
             <span class="check-green">✔</span>
-            <span><strong>Spese rimborsate dall'Ente:</strong> per legge (Art. 21), se la stima finale supera di oltre il <strong>10%</strong> l'offerta iniziale, i costi del collegio tecnico sono <strong>a carico dell'Ente Espropriante</strong>.</span>
+            <span><strong>Costi a carico dell'Ente (Art. 21):</strong> quando la perizia del collegio tecnico supera di oltre il <strong>10%</strong> l'offerta iniziale, le spese del collegio sono <strong>poste a carico dell'Ente Espropriante</strong>.</span>
           </li>
         </ul>
 
@@ -862,166 +775,119 @@
   <section id="prime-3-cose">
     <div class="container">
       <div class="section-title">
-        <h2>Stai subendo un esproprio? Le prime 3 cose da sapere</h2>
-        <p>Poche regole chiare per <strong>non commettere errori</strong> quando ricevi una raccomandata o una PEC dall'Ente.</p>
+        <h2>Stai subendo un esproprio? Le prime 3 cose da fare</h2>
+        <p>Quando ricevi una raccomandata o una PEC dall'Autorità Espropriante, segui queste <strong>3 regole fondamentali</strong> per non pregiudicare i tuoi diritti.</p>
       </div>
 
       <div class="three-steps">
         <div class="step-box">
-          <span class="step-num">REGOLA 1</span>
-          <h3>Non firmare subito la prima offerta</h3>
+          <span class="step-num">PASSO 1</span>
+          <h3>Verifica il progetto e presenta osservazioni</h3>
           <p>
-            La prima somma proposta dall'Ente è quasi sempre <strong>molto più bassa del vero valore di mercato</strong>. Hai <strong>30 giorni dalla notifica</strong> per far controllare le carte prima di prendere qualsiasi decisione.
+            La legge prevede il diritto del proprietario di <strong>prendere visione degli atti del progetto</strong> e di presentare <strong>osservazioni scritte entro 30 giorni</strong> dalla notifica per segnalare criticità, errori sulle superfici o chiedere modifiche a tutela della propria proprietà.
           </p>
         </div>
 
         <div class="step-box">
-          <span class="step-num">REGOLA 2</span>
-          <h3>Se non accetti, NON perdi i soldi offerti</h3>
+          <span class="step-num">PASSO 2</span>
+          <h3>Non accettare subito l'indennità provvisoria</h3>
           <p>
-            Molti accettano per paura di perdere tutto: <strong>è un errore!</strong> Se rifiuti l'offerta bassa, l'Ente è <strong>obbligato per legge</strong> a depositare comunque quella somma a tuo nome in <strong>Cassa Depositi e Prestiti</strong>, mentre noi chiediamo la differenza che ti spetta.
+            La prima cifra comunicata dall'Ente è una <strong>stima unilaterale quasi sempre sottostimata</strong>. Ricorda che <strong>rifiutare l'offerta non ti fa perdere i soldi proposti</strong>: l'Ente è obbligato a <strong>depositarli a tuo nome presso la Cassa Depositi e Prestiti</strong> mentre si procede al calcolo del giusto valore.
           </p>
         </div>
 
         <div class="step-box">
-          <span class="step-num">REGOLA 3</span>
-          <h3>Fai mettere tutto a verbale prima dei lavori</h3>
+          <span class="step-num">PASSO 3</span>
+          <h3>Fai verbalizzare tutto allo Stato di Consistenza</h3>
           <p>
-            Quando i tecnici vengono sul posto per prendere possesso del terreno, bisogna <strong>far scrivere nel verbale</strong> ogni pianta, recinzione, pozzo, impianto e danno al resto della proprietà: <strong>ciò che non è scritto prima delle ruspe non viene pagato dopo</strong>.
+            Prima che inizino i lavori, i tecnici dell'Ente redigono il <strong>verbale di immissione in possesso e stato di consistenza</strong>. È essenziale presenziare con un consulente per <strong>far mettere a verbale ogni singolo bene</strong> (piante, recinzioni, pozzi, accessi, impianti) prima che il cantiere modifichi i luoghi.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Cosa faccio per te -->
-  <section id="cosa-faccio" class="section-soft">
+  <!-- I 4 Concetti Chiave (Stile TutelaEspropri) -->
+  <section id="diritti-espropriato" class="section-soft">
     <div class="container">
       <div class="section-title">
-        <h2>Cosa faccio concretamente per difenderti</h2>
-        <p>Ti accompagno passo dopo passo, con un <strong>linguaggio semplice</strong> e senza burocrazia.</p>
+        <h2>I concetti fondamentali per ottenere la giusta indennità</h2>
+        <p>Ecco cosa prevede il <strong>Testo Unico sugli Espropri (D.P.R. 327/2001)</strong> a difesa del cittadino espropriato.</p>
       </div>
 
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">1</div>
-          <div>
-            <h3>Controllo Gratuito della Lettera Ricevuta</h3>
-            <p>
-              Leggo per te l'avviso di esproprio e le mappe del progetto per spiegarti chiaramente <strong>quanti metri quadri ti tolgono</strong>, quali sono le <strong>scadenze</strong> e quanto puoi ottenere in più.
-            </p>
-          </div>
+      <div class="concepts-grid">
+        <div class="concept-card">
+          <span class="concept-tag">1. La Perizia Vincola l'Ente</span>
+          <h3>La perizia del collegio di tecnici (Art. 21) vincola l'Ente Espropriante</h3>
+          <p>
+            L'Autorità Espropriante invita i proprietari che non hanno accettato l'offerta a comunicare se intendono avvalersi di un <strong>collegio di tre tecnici (Terna Arbitrale ex Art. 21)</strong> per determinare l'indennità definitiva. Il proprietario nomina il <strong>proprio tecnico di fiducia</strong>: la stima depositata dal collegio <strong>sostituisce l'offerta iniziale e vincola l'Ente al pagamento</strong>, evitando lunghe cause giudiziarie.
+          </p>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon">2</div>
-          <div>
-            <h3>Calcolo del Vero Valore del Tuo Bene</h3>
-            <p>
-              La legge impone di pagare il <strong>vero valore di mercato</strong> (anche per i <strong>terreni agricoli</strong>, oltre a quelli edificabili e ai fabbricati) più le <strong>maggiorazioni per Coltivatori Diretti e IAP</strong>.
-            </p>
-          </div>
+        <div class="concept-card">
+          <span class="concept-tag">2. Art. 33 — Esproprio Parziale</span>
+          <h3>Svalutazione della porzione residua: un diritto spesso dimenticato</h3>
+          <p>
+            Quando l'opera pubblica ti toglie solo una parte del terreno o passa vicino al tuo fabbricato, <strong>anche la porzione che resta di tua proprietà subisce un danno</strong> (perché divisa in due, rimasta senza accesso comodo o deprezzata dalla vicinanza dell'infrastruttura). L'<strong>Art. 33 del Testo Unico</strong> stabilisce che l'indennità deve comprendere anche la <strong>perdita di valore della parte residua</strong>.
+          </p>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon">3</div>
-          <div>
-            <h3>Rimborso dei Danni alla Parte che Ti Resta</h3>
-            <p>
-              Se una strada, ferrovia, elettrodotto o metanodotto <strong>divide in due il tuo terreno</strong> o passa vicino a casa, ti faccio riconoscere anche la <strong>perdita di valore della proprietà residua</strong> (Art. 33).
-            </p>
-          </div>
+        <div class="concept-card">
+          <span class="concept-tag">3. Valore di Mercato Reale</span>
+          <h3>Indennità per terreni edificabili, fabbricati e terreni agricoli</h3>
+          <p>
+            La legge e la Corte Costituzionale (sentenze n. 348/2007 e n. 181/2011) stabiliscono che al proprietario spetta sempre il <strong>reale valore venale di mercato</strong> del bene, sia per le <strong>aree edificabili</strong> sia per i <strong>terreni agricoli</strong> (non più i vecchi valori tabellari riduttivi). Inoltre, a <strong>Coltivatori Diretti, IAP e fittavoli</strong> spettano importanti <strong>indennità aggiuntive esentasse</strong>.
+          </p>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon">4</div>
-          <div>
-            <h3>La Perizia del Collegio Tecnico Vincola l'Ente</h3>
-            <p>
-              Ti assisto nominando i tecnici del collegio arbitrale (Art. 21): <strong>la loro stima sostituisce l'offerta bassa dell'Ente</strong> e ti permette di incassare il giusto valore senza lunghe cause in tribunale.
-            </p>
-          </div>
+        <div class="concept-card">
+          <span class="concept-tag">4. Occupazione d'Urgenza e Servitù</span>
+          <h3>Indennità di occupazione temporanea, asservimenti e danni di cantiere</h3>
+          <p>
+            In caso di <strong>occupazione d'urgenza (Art. 22-bis)</strong> o di <strong>occupazione temporanea per cantiere (Art. 49–50)</strong>, al proprietario spetta un'indennità aggiuntiva per <strong>ogni anno o mese di occupazione</strong>, oltre al <strong>ripristino integrale dei danni</strong> lasciati dai mezzi. Lo stesso vale per le <strong>servitù di elettrodotto, metanodotto o fognatura</strong>.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Simulatore Semplice -->
-  <section id="simulatore">
+  <!-- 6 Consigli Utili -->
+  <section id="consigli-utili">
     <div class="container">
       <div class="section-title">
-        <h2>Come calcolare l'indennità di esproprio</h2>
-        <p>Inserisci i dati principali per avere subito un'<strong>indicazione chiara</strong> di quanto può aumentare l'indennità con una tutela tecnica.</p>
+        <h2>6 consigli pratici per difendere la tua proprietà</h2>
+        <p>Indicazioni semplici ed efficaci da tenere sempre a mente durante tutta la procedura espropriativa.</p>
       </div>
 
-      <div class="calc-box">
-        <div>
-          <div class="form-group">
-            <label for="calc-type">1. Che tipo di proprietà ti stanno espropriando?</label>
-            <select id="calc-type" class="form-control">
-              <option value="agricolo">Terreno Agricolo (Seminativo / Prato / Irriguo)</option>
-              <option value="vigneto">Terreno Agricolo di Pregio (Vigneto / Frutteto / Vivaio)</option>
-              <option value="edificabile">Terreno Edificabile o Area Produttiva / Industriale</option>
-              <option value="fabbricato">Casa, Cortile, Recinzione o Capannone</option>
-              <option value="servitu">Passaggio di Elettrodotto, Metanodotto o Tubazione</option>
-            </select>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="calc-mq">2. Metri quadri coinvolti (circa)</label>
-              <input type="number" id="calc-mq" class="form-control" value="2500" min="10" step="50">
-            </div>
-            <div class="form-group">
-              <label for="calc-offer">3. Cifra offerta dall'Ente (€)</label>
-              <input type="number" id="calc-offer" class="form-control" value="12000" min="0" step="500">
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label>4. Spunta le situazioni che riguardano il tuo caso:</label>
-            <div class="check-list-simple">
-              <label class="check-item">
-                <input type="checkbox" id="chk-parziale" checked>
-                <span>L'opera <strong>taglia o riduce</strong> il resto della mia proprietà (<strong>Esproprio Parziale</strong>)</span>
-              </label>
-              <label class="check-item">
-                <input type="checkbox" id="chk-cd" checked>
-                <span>Sono <strong>Coltivatore Diretto, Imprenditore Agricolo (IAP)</strong> o affittuario</span>
-              </label>
-              <label class="check-item">
-                <input type="checkbox" id="chk-soprassuoli" checked>
-                <span>Sul terreno ci sono <strong>piante, recinzioni, cancelli, pozzi o irrigazione</strong></span>
-              </label>
-              <label class="check-item">
-                <input type="checkbox" id="chk-cantiere" checked>
-                <span>È prevista anche l'<strong>occupazione temporanea di cantiere</strong> per i lavori</span>
-              </label>
-            </div>
-          </div>
+      <div class="tips-grid">
+        <div class="tip-item">
+          <strong class="tip-title">1. Segna la data di ricezione</strong>
+          <p>Conserva la busta della raccomandata o la ricevuta della PEC: dalla data di notifica decorrono i <strong>30 giorni di legge</strong> per agire.</p>
         </div>
 
-        <!-- Risultato Semplice -->
-        <div class="calc-result" aria-live="polite">
-          <h3>📊 Risultato della verifica preliminare</h3>
-          <div class="result-numbers">
-            <div class="num-card">
-              <span>Offerta dell'Ente</span>
-              <strong id="out-offer">€ 12.000</strong>
-            </div>
-            <div class="num-card good">
-              <span>Stima con Tutela Tecnica</span>
-              <strong id="out-target">€ 29.500 – € 37.800</strong>
-            </div>
-          </div>
+        <div class="tip-item">
+          <strong class="tip-title">2. Non firmare al buio</strong>
+          <p>Non sottoscrivere moduli di <strong>accettazione o cessione volontaria</strong> prima di aver fatto verificare la congruità delle cifre da un consulente di parte.</p>
+        </div>
 
-          <ul class="result-bullets" id="out-bullets">
-            <!-- Popolato da JS -->
-          </ul>
+        <div class="tip-item">
+          <strong class="tip-title">3. Fotografa i luoghi prima dei lavori</strong>
+          <p>Scatta fotografie dettagliate di <strong>piante, colture, recinzioni, cancelli, pozzi e fabbricati</strong> prima che il cantiere entri nella tua proprietà.</p>
+        </div>
 
-          <button type="button" id="btn-use-calc" class="btn btn-green" style="width: 100%;">
-            Chiedi Verifica Gratuita su Questi Dati →
-          </button>
+        <div class="tip-item">
+          <strong class="tip-title">4. Controlla la natura del terreno</strong>
+          <p>Spesso aree con <strong>potenzialità edificatoria, artigianale o corti pertinenziali</strong> vengono erroneamente pagate dall'Ente come semplici terreni agricoli.</p>
+        </div>
+
+        <div class="tip-item">
+          <strong class="tip-title">5. Segnala i danni all'attività</strong>
+          <p>Se l'esproprio interrompe <strong>impianti di irrigazione, strade poderali o piazzali di manovra</strong>, hai diritto al ristoro dei costi di ripristino.</p>
+        </div>
+
+        <div class="tip-item">
+          <strong class="tip-title">6. Fatti assistere fin dall'inizio</strong>
+          <p>Intervenire tempestivamente con un <strong>consulente specializzato dalla parte dell'espropriato</strong> evita errori procedurali irreversibili.</p>
         </div>
       </div>
     </div>
@@ -1031,29 +897,36 @@
   <section id="faq" class="section-soft">
     <div class="container">
       <div class="section-title">
-        <h2>Domande frequenti dei proprietari espropriati</h2>
-        <p>Risposte semplici e dirette per capire come tutelarti.</p>
+        <h2>Domande frequenti sull'esproprio</h2>
+        <p>Le risposte ai dubbi più comuni dei cittadini che ricevono una notifica di espropriazione.</p>
       </div>
 
       <div class="faq-wrap">
         <details class="faq-card" name="faq-ponso" open>
-          <summary>Quanto costa il primo colloquio con Federico Ponso?</summary>
+          <summary>Il primo colloquio con Federico Ponso è davvero gratuito?</summary>
           <p>
-            Il primo colloquio e l'analisi iniziale delle carte sono <strong>completamente gratuiti e senza impegno</strong>. Ti dirò con totale onestà se la cifra offerta dall'Ente è già giusta oppure se ci sono i margini per <strong>ottenere molto di più</strong>.
+            <strong>Sì, è completamente gratuito e senza alcun impegno.</strong> Esamineremo insieme le comunicazioni che hai ricevuto per capire cosa ti stanno espropriando, a che punto si trova la procedura e se l'indennità proposta dall'Ente è corretta oppure sottostimata.
           </p>
         </details>
 
         <details class="faq-card" name="faq-ponso">
-          <summary>È vero che le spese dei tecnici vengono pagate dall'Ente Espropriante?</summary>
+          <summary>Se rifiuto l'indennità offerta dall'Ente rischio di perdere anche quella somma?</summary>
           <p>
-            <strong>Sì.</strong> L'articolo 21 del Testo Unico sugli Espropri stabilisce che quando il collegio di tecnici riconosce un'indennità superiore di almeno il <strong>10%</strong> rispetto all'offerta iniziale, <strong>le spese del collegio tecnico sono interamente a carico dell'Ente Espropriante</strong>.
+            <strong>Assolutamente no.</strong> La legge tutela il proprietario: quando non accetti l'indennità provvisoria, l'Ente deve obbligatoriamente <strong>depositare la somma offerta presso la Cassa Depositi e Prestiti (MEF)</strong> a tuo favore, mentre si avvia la procedura tecnica per far riconoscere la <strong>somma maggiore che ti spetta</strong>.
           </p>
         </details>
 
         <details class="faq-card" name="faq-ponso">
-          <summary>Se non accetto l'offerta dell'Ente devo fare una lunga causa in Tribunale?</summary>
+          <summary>Chi paga le spese del collegio di tecnici (Art. 21 D.P.R. 327/2001)?</summary>
           <p>
-            <strong>No.</strong> La legge prevede una procedura tecnica rapida chiamata <strong>Terna Arbitrale (Art. 21)</strong>: tre tecnici (tra cui il <strong>tuo consulente di fiducia</strong>) stabiliscono in pochi mesi il <strong>giusto valore del bene</strong>, e la loro perizia <strong>vincola l'Ente Espropriante al pagamento</strong>.
+            L'articolo 21 comma 6 del Testo Unico Espropri prevede che, quando la stima determinata dal collegio tecnico supera di almeno il <strong>10%</strong> l'indennità provvisoria offerta dall'Ente, <strong>le spese del collegio peritale sono interamente poste a carico dell'Autorità Espropriante</strong>.
+          </p>
+        </details>
+
+        <details class="faq-card" name="faq-ponso">
+          <summary>Cosa succede in caso di occupazione illegittima o lavori fuori dai confini previsti?</summary>
+          <p>
+            Se l'Amministrazione occupa porzioni di terreno non comprese nel decreto o oltre i termini di legge, il proprietario ha diritto alla <strong>tutela immediata</strong> e al <strong>risarcimento integrale del danno</strong> subito.
           </p>
         </details>
       </div>
@@ -1066,19 +939,20 @@
       <div class="contact-box">
         <div class="contact-left">
           <span class="claim-pill" style="margin-bottom: 0.75rem;">Dalla parte dell'espropriato!</span>
-          <h2>Richiedi ora un colloquio gratuito con Federico Ponso</h2>
+          <h2>Richiedi un colloquio gratuito con Federico Ponso</h2>
           <p>
-            Compila il modulo qui accanto con i tuoi recapiti. Ti ricontatterò rapidamente per <strong>spiegarti cosa ti sta accadendo</strong> e verificare gratuitamente la lettera di esproprio che hai ricevuto.
+            Hai bisogno di aiuto per capire una lettera di esproprio o vuoi verificare se i tuoi diritti sono stati rispettati? <strong>Compila il modulo qui accanto</strong>: ti ricontatterò per un <strong>colloquio telefonico gratuito</strong>.
           </p>
-          <p style="font-size: 0.92rem; color: var(--blue-dark);">
-            📍 <strong>Operatività su tutto il territorio nazionale</strong><br>
-            ✉️ <strong>Email diretta:</strong> <a href="mailto:info@federicoponso.it" style="color: var(--blue-primary); font-weight: 700;">info@federicoponso.it</a><br>
+          <p style="font-size: 0.94rem; color: var(--blue-dark);">
+            ✔ <strong>Assistenza specializzata in tutta Italia</strong><br>
+            ✔ <strong>Verifica gratuita degli atti ricevuti</strong><br>
+            ✉️ <strong>Email:</strong> <a href="mailto:info@federicoponso.it" style="color: var(--blue-primary); font-weight: 700;">info@federicoponso.it</a><br>
             🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/search/results/people/?keywords=Federico%20Ponso" target="_blank" rel="noopener" style="color: var(--blue-primary); font-weight: 700;">Federico Ponso</a>
           </p>
         </div>
 
         <div class="contact-form-card">
-          <h3 style="font-size: 1.25rem; color: var(--blue-dark); margin-bottom: 1rem;">Fissa il tuo colloquio telefonico gratuito</h3>
+          <h3 style="font-size: 1.25rem; color: var(--blue-dark); margin-bottom: 1rem;">Fissa ora il tuo colloquio gratuito</h3>
           <form id="contact-form" novalidate>
             <div class="form-row">
               <div class="form-group">
@@ -1107,8 +981,8 @@
             </div>
 
             <div class="form-group">
-              <label for="f-note">Cosa ti stanno espropriando? (facoltativo)</label>
-              <textarea id="f-note" rows="3" class="form-control" placeholder="Scrivi brevemente se hai ricevuto una lettera, di che terreno o immobile si tratta e se ti hanno già fatto un'offerta..."></textarea>
+              <label for="f-note">Descrivi brevemente la tua situazione (facoltativo)</label>
+              <textarea id="f-note" rows="3" class="form-control" placeholder="Indica quale comunicazione hai ricevuto (es. avviso di avvio procedimento, offerta di indennità, occupazione d'urgenza)..."></textarea>
             </div>
 
             <button type="submit" class="btn btn-green" style="width: 100%; font-size: 1rem;">
@@ -1139,7 +1013,7 @@
     <div class="container footer-inner">
       <div>
         <strong>Federico Ponso — Consulente Espropri</strong> · <strong>"Dalla parte dell'espropriato!"</strong><br>
-        <span style="color: #cbd5e1;">Assistenza tecnica e tutela indennità di espropriazione per pubblica utilità (D.P.R. 327/2001)</span>
+        <span style="color: #cbd5e1;">Informazione e tutela tecnica per i cittadini soggetti a espropriazione per pubblica utilità (D.P.R. 327/2001)</span>
       </div>
       <div>
         <span>© 2026 Federico Ponso · Tutti i diritti riservati</span>
@@ -1148,81 +1022,6 @@
   </footer>
 
   <script>
-    const fmtEUR = (n) => new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(Math.round(n));
-
-    const calcType = document.getElementById('calc-type');
-    const calcMq = document.getElementById('calc-mq');
-    const calcOffer = document.getElementById('calc-offer');
-    const chkParziale = document.getElementById('chk-parziale');
-    const chkCd = document.getElementById('chk-cd');
-    const chkSoprassuoli = document.getElementById('chk-soprassuoli');
-    const chkCantiere = document.getElementById('chk-cantiere');
-
-    const outOffer = document.getElementById('out-offer');
-    const outTarget = document.getElementById('out-target');
-    const outBullets = document.getElementById('out-bullets');
-    const btnUseCalc = document.getElementById('btn-use-calc');
-
-    let summaryForForm = '';
-
-    function runSimpleCalc() {
-      const type = calcType.value;
-      const mq = Math.max(10, parseFloat(calcMq.value) || 0);
-      const offer = Math.max(0, parseFloat(calcOffer.value) || 0);
-
-      const rates = {
-        agricolo: 8.5,
-        vigneto: 22.0,
-        edificabile: 95.0,
-        fabbricato: 175.0,
-        servitu: 7.5
-      };
-
-      let total = Math.max(offer * 1.35, mq * (rates[type] || 8.5));
-      const bullets = [
-        `<li>✔ <strong>Vero valore di mercato</strong> del bene anziché i soli valori tabellari minimi.</li>`
-      ];
-
-      if (chkParziale.checked) {
-        total += total * 0.28;
-        bullets.push(`<li>✔ <strong>Rimborso per la svalutazione</strong> della parte di proprietà che ti resta (Art. 33).</li>`);
-      }
-      if (chkCd.checked) {
-        total += total * 0.30;
-        bullets.push(`<li>✔ <strong>Maggiorazione aggiuntiva esentasse</strong> per Coltivatore Diretto / IAP / Affittuario.</li>`);
-      }
-      if (chkSoprassuoli.checked) {
-        total += total * 0.18;
-        bullets.push(`<li>✔ <strong>Pagamento separato</strong> di piante, recinzioni, pozzi e impianti presenti.</li>`);
-      }
-      if (chkCantiere.checked) {
-        total += total * 0.16;
-        bullets.push(`<li>✔ <strong>Indennità di occupazione cantiere</strong> per ogni anno di lavori + ripristino terreno.</li>`);
-      }
-
-      const minVal = total * 0.9;
-      const maxVal = total * 1.15;
-
-      outOffer.textContent = offer > 0 ? fmtEUR(offer) : 'Da verificare';
-      outTarget.textContent = `${fmtEUR(minVal)} – ${fmtEUR(maxVal)}`;
-      outBullets.innerHTML = bullets.join('');
-
-      summaryForForm = `Bene: ${calcType.options[calcType.selectedIndex].text} (${mq} mq) - Offerta Ente: ${offer > 0 ? fmtEUR(offer) : 'non indicata'} - Stima orientativa: ${fmtEUR(minVal)} / ${fmtEUR(maxVal)}.`;
-    }
-
-    [calcType, calcMq, calcOffer, chkParziale, chkCd, chkSoprassuoli, chkCantiere].forEach(el => {
-      el.addEventListener('input', runSimpleCalc);
-      el.addEventListener('change', runSimpleCalc);
-    });
-    runSimpleCalc();
-
-    btnUseCalc.addEventListener('click', () => {
-      document.getElementById('f-note').value = summaryForForm;
-      document.getElementById('colloquio-gratuito').scrollIntoView({ behavior: 'smooth' });
-      document.getElementById('f-name').focus();
-    });
-
-    // Form Invio
     const contactForm = document.getElementById('contact-form');
     const sendModal = document.getElementById('send-modal');
     const modalSummary = document.getElementById('modal-summary');
@@ -1241,7 +1040,7 @@
       const phone = document.getElementById('f-phone').value.trim();
       const email = document.getElementById('f-email').value.trim();
       const comune = document.getElementById('f-comune').value.trim();
-      const note = document.getElementById('f-note').value.trim() || summaryForForm;
+      const note = document.getElementById('f-note').value.trim() || 'Richiesta colloquio informativo gratuito.';
 
       const text =
 `RICHIESTA COLLOQUIO GRATUITO — FEDERICO PONSO
@@ -1251,7 +1050,7 @@ Nome: ${name}
 Telefono: ${phone}
 Email: ${email}
 Comune del bene: ${comune}
-Dettagli: ${note}`;
+Messaggio: ${note}`;
 
       modalSummary.textContent = text;
       modalMailto.href = `mailto:info@federicoponso.it?subject=${encodeURIComponent('Richiesta Colloquio Gratuito Esproprio - ' + name)}&body=${encodeURIComponent(text)}`;
