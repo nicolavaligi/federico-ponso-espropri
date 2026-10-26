@@ -1,1190 +1,802 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Federico Ponso – Consulente Espropriativo | Dalla parte dell'espropriato!</title>
-  <meta name="description" content="Hai ricevuto una notifica di esproprio, occupazione temporanea, servitù o mitigazione acustica per pubblica utilità? Prima di accettare, parliamone. Federico Ponso – Consulente Espropriativo.">
+  <title>Federico Ponso | Consulente Espropriativo — Tutela Indennità D.P.R. 327/2001</title>
+  <meta name="description" content="Consulenza tecnica e assistenza procedurale per proprietari coinvolti in espropri per pubblica utilità, occupazioni temporanee, servitù ed elettrodotti, e mitigazione acustica. Prima verifica senza impegno.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="it_IT">
   <meta property="og:url" content="https://nicolavaligi.github.io/federico-ponso-espropri/">
-  <meta property="og:title" content="Federico Ponso – Consulente Espropriativo | Dalla parte dell'espropriato!">
-  <meta property="og:description" content="Hai ricevuto una notifica di esproprio, occupazione temporanea, servitù o mitigazione acustica? Prima di accettare, parliamone senza impegno.">
+  <meta property="og:title" content="Federico Ponso | Consulente Espropriativo — Dalla parte dell'espropriato">
+  <meta property="og:description" content="Hai ricevuto una notifica di esproprio, occupazione temporanea, servitù o mitigazione acustica? Prima di accettare, parliamone.">
   <meta property="og:image" content="https://nicolavaligi.github.io/federico-ponso-espropri/federico-ponso.jpg">
   <link rel="canonical" href="https://nicolavaligi.github.io/federico-ponso-espropri/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
+            serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+          },
+          colors: {
+            brand: {
+              950: '#090E1A',
+              900: '#0F172A',
+              800: '#1E293B',
+              700: '#334155',
+              accent: '#1D4ED8',
+              gold: '#B45309',
+            }
+          }
+        }
+      }
+    }
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Federico Ponso",
-    "jobTitle": "Consulente Espropriativo",
+    "@type": "ProfessionalService",
+    "name": "Federico Ponso | Consulente Espropriativo",
+    "slogan": "Dalla parte dell'espropriato!",
     "telephone": "+393484424717",
     "email": "f.ponso@gmail.com",
     "url": "https://nicolavaligi.github.io/federico-ponso-espropri/",
     "image": "https://nicolavaligi.github.io/federico-ponso-espropri/federico-ponso.jpg",
-    "description": "Consulente Espropriativo indipendente dalla parte dei proprietari per espropri di pubblica utilità, occupazioni temporanee, mitigazione acustica e servitù."
+    "description": "Consulenza espropriativa indipendente per la tutela dei proprietari in procedure di espropriazione per pubblica utilità, occupazioni temporanee, servitù e mitigazione acustica (D.P.R. 327/2001).",
+    "areaServed": { "@type": "Country", "name": "Italia" },
+    "priceRange": "Primo incontro senza impegno"
   }
   </script>
   <style>
-    :root {
-      --blue-main: #1b5dab;
-      --blue-deep: #0f3566;
-      --blue-pale: #f2f7fc;
-      --blue-tint: #e6f0fa;
-      --blue-border: #cde0f5;
-      --green-wa: #1c8c44;
-      --green-wa-hover: #156e35;
-      --green-pale: #edf8f1;
-      --warm-pale: #fffaf0;
-      --warm-border: #f3d999;
-      --text-primary: #1f2933;
-      --text-secondary: #4b5563;
-      --white: #ffffff;
-      --border-soft: #e5e7eb;
-      --danger: #b91c1c;
-      --radius: 10px;
-      --shadow: 0 4px 16px rgba(15, 53, 102, 0.06);
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: var(--white);
-      color: var(--text-primary);
-      line-height: 1.65;
-      font-size: 16px;
-    }
-
-    h1, h2, h3, h4, button, input, select, textarea, summary {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 0 1.25rem;
-    }
-
-    /* Top Bar Contatto Diretto */
-    .top-bar {
-      background-color: var(--blue-deep);
-      color: var(--white);
-      font-size: 0.9rem;
-      padding: 0.55rem 1rem;
-      text-align: center;
-    }
-
-    .top-bar strong {
-      color: #ffe58f;
-    }
-
-    .top-bar a {
-      color: var(--white);
-      font-weight: 700;
-      text-decoration: underline;
-      margin-left: 0.5rem;
-    }
-
-    /* Header Semplice e Personale */
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background-color: rgba(255, 255, 255, 0.97);
-      border-bottom: 1px solid var(--border-soft);
-    }
-
-    .header-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 72px;
-      gap: 1rem;
-    }
-
-    .brand {
-      text-decoration: none;
-      color: var(--blue-deep);
-    }
-
-    .brand-name {
-      display: block;
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: var(--blue-deep);
-      line-height: 1.15;
-    }
-
-    .brand-role {
-      display: block;
-      font-size: 0.82rem;
-      font-weight: 700;
-      color: var(--blue-main);
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 1.25rem;
-      list-style: none;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: var(--text-primary);
-      font-size: 0.92rem;
-      font-weight: 700;
-    }
-
-    .nav-links a:hover {
-      color: var(--blue-main);
-    }
-
-    .header-cta {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-    }
-
-    /* Buttons */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.45rem;
-      padding: 0.78rem 1.35rem;
-      border-radius: 8px;
-      font-size: 0.95rem;
-      font-weight: 700;
-      text-decoration: none;
-      cursor: pointer;
-      border: none;
-      transition: background 0.15s ease, transform 0.15s ease;
-    }
-
-    .btn-blue {
-      background-color: var(--blue-main);
-      color: var(--white);
-    }
-
-    .btn-blue:hover {
-      background-color: var(--blue-deep);
-      transform: translateY(-1px);
-    }
-
-    .btn-wa {
-      background-color: var(--green-wa);
-      color: var(--white);
-    }
-
-    .btn-wa:hover {
-      background-color: var(--green-wa-hover);
-      transform: translateY(-1px);
-    }
-
-    .btn-outline {
-      background-color: var(--white);
-      color: var(--blue-main);
-      border: 2px solid var(--blue-main);
-    }
-
-    .btn-outline:hover {
-      background-color: var(--blue-pale);
-    }
-
-    /* Apertura / Hero Personale */
-    .hero {
-      background: linear-gradient(180deg, var(--blue-pale) 0%, var(--white) 100%);
-      padding: 3.25rem 0 2.75rem;
-      border-bottom: 1px solid var(--blue-border);
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 0.85fr 1.15fr;
-      gap: 2.5rem;
-      align-items: center;
-    }
-
-    .person-card {
-      background: var(--white);
-      border: 2px solid var(--blue-border);
-      border-radius: 14px;
-      padding: 1.85rem;
-      text-align: center;
-      box-shadow: var(--shadow);
-    }
-
-    .photo-wrap {
-      position: relative;
-      width: 164px;
-      height: 164px;
-      margin: 0 auto 1.1rem;
-    }
-
-    .photo-wrap img {
-      width: 164px;
-      height: 164px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid var(--blue-main);
-      background-color: var(--blue-pale);
-    }
-
-    .linkedin-pin {
-      position: absolute;
-      bottom: 6px;
-      right: 6px;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      background-color: #0a66c2;
-      color: var(--white);
-      font-weight: 700;
-      font-size: 0.95rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 2px solid var(--white);
-      text-decoration: none;
-    }
-
-    .person-card h2 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--blue-deep);
-      margin-bottom: 0.2rem;
-    }
-
-    .person-title {
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--blue-main);
-      margin-bottom: 0.85rem;
-    }
-
-    .direct-contacts {
-      background: var(--blue-pale);
-      border: 1px solid var(--blue-border);
-      border-radius: 8px;
-      padding: 0.85rem;
-      font-size: 0.94rem;
-      margin-bottom: 0.9rem;
-      text-align: left;
-    }
-
-    .direct-contacts div {
-      margin-bottom: 0.35rem;
-    }
-
-    .direct-contacts div:last-child {
-      margin-bottom: 0;
-    }
-
-    .direct-contacts a {
-      color: var(--blue-deep);
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    .direct-contacts a:hover {
-      text-decoration: underline;
-    }
-
-    .claim-badge {
-      display: inline-block;
-      background-color: var(--blue-main);
-      color: var(--white);
-      font-size: 0.84rem;
-      font-weight: 700;
-      padding: 0.32rem 0.9rem;
-      border-radius: 999px;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      margin-bottom: 1rem;
-    }
-
-    .hero h1 {
-      font-size: clamp(1.75rem, 3.3vw, 2.35rem);
-      font-weight: 700;
-      color: var(--blue-deep);
-      line-height: 1.25;
-      margin-bottom: 1rem;
-    }
-
-    .hero h1 span {
-      color: var(--blue-main);
-      text-decoration: underline;
-      text-decoration-color: #9dc4eb;
-      text-underline-offset: 4px;
-    }
-
-    .hero-text {
-      font-size: 1.06rem;
-      color: var(--text-primary);
-      margin-bottom: 1.35rem;
-    }
-
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.8rem;
-      margin-bottom: 1.1rem;
-    }
-
-    /* Sezioni Generali */
-    section {
-      padding: 3.25rem 0;
-    }
-
-    .section-alt {
-      background-color: var(--blue-pale);
-      border-top: 1px solid var(--blue-border);
-      border-bottom: 1px solid var(--blue-border);
-    }
-
-    .section-heading {
-      font-size: clamp(1.5rem, 2.6vw, 1.95rem);
-      font-weight: 700;
-      color: var(--blue-deep);
-      margin-bottom: 0.85rem;
-    }
-
-    /* Chi sono & Di cosa mi occupo */
-    .two-cards {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-    }
-
-    .info-card {
-      background: var(--white);
-      border: 1px solid var(--blue-border);
-      border-top: 4px solid var(--blue-main);
-      border-radius: var(--radius);
-      padding: 1.65rem;
-      box-shadow: var(--shadow);
-    }
-
-    .info-card h2 {
-      font-size: 1.35rem;
-      font-weight: 700;
-      color: var(--blue-deep);
-      margin-bottom: 0.65rem;
-    }
-
-    .info-card p {
-      font-size: 1rem;
-      color: var(--text-primary);
-    }
-
-    /* Come lavoro (6 passi) */
-    .steps-list {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.1rem;
-      margin-top: 1.25rem;
-      margin-bottom: 1.75rem;
-    }
-
-    .step-item {
-      background: var(--white);
-      border: 1px solid var(--blue-border);
-      border-radius: var(--radius);
-      padding: 1.3rem;
-      box-shadow: var(--shadow);
-    }
-
-    .step-number {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      background-color: var(--blue-main);
-      color: var(--white);
-      font-weight: 700;
-      font-size: 0.95rem;
-      margin-bottom: 0.65rem;
-    }
-
-    .step-item p {
-      font-size: 0.96rem;
-      color: var(--text-primary);
-    }
-
-    .sub-grid-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.25rem;
-    }
-
-    .sub-box {
-      background: var(--white);
-      border: 1px solid var(--blue-border);
-      border-radius: var(--radius);
-      padding: 1.4rem;
-    }
-
-    .sub-box h3 {
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--blue-deep);
-      margin-bottom: 0.45rem;
-    }
-
-    /* Perché fidarsi & Gli errori più comuni */
-    .trust-box {
-      background: var(--green-pale);
-      border: 2px solid #a3d9b5;
-      border-radius: 12px;
-      padding: 1.75rem;
-      margin-bottom: 2rem;
-    }
-
-    .trust-box h2 {
-      font-size: 1.45rem;
-      font-weight: 700;
-      color: var(--blue-deep);
-      margin-bottom: 0.65rem;
-    }
-
-    .trust-box p {
-      font-size: 1rem;
-      margin-bottom: 0.7rem;
-    }
-
-    .trust-box p:last-child {
-      margin-bottom: 0;
-    }
-
-    .errors-card {
-      background: var(--warm-pale);
-      border: 1px solid var(--warm-border);
-      border-left: 5px solid #d97706;
-      border-radius: var(--radius);
-      padding: 1.75rem;
-    }
-
-    .errors-card h2 {
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: var(--blue-deep);
-      margin-bottom: 0.85rem;
-    }
-
-    .errors-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-      margin-bottom: 1.15rem;
-    }
-
-    .errors-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.6rem;
-      font-size: 0.98rem;
-    }
-
-    .err-dot {
-      color: #d97706;
-      font-weight: 700;
-      font-size: 1.1rem;
-      line-height: 1.3;
-    }
-
-    /* Un esempio concreto */
-    .story-box {
-      background: var(--white);
-      border: 2px solid var(--blue-border);
-      border-radius: 12px;
-      padding: 2rem;
-      box-shadow: var(--shadow);
-    }
-
-    .story-tag {
-      display: inline-block;
-      background: var(--blue-tint);
-      color: var(--blue-main);
-      font-weight: 700;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      padding: 0.25rem 0.7rem;
-      border-radius: 6px;
-      margin-bottom: 0.65rem;
-    }
-
-    .story-box h2 {
-      font-size: 1.45rem;
-      font-weight: 700;
-      color: var(--blue-deep);
-      margin-bottom: 0.75rem;
-    }
-
-    .story-box p {
-      font-size: 1.02rem;
-      margin-bottom: 0.85rem;
-    }
-
-    .story-quote {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--blue-main);
-      margin-top: 0.5rem;
-    }
-
-    /* Opere ed Enti (Senza Loghi) */
-    .opere-list {
-      list-style: none;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.85rem;
-      margin: 1.25rem 0 1.5rem;
-    }
-
-    .opere-list li {
-      background: var(--blue-pale);
-      border: 1px solid var(--blue-border);
-      border-radius: 8px;
-      padding: 0.9rem 1.1rem;
-      font-size: 0.95rem;
-      display: flex;
-      align-items: flex-start;
-      gap: 0.55rem;
-    }
-
-    .opere-pin {
-      color: var(--blue-main);
-      font-weight: 700;
-    }
-
-    .enti-text {
-      background: var(--white);
-      border: 1px solid var(--border-soft);
-      border-radius: 8px;
-      padding: 1.15rem 1.25rem;
-      font-size: 0.96rem;
-      color: var(--text-primary);
-    }
-
-    /* Domande Frequenti */
-    .faq-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-
-    details.faq-item {
-      background: var(--white);
-      border: 1px solid var(--blue-border);
-      border-radius: 8px;
-      padding: 1.05rem 1.3rem;
-    }
-
-    details.faq-item summary {
-      font-weight: 700;
-      font-size: 1.02rem;
-      color: var(--blue-deep);
-      cursor: pointer;
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    details.faq-item summary::-webkit-details-marker {
-      display: none;
-    }
-
-    details.faq-item summary::after {
-      content: "+";
-      font-size: 1.35rem;
-      color: var(--blue-main);
-      font-weight: 700;
-    }
-
-    details.faq-item[open] summary::after {
-      content: "−";
-    }
-
-    .faq-body {
-      margin-top: 0.7rem;
-      padding-top: 0.7rem;
-      border-top: 1px solid var(--border-soft);
-      font-size: 0.96rem;
-      color: var(--text-primary);
-    }
-
-    /* Contatti */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
-      gap: 2rem;
-      align-items: start;
-    }
-
-    .contact-direct-box {
-      background: var(--blue-pale);
-      border: 2px solid var(--blue-border);
-      border-radius: 12px;
-      padding: 1.75rem;
-    }
-
-    .contact-direct-box h2 {
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: var(--blue-deep);
-      margin-bottom: 0.6rem;
-    }
-
-    .contact-direct-list {
-      list-style: none;
-      margin: 1.25rem 0;
-      display: flex;
-      flex-direction: column;
-      gap: 0.85rem;
-      font-size: 1.02rem;
-    }
-
-    .contact-direct-list a {
-      color: var(--blue-deep);
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    .contact-direct-list a:hover {
-      text-decoration: underline;
-    }
-
-    .contact-form-box {
-      background: var(--white);
-      border: 2px solid var(--blue-border);
-      border-radius: 12px;
-      padding: 1.85rem;
-      box-shadow: var(--shadow);
-    }
-
-    .form-group {
-      margin-bottom: 0.95rem;
-    }
-
-    .form-group label {
-      display: block;
-      font-weight: 700;
-      font-size: 0.9rem;
-      color: var(--blue-deep);
-      margin-bottom: 0.3rem;
-    }
-
-    .form-control {
-      width: 100%;
-      padding: 0.72rem 0.85rem;
-      border: 1px solid #cbd5e1;
-      border-radius: 8px;
-      font-size: 0.95rem;
-      color: var(--text-primary);
-      background: var(--white);
-    }
-
-    .form-control:focus {
-      outline: 2px solid var(--blue-main);
-      border-color: transparent;
-    }
-
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.85rem;
-    }
-
-    .error-msg {
-      display: none;
-      color: var(--danger);
-      font-size: 0.8rem;
-      font-weight: 700;
-      margin-top: 0.25rem;
-    }
-
-    .form-control:user-invalid {
-      border-color: var(--danger);
-      background-color: #fef2f2;
-    }
-
-    .form-control:user-invalid + .error-msg {
-      display: block;
-    }
-
-    dialog.modal {
-      margin: auto;
-      border: 2px solid var(--blue-main);
-      border-radius: 12px;
-      padding: 1.75rem;
-      max-width: 500px;
-      width: 92%;
-      background: var(--white);
-      color: var(--text-primary);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    }
-
-    dialog.modal::backdrop {
-      background: rgba(15, 53, 102, 0.45);
-    }
-
-    .summary-pre {
-      background: var(--blue-pale);
-      border: 1px solid var(--blue-border);
-      border-radius: 8px;
-      padding: 0.9rem;
-      font-size: 0.86rem;
-      margin: 0.85rem 0 1.1rem;
-      white-space: pre-wrap;
-    }
-
-    footer {
-      background-color: var(--blue-deep);
-      color: var(--white);
-      padding: 2rem 0;
-      font-size: 0.88rem;
-    }
-
-    .footer-inner {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    @media (max-width: 860px) {
-      .hero-grid,
-      .two-cards,
-      .steps-list,
-      .sub-grid-2,
-      .opere-list,
-      .contact-grid,
-      .form-row {
-        grid-template-columns: 1fr;
-      }
-      .nav-links {
-        display: none;
-      }
+    details > summary { list-style: none; }
+    details > summary::-webkit-details-marker { display: none; }
+    .form-input:user-invalid {
+      border-color: #ef4444;
+      background-color: rgba(239, 68, 68, 0.08);
     }
   </style>
 </head>
-<body>
+<body class="bg-white text-slate-900 font-sans antialiased selection:bg-blue-900 selection:text-white">
 
-  <!-- Top Bar con Contatto Diretto -->
-  <div class="top-bar">
-    <strong>Dalla parte dell'espropriato!</strong> — Contatto diretto Federico Ponso:
-    <a href="tel:+393484424717">📞 348 442 4717</a> ·
-    <a href="https://wa.me/393484424717" target="_blank" rel="noopener">💬 WhatsApp</a> ·
-    <a href="mailto:f.ponso@gmail.com">✉️ f.ponso@gmail.com</a>
+  <!-- Top Institutional Bar -->
+  <div class="bg-slate-950 text-slate-300 text-xs sm:text-sm py-2.5 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-amber-400"></span>
+        <span class="font-semibold text-white tracking-wide uppercase text-xs">Dalla parte dell'espropriato!</span>
+        <span class="hidden md:inline text-slate-400">— Tutela tecnica e procedurale ex D.P.R. 327/2001</span>
+      </div>
+      <div class="flex items-center gap-4 font-medium">
+        <a href="tel:+393484424717" class="hover:text-white transition-colors flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          <span>348 442 4717</span>
+        </a>
+        <span class="text-slate-700">|</span>
+        <a href="mailto:f.ponso@gmail.com" class="hover:text-white transition-colors">f.ponso@gmail.com</a>
+      </div>
+    </div>
   </div>
 
-  <!-- Header Semplice e Personale -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#" class="brand">
-        <span class="brand-name">Federico Ponso</span>
-        <span class="brand-role">Consulente Espropriativo</span>
-      </a>
-      <nav aria-label="Menu principale">
-        <ul class="nav-links">
-          <li><a href="#chi-sono">Chi Sono</a></li>
-          <li><a href="#come-lavoro">Come Lavoro</a></li>
-          <li><a href="#perche-fidarsi">Perché Fidarsi</a></li>
-          <li><a href="#opere">Opere Seguite</a></li>
-          <li><a href="#faq">Domande Frequenti</a></li>
-        </ul>
-      </nav>
-      <div class="header-cta">
-        <a href="#contatti" class="btn btn-blue">Parliamone</a>
+  <!-- Sticky Corporate Navbar -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Brand -->
+        <a href="#" class="flex items-center gap-3.5 group">
+          <div class="w-11 h-11 rounded-lg bg-slate-900 text-white flex items-center justify-center font-serif text-2xl tracking-wider border border-slate-700 group-hover:bg-blue-900 transition-colors">
+            FP
+          </div>
+          <div class="flex flex-col">
+            <span class="text-lg font-bold tracking-tight text-slate-900 leading-none">Federico Ponso</span>
+            <span class="text-xs font-semibold uppercase tracking-widest text-slate-500 mt-1">Consulente Espropriativo</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700" aria-label="Menu principale">
+          <a href="#chi-sono" class="hover:text-blue-700 transition-colors">Chi Sono</a>
+          <a href="#servizi" class="hover:text-blue-700 transition-colors">Ambiti di Intervento</a>
+          <a href="#metodo" class="hover:text-blue-700 transition-colors">Come Lavoro</a>
+          <a href="#opere" class="hover:text-blue-700 transition-colors">Opere Seguite</a>
+          <a href="#faq" class="hover:text-blue-700 transition-colors">FAQ</a>
+        </nav>
+
+        <!-- Desktop CTA -->
+        <div class="hidden md:flex items-center gap-3">
+          <a href="https://wa.me/393484424717" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 transition-colors">
+            <span>WhatsApp</span>
+          </a>
+          <a href="#contatti" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-white bg-slate-900 hover:bg-blue-800 transition-colors shadow-sm">
+            <span>Richiedi Valutazione Pratica</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button type="button" id="mobile-menu-btn" class="md:hidden inline-flex items-center justify-center p-2.5 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none" aria-expanded="false" aria-label="Apri menu di navigazione">
+          <svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+          <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-3">
+      <a href="#chi-sono" class="mobile-link block py-2 text-base font-semibold text-slate-800 border-b border-slate-100">Chi Sono</a>
+      <a href="#servizi" class="mobile-link block py-2 text-base font-semibold text-slate-800 border-b border-slate-100">Ambiti di Intervento</a>
+      <a href="#metodo" class="mobile-link block py-2 text-base font-semibold text-slate-800 border-b border-slate-100">Come Lavoro</a>
+      <a href="#opere" class="mobile-link block py-2 text-base font-semibold text-slate-800 border-b border-slate-100">Opere Seguite</a>
+      <a href="#faq" class="mobile-link block py-2 text-base font-semibold text-slate-800 border-b border-slate-100">Domande Frequenti</a>
+      <div class="pt-2 flex flex-col gap-2.5">
+        <a href="tel:+393484424717" class="w-full text-center py-3 rounded-lg font-semibold text-slate-900 bg-slate-100">Chiama 348 442 4717</a>
+        <a href="#contatti" class="mobile-link w-full text-center py-3 rounded-lg font-semibold text-white bg-slate-900">Richiedi Valutazione Pratica</a>
       </div>
     </div>
   </header>
 
-  <!-- Apertura / Hero Personale -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <!-- Colonna Persona: Foto ben visibile, nome, qualifica, contatti diretti -->
-      <aside class="person-card" aria-label="Federico Ponso Consulente Espropriativo">
-        <div class="photo-wrap">
-          <img
-            src="federico-ponso.jpg"
-            alt="Federico Ponso – Consulente Espropriativo"
-            onerror="this.src='https://ui-avatars.com/api/?name=Federico+Ponso&size=256&background=1b5dab&color=fff&bold=true'"
-          >
-          <a href="https://www.linkedin.com/search/results/people/?keywords=Federico%20Ponso" target="_blank" rel="noopener" class="linkedin-pin" title="Profilo LinkedIn di Federico Ponso">in</a>
+  <!-- Hero Section -->
+  <section class="relative bg-slate-900 text-white py-20 lg:py-28 overflow-hidden border-b border-slate-800">
+    <!-- Subtle Geometric Background Pattern -->
+    <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#94a3b8 1px, transparent 1px); background-size: 32px 32px;"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+        <!-- Left Column (7 cols) -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-300 text-xs font-semibold uppercase tracking-widest">
+            <span>D.P.R. 327/2001 · Dalla parte dell'espropriato!</span>
+          </div>
+
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-[3.4rem] font-normal tracking-tight text-white leading-[1.12]">
+            Hai ricevuto una notifica di esproprio, occupazione temporanea, servitù o mitigazione acustica? <span class="italic text-amber-300">Prima di accettare, parliamone.</span>
+          </h1>
+
+          <p class="text-lg sm:text-xl text-slate-300 leading-relaxed max-w-2xl font-normal">
+            Chi riceve una comunicazione di esproprio per pubblica utilità si trova davanti a scadenze strette e stime unilaterali. Qui non parli con un marchio astratto, ma con <strong class="text-white font-semibold">Federico Ponso</strong>: un unico interlocutore diretto che coordina perizia tecnica, trattativa bonaria e tutela arbitrale per ottenere un <strong class="text-white font-semibold">indennizzo realmente commisurato al valore del tuo bene</strong>.
+          </p>
+
+          <!-- Dual CTA -->
+          <div class="pt-2 flex flex-col sm:flex-row gap-4">
+            <a href="#contatti" class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-lg text-base font-bold text-slate-950 bg-amber-400 hover:bg-amber-300 transition-all shadow-lg">
+              <span>Fissa un Primo Incontro Senza Impegno</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/></svg>
+            </a>
+            <a href="#metodo" class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-lg text-base font-semibold text-white border border-slate-600 hover:bg-slate-800 transition-colors">
+              <span>Scopri il Metodo in 6 Fasi</span>
+            </a>
+          </div>
+
+          <!-- Direct Reassurance Footnote -->
+          <div class="pt-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-slate-400">
+            <span class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+              <span>Incontri direttamente presso la tua proprietà</span>
+            </span>
+            <span class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+              <span>Indennizzo pagato per legge sempre e solo al proprietario</span>
+            </span>
+          </div>
         </div>
-        <h2>Federico Ponso</h2>
-        <div class="person-title">Consulente Espropriativo</div>
 
-        <div class="direct-contacts">
-          <div>📞 <strong>Tel / WhatsApp:</strong> <a href="tel:+393484424717">348 442 4717</a></div>
-          <div>✉️ <strong>Email:</strong> <a href="mailto:f.ponso@gmail.com">f.ponso@gmail.com</a></div>
-        </div>
+        <!-- Right Credibility & Advisory Card (5 cols) -->
+        <div class="lg:col-span-5">
+          <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-7 sm:p-8 shadow-2xl backdrop-blur-sm">
+            <div class="flex items-center justify-between pb-5 mb-6 border-b border-slate-700">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-widest text-amber-400 block">Presidio Tecnico di Parte</span>
+                <h2 class="text-xl font-bold text-white mt-1">I 3 errori più comuni da evitare</h2>
+              </div>
+              <span class="px-3 py-1 rounded-md bg-slate-900 border border-slate-700 text-xs font-semibold text-slate-300">D.P.R. 327/01</span>
+            </div>
 
-        <a href="#contatti" class="btn btn-blue" style="width: 100%; margin-bottom: 0.5rem;">
-          Primo Incontro Senza Impegno
-        </a>
-        <a href="https://wa.me/393484424717" target="_blank" rel="noopener" class="btn btn-wa" style="width: 100%;">
-          💬 Scrivimi su WhatsApp
-        </a>
-      </aside>
+            <ul class="space-y-4 text-sm text-slate-300">
+              <li class="flex items-start gap-3.5">
+                <span class="w-6 h-6 rounded-full bg-amber-400/15 border border-amber-400/40 text-amber-300 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">1</span>
+                <span>
+                  <strong class="text-white">Ascoltare chi non è specializzato in espropri:</strong> anche ottimi professionisti, se non operano ogni giorno in questa materia, spesso consigliano di lasciar perdere perché <em class="text-slate-200">"è un'opera pubblica, non metterti contro lo Stato"</em>.
+                </span>
+              </li>
+              <li class="flex items-start gap-3.5">
+                <span class="w-6 h-6 rounded-full bg-amber-400/15 border border-amber-400/40 text-amber-300 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">2</span>
+                <span>
+                  <strong class="text-white">Accettare subito la prima offerta:</strong> la stima iniziale spesso non considera la svalutazione del bene residuo (Art. 33), i soprassuoli, i danni all'attività o il reale valore venale.
+                </span>
+              </li>
+              <li class="flex items-start gap-3.5">
+                <span class="w-6 h-6 rounded-full bg-amber-400/15 border border-amber-400/40 text-amber-300 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">3</span>
+                <span>
+                  <strong class="text-white">Restare fermi aspettando:</strong> lasciar correre il tempo dopo la notifica riduce i margini per far verbalizzare lo stato dei luoghi e negoziare con l'ente.
+                </span>
+              </li>
+            </ul>
 
-      <!-- Colonna Messaggio di Apertura -->
-      <div>
-        <span class="claim-badge">Dalla parte dell'espropriato!</span>
-        <h1>Hai ricevuto una notifica di esproprio, occupazione temporanea, servitù o mitigazione acustica per pubblica utilità? <br><span>Prima di accettare, parliamone.</span></h1>
-        <p class="hero-text">
-          Chi riceve una notifica di esproprio è preoccupato e spesso non sa a chi rivolgersi. Qui non trovi un marchio astratto o un call center, ma <strong>una persona reale che ci mette la faccia</strong> e risponde direttamente del proprio lavoro.
-        </p>
-        <p class="hero-text">
-          Ti invito a un <strong>primo incontro senza impegno</strong> per leggere insieme le carte che hai ricevuto e capire, con parole semplici e senza burocratese, cosa puoi fare per tutelare la tua proprietà.
-        </p>
-        <div class="hero-buttons">
-          <a href="tel:+393484424717" class="btn btn-blue">📞 Chiama 348 442 4717</a>
-          <a href="#come-lavoro" class="btn btn-outline">Scopri Come Lavoro</a>
+            <div class="mt-6 pt-5 border-t border-slate-700/80 flex items-center justify-between gap-4">
+              <div class="text-xs text-slate-300">
+                <span class="block font-semibold text-white">Contatto Diretto Federico Ponso</span>
+                <span>Tel / WhatsApp: <strong class="text-amber-300">348 442 4717</strong></span>
+              </div>
+              <a href="tel:+393484424717" class="px-4 py-2 rounded-lg bg-white text-slate-900 font-bold text-xs hover:bg-slate-100 transition-colors shrink-0">
+                Chiama Ora
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Chi sono & Di cosa mi occupo -->
-  <section id="chi-sono">
-    <div class="container">
-      <div class="two-cards">
-        <div class="info-card">
-          <h2>Chi sono</h2>
-          <p>
-            Ho sempre dedicato tempo agli altri. Quando gli espropri hanno toccato il mio territorio, ho scelto di stare <strong>dalla parte dei proprietari</strong>.
+  <!-- Trust Bar / Metric Highlights -->
+  <section class="bg-slate-50 border-b border-slate-200 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+          <div class="font-serif text-3xl text-slate-900">100% Tutela</div>
+          <div class="text-xs font-bold uppercase tracking-wider text-blue-700 mt-1">Pagamento Diretto per Legge</div>
+          <p class="text-xs text-slate-600 mt-1.5">Ogni liquidazione va sempre e solo sul conto del proprietario intestatario della notifica.</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+          <div class="font-serif text-3xl text-slate-900">6 Grandi Assi</div>
+          <div class="text-xs font-bold uppercase tracking-wider text-blue-700 mt-1">Infrastrutture Presidiate</div>
+          <p class="text-xs text-slate-600 mt-1.5">Pratiche seguite su AV/AC Milano-Venezia, Pedemontana, Rho-Arona, A11, A22 e SS12.</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+          <div class="font-serif text-3xl text-slate-900">Art. 21 D.P.R.</div>
+          <div class="text-xs font-bold uppercase tracking-wider text-blue-700 mt-1">Terna Tecnica Arbitrale</div>
+          <p class="text-xs text-slate-600 mt-1.5">Rete indipendente di periti e avvocati selezionati su misura per il singolo caso.</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+          <div class="font-serif text-3xl text-slate-900">Sopralluogo</div>
+          <div class="text-xs font-bold uppercase tracking-wider text-blue-700 mt-1">Direttamente a Casa Tua</div>
+          <p class="text-xs text-slate-600 mt-1.5">Primo incontro senza impegno sul posto interessato dall'opera per valutare insieme le carte.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profilo Professionale / Chi Sono (Split 2 Colonne) -->
+  <section id="chi-sono" class="py-20 lg:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Left Portrait Column (5 cols) -->
+        <div class="lg:col-span-5">
+          <div class="relative bg-slate-100 rounded-2xl p-3 border border-slate-200 shadow-md">
+            <img
+              src="federico-ponso.jpg"
+              alt="Federico Ponso — Consulente Espropriativo"
+              class="w-full aspect-square object-cover rounded-xl border border-slate-200"
+              onerror="this.src='https://ui-avatars.com/api/?name=Federico+Ponso&size=512&background=0F172A&color=fff&bold=true'"
+            >
+            <div class="mt-4 px-2 pb-1 flex items-center justify-between">
+              <div>
+                <h3 class="text-lg font-bold text-slate-900">Federico Ponso</h3>
+                <p class="text-xs font-semibold uppercase tracking-wider text-blue-700">Consulente Espropriativo Indipendente</p>
+              </div>
+              <a href="https://www.linkedin.com/search/results/people/?keywords=Federico%20Ponso" target="_blank" rel="noopener" class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#0A66C2] text-white font-bold text-sm hover:opacity-90 transition-opacity" title="Profilo LinkedIn di Federico Ponso">
+                in
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Bio & Values Column (7 cols) -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-block px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-widest">
+            Chi Sono &amp; Perché Metterci la Faccia
+          </div>
+
+          <h2 class="font-serif text-3xl sm:text-4xl text-slate-900 leading-tight">
+            "Quando gli espropri hanno toccato il mio territorio, ho scelto di stare dalla parte dei proprietari."
+          </h2>
+
+          <p class="text-slate-600 text-base leading-relaxed">
+            Ho sempre dedicato tempo agli altri. Chi riceve una notifica di esproprio è preoccupato e spesso diffidente: si affida più volentieri a <strong class="text-slate-900">una persona reale, con un volto, un nome e un numero di telefono diretto</strong>, che a una sigla impersonale. Ancora oggi le persone che ho seguito negli anni mi chiamano.
           </p>
-          <p style="margin-top: 0.75rem;">
-            Lavoro in modo personale e diretto: <strong>ancora oggi le persone che ho seguito negli anni mi chiamano</strong>.
+
+          <p class="text-slate-600 text-base leading-relaxed">
+            Opero come <strong class="text-slate-900">consulente indipendente</strong>, senza essere vincolato a un unico marchio. Questo mi permette di scegliere per ogni singola pratica <strong class="text-slate-900">il tecnico estimatore e l'avvocato più adatti</strong> — dalla perizia di stima fino all'arbitrato — all'interno di una rete collaudata di professionisti di lunga esperienza, e di dirti con totale onestà anche quando <strong class="text-slate-900">non conviene agire</strong>.
+          </p>
+
+          <!-- Key Pillars Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <div class="font-bold text-sm text-slate-900 mb-1">📍 Vengo io da te</div>
+              <p class="text-xs text-slate-600 leading-relaxed">Gli incontri si svolgono direttamente presso la tua abitazione o sul terreno interessato dall'opera, oppure in una sede di appoggio concordata.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <div class="font-bold text-sm text-slate-900 mb-1">⚖️ Nessun rischio sull'incasso</div>
+              <p class="text-xs text-slate-600 leading-relaxed">Per legge ogni pagamento dell'Ente Espropriante o del MEF viene accreditato esclusivamente al proprietario intestatario della notifica.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- I Nostri Servizi / Ambiti di Intervento -->
+  <section id="servizi" class="py-20 lg:py-24 bg-slate-50 border-t border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-blue-700 bg-blue-50 border border-blue-200 px-3 py-1 rounded-full">Di Cosa Mi Occupo</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-slate-900 mt-3">Ambiti di Intervento &amp; Tutela Estimativa</h2>
+        <p class="text-slate-600 mt-3 text-base">
+          Non si tratta di bloccare l'opera né di togliere soldi allo Stato, ma di far considerare <strong class="text-slate-900">tutti gli aspetti patrimoniali e funzionali</strong> spesso trascurati nella prima offerta.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white border border-slate-200 rounded-xl p-7 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-11 h-11 rounded-lg bg-slate-900 text-white flex items-center justify-center mb-5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Espropri per Pubblica Utilità</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Verifica del Piano Particellare e determinazione del <strong class="text-slate-800">reale valore venale di mercato</strong> per terreni agricoli (Corte Cost. 181/2011), aree edificabili (Art. 37), fabbricati (Art. 38) e indennità aggiuntive per Coltivatori Diretti, IAP e fittavoli (Artt. 40 e 42).
           </p>
         </div>
 
-        <div class="info-card">
-          <h2>Di cosa mi occupo</h2>
-          <p>
-            Seguo pratiche di <strong>espropri per pubblica utilità</strong>, <strong>occupazioni temporanee</strong>, <strong>mitigazione acustica</strong> e <strong>servitù</strong>, anche per <strong>elettrodotti</strong>.
+        <!-- Card 2 -->
+        <div class="bg-white border border-slate-200 rounded-xl p-7 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-11 h-11 rounded-lg bg-slate-900 text-white flex items-center justify-center mb-5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Occupazioni Temporanee e d'Urgenza</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Tutela nelle procedure ex <strong class="text-slate-800">Art. 22-bis e Artt. 49–50 D.P.R. 327/2001</strong>: verbalizzazione puntuale dello Stato di Consistenza prima dell'ingresso dei mezzi, calcolo dell'indennità annua di occupazione e ristoro dei danni da cantiere.
           </p>
-          <p style="margin-top: 0.75rem;">
-            Con un unico obiettivo: <strong>ottenere per il proprietario un indennizzo giusto</strong>.
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white border border-slate-200 rounded-xl p-7 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-11 h-11 rounded-lg bg-slate-900 text-white flex items-center justify-center mb-5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Servitù ed Elettrodotti</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Quantificazione dell'indennizzo per <strong class="text-slate-800">servitù coattive di elettrodotto (Terna, E-Distribuzione), metanodotto o acquedotto</strong>, includendo le fasce di rispetto, i limiti edificatori o colturali e la svalutazione dell'intero fondo attraversato.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white border border-slate-200 rounded-xl p-7 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-11 h-11 rounded-lg bg-slate-900 text-white flex items-center justify-center mb-5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Mitigazione Acustica e Danno</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Assistenza per proprietari di abitazioni prossime a nuove infrastrutture stradali, autostradali o ferroviarie per richiedere <strong class="text-slate-800">interventi di mitigazione</strong> e l'indennizzo per il <strong class="text-slate-800">deprezzamento dell'immobile</strong> (Art. 44 D.P.R. 327/01 e Art. 844 c.c.).
+          </p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-white border border-slate-200 rounded-xl p-7 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-11 h-11 rounded-lg bg-slate-900 text-white flex items-center justify-center mb-5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Esproprio Parziale e Modifiche</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Valutazione della <strong class="text-slate-800">svalutazione della porzione residua (Art. 33)</strong> quando l'opera divide o penalizza la proprietà rimasta, e presentazione di proposte tecniche migliorative su viabilità secondaria, accessi e alberature.
+          </p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-white border border-slate-200 rounded-xl p-7 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-11 h-11 rounded-lg bg-slate-900 text-white flex items-center justify-center mb-5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Terna Tecnica (Art. 21) e Ricorsi</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Coordinamento completo nella procedura arbitrale con <strong class="text-slate-800">Collegio di tre tecnici ex Art. 21 D.P.R. 327/2001</strong> (con spese del collegio a carico dell'Ente se la stima supera di oltre il 10% l'offerta iniziale) e nel percorso legale.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Come lavoro (6 passi) + Dove ci incontriamo + Rete di professionisti -->
-  <section id="come-lavoro" class="section-alt">
-    <div class="container">
-      <h2 class="section-heading">Come lavoro</h2>
-      <p style="color: var(--text-secondary);">Un percorso chiaro in <strong>6 passaggi</strong>, in cui hai sempre me come unico punto di riferimento:</p>
-
-      <div class="steps-list">
-        <div class="step-item">
-          <div class="step-number">1</div>
-          <p><strong>Primo incontro senza impegno</strong> e analisi dell'offerta ricevuta.</p>
-        </div>
-        <div class="step-item">
-          <div class="step-number">2</div>
-          <p><strong>Sopralluogo sul posto</strong>, fotografie e raccolta di tutta la documentazione.</p>
-        </div>
-        <div class="step-item">
-          <div class="step-number">3</div>
-          <p><strong>Scelta del tecnico e dell'avvocato</strong> più adatti al caso specifico.</p>
-        </div>
-        <div class="step-item">
-          <div class="step-number">4</div>
-          <p><strong>Perizia e trattativa con l'ente</strong> per l'accordo bonario.</p>
-        </div>
-        <div class="step-item">
-          <div class="step-number">5</div>
-          <p>Se necessario, <strong>terna tecnica (arbitrato)</strong> o percorso legale.</p>
-        </div>
-        <div class="step-item">
-          <div class="step-number">6</div>
-          <p><strong>Coordinamento continuo</strong> fino alla chiusura della pratica.</p>
-        </div>
-      </div>
-
-      <div class="sub-grid-2">
-        <div class="sub-box">
-          <h3>📍 Dove ci incontriamo</h3>
-          <p>
-            <strong>Vengo io da te:</strong> gli incontri si svolgono direttamente <strong>presso la tua abitazione</strong> o <strong>sul luogo interessato dall'opera</strong>. In alternativa, possiamo vederci in un ufficio o in una sede di appoggio concordata insieme.
-          </p>
-        </div>
-
-        <div class="sub-box">
-          <h3>🤝 La mia rete di professionisti</h3>
-          <p>
-            Non essendo legato a un unico marchio, per ogni pratica sono libero di scegliere <strong>il tecnico e l'avvocato più adatti</strong>, dalla perizia all'arbitrato, all'interno di una <strong>rete di professionisti di lunga esperienza</strong>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Perché fidarsi + Gli errori più comuni -->
-  <section id="perche-fidarsi">
-    <div class="container">
-      <div class="trust-box">
-        <h2>Perché fidarsi</h2>
-        <p>
-          Hai un <strong>unico interlocutore</strong> che ti affianca passo passo, sempre disponibile, e <strong>onesto nel dirti quando non conviene agire</strong>.
-        </p>
-        <p>
-          <strong>Temi dei rischi ad affidare la tua pratica a un'altra persona? Non ce ne sono:</strong> per legge <strong>ogni pagamento va sempre al proprietario intestatario della notifica, cioè a te</strong>. Sei tutelato dalla legge italiana.
+  <!-- Metodo di Lavoro Step-by-Step + Caso Studio Reale -->
+  <section id="metodo" class="py-20 lg:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-blue-700 bg-blue-50 border border-blue-200 px-3 py-1 rounded-full">Metodo Operativo</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-slate-900 mt-3">Come Lavoro: 6 Passaggi Chiari</h2>
+        <p class="text-slate-600 mt-3 text-base">
+          Dalla lettura della prima raccomandata fino alla liquidazione finale dell'indennizzo, hai sempre un unico referente al tuo fianco.
         </p>
       </div>
 
-      <div class="errors-card">
-        <h2>Gli errori più comuni da evitare</h2>
-        <ul class="errors-list">
-          <li>
-            <span class="err-dot">•</span>
-            <span>Seguire il consiglio di <strong>professionisti bravissimi nel proprio campo ma non esperti di espropri</strong>, che suggeriscono di lasciar perdere: <em>"è un'opera pubblica, non metterti contro lo Stato"</em>.</span>
-          </li>
-          <li>
-            <span class="err-dot">•</span>
-            <span><strong>Accettare subito</strong> la prima offerta.</span>
-          </li>
-          <li>
-            <span class="err-dot">•</span>
-            <span><strong>Restare fermi dopo la notifica</strong>, aspettando: il tempo passa e si riducono i margini per lavorare bene.</span>
-          </li>
-        </ul>
-        <p style="font-size: 0.98rem;">
-          Non si tratta di bloccare l'opera né di togliere soldi allo Stato. Spesso l'offerta <strong>non considera tutti gli aspetti</strong>, e dall'altra parte c'è una persona che ascolta. <strong>Vale sempre la pena almeno approfondire.</strong>
-        </p>
-      </div>
-    </div>
-  </section>
+      <!-- 6 Steps Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div class="p-6 rounded-xl bg-slate-50 border border-slate-200 relative">
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-slate-900 text-amber-300 font-bold text-sm mb-4">01</span>
+          <h3 class="text-base font-bold text-slate-900 mb-1.5">Primo incontro senza impegno</h3>
+          <p class="text-sm text-slate-600">Analisi della notifica e dell'offerta ricevuta direttamente a casa tua o sul luogo interessato dall'opera.</p>
+        </div>
 
-  <!-- Un esempio -->
-  <section class="section-alt">
-    <div class="container">
-      <div class="story-box">
-        <span class="story-tag">Una storia vera</span>
-        <h2>Un esempio concreto dal territorio</h2>
-        <p>
-          Un'azienda agricola danneggiata dal passaggio dell'opera, il cui titolare teneva molto al paesaggio. Ascoltandolo, sono riuscito a <strong>far spostare in progetto una strada secondaria</strong>, salvando un <strong>filare di piante importanti</strong>: così continua ad avere una bella vista aprendo la finestra di casa.
-        </p>
-        <p>
-          Non era facile, ma la proposta è stata accolta, oltre a un <strong>indennizzo importante</strong>.
-        </p>
-        <div class="story-quote">
-          "Sono le piccole cose a fare la differenza. Perché non chiederle?"
+        <div class="p-6 rounded-xl bg-slate-50 border border-slate-200 relative">
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-slate-900 text-amber-300 font-bold text-sm mb-4">02</span>
+          <h3 class="text-base font-bold text-slate-900 mb-1.5">Sopralluogo e rilievo sul posto</h3>
+          <p class="text-sm text-slate-600">Fotografie dello stato dei luoghi, verifica delle interferenze progettuali e raccolta di tutta la documentazione.</p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-50 border border-slate-200 relative">
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-slate-900 text-amber-300 font-bold text-sm mb-4">03</span>
+          <h3 class="text-base font-bold text-slate-900 mb-1.5">Scelta dei professionisti dedicati</h3>
+          <p class="text-sm text-slate-600">Individuazione del tecnico estimatore e dell'avvocato più adatti alla specificità del tuo terreno o fabbricato.</p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-50 border border-slate-200 relative">
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-slate-900 text-amber-300 font-bold text-sm mb-4">04</span>
+          <h3 class="text-base font-bold text-slate-900 mb-1.5">Perizia di stima e trattativa</h3>
+          <p class="text-sm text-slate-600">Redazione della perizia tecnica di parte e confronto diretto con l'Ente Espropriante per ricercare un accordo bonario.</p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-50 border border-slate-200 relative">
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-slate-900 text-amber-300 font-bold text-sm mb-4">05</span>
+          <h3 class="text-base font-bold text-slate-900 mb-1.5">Terna tecnica (Art. 21) o tutela legale</h3>
+          <p class="text-sm text-slate-600">Se l'offerta resta incongrua, attivazione dell'arbitrato con collegio peritale ex Art. 21 o del percorso giudiziale.</p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-50 border border-slate-200 relative">
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-slate-900 text-amber-300 font-bold text-sm mb-4">06</span>
+          <h3 class="text-base font-bold text-slate-900 mb-1.5">Coordinamento fino all'incasso</h3>
+          <p class="text-sm text-slate-600">Assistenza costante fino alla chiusura della pratica e all'effettivo accredito delle somme a tuo nome.</p>
+        </div>
+      </div>
+
+      <!-- Case Study Banner (Un esempio concreto) -->
+      <div class="bg-slate-900 text-white rounded-2xl p-8 sm:p-10 lg:p-12 border border-slate-800 shadow-xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-8 space-y-4">
+            <span class="inline-block px-3 py-1 rounded-md bg-amber-400/15 border border-amber-400/30 text-amber-300 text-xs font-bold uppercase tracking-widest">
+              Caso Reale Seguito sul Territorio
+            </span>
+            <h3 class="font-serif text-2xl sm:text-3xl text-white">
+              Oltre l'indennizzo economico: quando ascoltare il proprietario salva anche il paesaggio di casa
+            </h3>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              Un'azienda agricola era pesantemente danneggiata dal passaggio di un'opera pubblica, e il titolare teneva moltissimo al paesaggio intorno alla propria abitazione. Ascoltandolo, sono riuscito a <strong class="text-white">far spostare in progetto il tracciato di una strada secondaria</strong>, salvando un <strong class="text-white">filare di piante importanti</strong>: così ancora oggi continua ad avere una bella vista aprendo la finestra di casa. Non era facile, ma la proposta tecnica è stata accolta dall'Ente, oltre al riconoscimento di un <strong class="text-white">indennizzo importante</strong>.
+            </p>
+          </div>
+          <div class="lg:col-span-4 bg-slate-800/90 border border-slate-700 rounded-xl p-6 text-center">
+            <p class="font-serif italic text-2xl text-amber-300 leading-snug mb-4">
+              "Sono le piccole cose a fare la differenza. Perché non chiederle?"
+            </p>
+            <span class="text-xs font-semibold uppercase tracking-widest text-slate-400 block mb-4">— Federico Ponso</span>
+            <a href="#contatti" class="inline-block w-full py-3 px-4 rounded-lg bg-white text-slate-900 font-bold text-sm hover:bg-slate-100 transition-colors">
+              Parliamo del Tuo Caso
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Opere ed Enti (Senza Loghi) -->
-  <section id="opere">
-    <div class="container">
-      <h2 class="section-heading">Opere ed enti</h2>
-      <p style="color: var(--text-secondary);">Opere per cui ho seguito e seguo tuttora pratiche:</p>
-
-      <ul class="opere-list">
-        <li>
-          <span class="opere-pin">▸</span>
-          <span><strong>Linea AV/AC Brescia-Verona-Padova</strong> (asse Milano-Venezia)</span>
-        </li>
-        <li>
-          <span class="opere-pin">▸</span>
-          <span><strong>Autostrada Pedemontana Lombarda</strong> (Brianza)</span>
-        </li>
-        <li>
-          <span class="opere-pin">▸</span>
-          <span><strong>Potenziamento linea Rho-Arona:</strong> quadruplicamento Rho-Parabiago e Raccordo Y per Malpensa</span>
-        </li>
-        <li>
-          <span class="opere-pin">▸</span>
-          <span><strong>Autostrada A11 Firenze-Mare:</strong> terza corsia Firenze-Pistoia</span>
-        </li>
-        <li>
-          <span class="opere-pin">▸</span>
-          <span><strong>Autostrada Campogalliano-Sassuolo</strong> (collegamento con l'A22 del Brennero)</span>
-        </li>
-        <li>
-          <span class="opere-pin">▸</span>
-          <span><strong>Variante alla SS12 dell'Abetone e del Brennero</strong>, Verona Sud-Isola della Scala</span>
-        </li>
-      </ul>
-
-      <div class="enti-text">
-        Su queste opere lavoro, collaboro e seguo pratiche nei confronti di enti come <strong>Autostrade per l'Italia</strong>, <strong>RFI – Ferrovie dello Stato</strong>, <strong>Autostrada Pedemontana Lombarda</strong>, <strong>ANAS</strong>, <strong>Terna</strong>, <strong>E-Distribuzione</strong> e altri.
+  <section id="opere" class="py-20 lg:py-24 bg-slate-50 border-t border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-blue-700 bg-blue-50 border border-blue-200 px-3 py-1 rounded-full">Esperienza sul Campo</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-slate-900 mt-3">Opere Infrastrutturali &amp; Procedimenti Seguiti</h2>
+        <p class="text-slate-600 mt-2 text-base">
+          Principali infrastrutture nazionali e regionali per cui ho seguito e seguo tuttora pratiche a tutela dei proprietari espropriati:
+        </p>
       </div>
-    </div>
-  </section>
 
-  <!-- Domande frequenti -->
-  <section id="faq" class="section-alt">
-    <div class="container">
-      <h2 class="section-heading">Domande frequenti</h2>
-      <div class="faq-list">
-        <details class="faq-item" name="faq-ponso" open>
-          <summary>L'opera si farà davvero?</summary>
-          <div class="faq-body">
-            Quando un'opera è dichiarata di pubblica utilità e arrivano le notifiche, <strong>l'iter è avviato</strong>. Aspettare sperando che non si faccia significa solo <strong>perdere tempo prezioso</strong>.
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-700">Alta Velocità Ferroviaria</span>
+            <h3 class="text-base font-bold text-slate-900 mt-1">Linea AV/AC Brescia–Verona–Padova</h3>
+            <p class="text-xs text-slate-500 mt-1">Asse ferroviario Milano–Venezia</p>
           </div>
-        </details>
-
-        <details class="faq-item" name="faq-ponso">
-          <summary>Ci sono davvero i soldi per gli indennizzi?</summary>
-          <div class="faq-body">
-            Gli indennizzi <strong>fanno parte del finanziamento dell'opera</strong> e sono a carico dell'ente che espropria. Il punto non è se arriveranno, ma <strong>se saranno giusti</strong>.
-          </div>
-        </details>
-
-        <details class="faq-item" name="faq-ponso">
-          <summary>Posso trattare da solo con l'ente?</summary>
-          <div class="faq-body">
-            Certo, è un tuo diritto. Ma l'esproprio ha <strong>regole, tempi e criteri di stima molto specifici</strong>: farsi affiancare da chi conosce il settore aiuta a <strong>far valere tutti gli aspetti</strong>, senza tralasciarne nessuno.
-          </div>
-        </details>
-
-        <details class="faq-item" name="faq-ponso">
-          <summary>Cosa succede se non accetto l'offerta?</summary>
-          <div class="faq-body">
-            La legge prevede strade precise, come la <strong>stima con terna tecnica</strong> o il ricorso. Non accettare non significa bloccare l'opera, ma <strong>chiedere una valutazione corretta</strong>. L'importante è <strong>muoversi nei tempi giusti</strong>.
-          </div>
-        </details>
-
-        <details class="faq-item" name="faq-ponso">
-          <summary>A chi viene pagato l'indennizzo?</summary>
-          <div class="faq-body">
-            <strong>Sempre e solo a te</strong>, in qualità di proprietario del bene, terreno o fabbricato, e <strong>intestatario della notifica</strong>, come previsto dalla normativa in materia di espropriazione per pubblica utilità.
-          </div>
-        </details>
-
-        <details class="faq-item" name="faq-ponso">
-          <summary>Quanto costa la consulenza?</summary>
-          <div class="faq-body">
-            Ne parliamo al <strong>primo incontro senza impegno</strong>. Le modalità si costruiscono insieme, caso per caso, in tutta serenità.
-          </div>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contatti -->
-  <section id="contatti">
-    <div class="container">
-      <div class="contact-grid">
-        <div class="contact-direct-box">
-          <span class="claim-badge" style="margin-bottom: 0.75rem;">Dalla parte dell'espropriato!</span>
-          <h2>Contatti diretti</h2>
-          <p>
-            Hai ricevuto una notifica o vuoi farmi vedere le carte della tua proprietà? Chiamami, scrivimi su WhatsApp o mandami un'email.
-          </p>
-
-          <ul class="contact-direct-list">
-            <li>📞 <strong>Telefono e WhatsApp:</strong> <a href="tel:+393484424717">348 442 4717</a></li>
-            <li>✉️ <strong>Email:</strong> <a href="mailto:f.ponso@gmail.com">f.ponso@gmail.com</a></li>
-            <li>🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/search/results/people/?keywords=Federico%20Ponso" target="_blank" rel="noopener">Federico Ponso</a></li>
-          </ul>
-
-          <div style="display: flex; flex-wrap: wrap; gap: 0.65rem; margin-top: 1.25rem;">
-            <a href="tel:+393484424717" class="btn btn-blue" style="flex: 1;">📞 Chiama Ora</a>
-            <a href="https://wa.me/393484424717" target="_blank" rel="noopener" class="btn btn-wa" style="flex: 1;">💬 WhatsApp</a>
-          </div>
-
-          <p style="margin-top: 1.25rem; font-weight: 700; color: var(--blue-deep); font-size: 1.05rem;">
-            Parliamone, senza impegno.
-          </p>
         </div>
 
-        <div class="contact-form-box">
-          <h3 style="font-size: 1.3rem; color: var(--blue-deep); margin-bottom: 0.35rem;">Scrivimi un messaggio</h3>
-          <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 1.1rem;">Lascia i tuoi riferimenti e ti ricontatto io al più presto.</p>
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-700">Infrastruttura Autostradale</span>
+            <h3 class="text-base font-bold text-slate-900 mt-1">Autostrada Pedemontana Lombarda</h3>
+            <p class="text-xs text-slate-500 mt-1">Tratte e opere connesse in Brianza e Lombardia</p>
+          </div>
+        </div>
 
-          <form id="contact-form" novalidate>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="f-name">Nome e Cognome *</label>
-                <input type="text" id="f-name" class="form-control" required placeholder="Il tuo nome e cognome">
-                <div class="error-msg">Inserisci il tuo nome e cognome.</div>
-              </div>
-              <div class="form-group">
-                <label for="f-phone">Telefono *</label>
-                <input type="tel" id="f-phone" class="form-control" required placeholder="Il tuo numero di telefono">
-                <div class="error-msg">Inserisci un recapito telefonico.</div>
-              </div>
-            </div>
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-700">Potenziamento Ferroviario</span>
+            <h3 class="text-base font-bold text-slate-900 mt-1">Linea Rho–Arona e Raccordo Y Malpensa</h3>
+            <p class="text-xs text-slate-500 mt-1">Quadruplicamento Rho–Parabiago e collegamenti</p>
+          </div>
+        </div>
 
-            <div class="form-row">
-              <div class="form-group">
-                <label for="f-email">Email (facoltativa)</label>
-                <input type="email" id="f-email" class="form-control" placeholder="tua@email.it">
-              </div>
-              <div class="form-group">
-                <label for="f-comune">Comune / Opera *</label>
-                <input type="text" id="f-comune" class="form-control" required placeholder="Es. Verona, Pedemontana, AV/AC...">
-                <div class="error-msg">Indica il Comune o l'opera interessata.</div>
-              </div>
-            </div>
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-700">Ampliamento Autostradale</span>
+            <h3 class="text-base font-bold text-slate-900 mt-1">Autostrada A11 Firenze–Mare</h3>
+            <p class="text-xs text-slate-500 mt-1">Realizzazione terza corsia tratto Firenze–Pistoia</p>
+          </div>
+        </div>
 
-            <div class="form-group">
-              <label for="f-note">Messaggio (facoltativo)</label>
-              <textarea id="f-note" rows="3" class="form-control" placeholder="Descrivi brevemente che notifica hai ricevuto..."></textarea>
-            </div>
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-700">Bretella Autostradale</span>
+            <h3 class="text-base font-bold text-slate-900 mt-1">Autostrada Campogalliano–Sassuolo</h3>
+            <p class="text-xs text-slate-500 mt-1">Collegamento con l'Autostrada A22 del Brennero</p>
+          </div>
+        </div>
 
-            <button type="submit" class="btn btn-blue" style="width: 100%; font-size: 1rem;">
-              Invia a Federico Ponso — Parliamone, senza impegno
-            </button>
-          </form>
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-700">Viabilità Statale</span>
+            <h3 class="text-base font-bold text-slate-900 mt-1">Variante alla SS12 dell'Abetone e del Brennero</h3>
+            <p class="text-xs text-slate-500 mt-1">Tratto Verona Sud – Isola della Scala</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nota Enti (Solo Testuale, Nessun Logo per Indipendenza) -->
+      <div class="bg-white border border-slate-200 rounded-xl p-6 text-sm text-slate-700 leading-relaxed">
+        <strong class="text-slate-900">Enti controparte nelle procedure seguite:</strong> su queste e altre opere lavoro, collaboro e seguo pratiche — <strong class="text-slate-900">sempre ed esclusivamente a tutela dei proprietari espropriati</strong> — nei confronti di enti e concessionarie quali <strong>Autostrade per l'Italia</strong>, <strong>RFI – Rete Ferroviaria Italiana (Ferrovie dello Stato)</strong>, <strong>Autostrada Pedemontana Lombarda</strong>, <strong>ANAS</strong>, <strong>Terna</strong>, <strong>E-Distribuzione</strong> e amministrazioni locali.
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ / Chiarimenti Procedurali -->
+  <section id="faq" class="py-20 lg:py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-blue-700 bg-blue-50 border border-blue-200 px-3 py-1 rounded-full">Chiarimenti Procedurali</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-slate-900 mt-3">Domande Frequenti</h2>
+        <p class="text-slate-600 mt-2 text-base">Risposte dirette ai dubbi più ricorrenti di chi riceve una notifica di esproprio.</p>
+      </div>
+
+      <div class="space-y-4">
+        <details class="group bg-slate-50 border border-slate-200 rounded-xl p-6 open:bg-white open:shadow-sm transition-all" name="faq-accordion" open>
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base">
+            <span>L'opera si farà davvero?</span>
+            <span class="ml-4 w-7 h-7 rounded-full bg-slate-200/80 text-slate-700 flex items-center justify-center text-sm group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <p class="mt-3 pt-3 border-t border-slate-200/80 text-sm text-slate-600 leading-relaxed">
+            Quando un'opera è dichiarata di pubblica utilità e arrivano le notifiche ai proprietari, <strong class="text-slate-900">l'iter procedurale è concretamente avviato</strong>. Aspettare sperando che l'opera non venga realizzata significa solo perdere tempo prezioso e far scadere i termini per tutelarsi.
+          </p>
+        </details>
+
+        <details class="group bg-slate-50 border border-slate-200 rounded-xl p-6 open:bg-white open:shadow-sm transition-all" name="faq-accordion">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base">
+            <span>Ci sono davvero i soldi per pagare gli indennizzi?</span>
+            <span class="ml-4 w-7 h-7 rounded-full bg-slate-200/80 text-slate-700 flex items-center justify-center text-sm group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <p class="mt-3 pt-3 border-t border-slate-200/80 text-sm text-slate-600 leading-relaxed">
+            Sì: gli indennizzi di esproprio <strong class="text-slate-900">fanno parte per legge del quadro economico di finanziamento dell'opera</strong> e sono a carico dell'ente che espropria. Il vero punto non è se arriveranno, ma <strong class="text-slate-900">se saranno giusti e completi</strong> di tutte le voci dovute.
+          </p>
+        </details>
+
+        <details class="group bg-slate-50 border border-slate-200 rounded-xl p-6 open:bg-white open:shadow-sm transition-all" name="faq-accordion">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base">
+            <span>Posso trattare da solo con l'ente espropriante?</span>
+            <span class="ml-4 w-7 h-7 rounded-full bg-slate-200/80 text-slate-700 flex items-center justify-center text-sm group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <p class="mt-3 pt-3 border-t border-slate-200/80 text-sm text-slate-600 leading-relaxed">
+            Certo, è un tuo diritto. Tuttavia la materia espropriativa ha <strong class="text-slate-900">regole, scadenze perentorie e criteri di stima molto specifici</strong>: farsi affiancare da chi conosce a fondo il settore aiuta a far valere ogni singolo aspetto tecnico ed economico, senza tralasciarne nessuno.
+          </p>
+        </details>
+
+        <details class="group bg-slate-50 border border-slate-200 rounded-xl p-6 open:bg-white open:shadow-sm transition-all" name="faq-accordion">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base">
+            <span>Cosa succede se non accetto l'offerta dell'ente?</span>
+            <span class="ml-4 w-7 h-7 rounded-full bg-slate-200/80 text-slate-700 flex items-center justify-center text-sm group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <p class="mt-3 pt-3 border-t border-slate-200/80 text-sm text-slate-600 leading-relaxed">
+            La legge (D.P.R. 327/2001) prevede strade ben precise, come la <strong class="text-slate-900">stima tramite terna tecnica (Collegio Peritale ex Art. 21)</strong> o il ricorso. Non accettare la prima offerta non significa bloccare l'opera né perdere la somma offerta (che viene depositata presso la Cassa Depositi e Prestiti), ma <strong class="text-slate-900">chiedere una valutazione corretta</strong>. L'importante è muoversi nei tempi giusti.
+          </p>
+        </details>
+
+        <details class="group bg-slate-50 border border-slate-200 rounded-xl p-6 open:bg-white open:shadow-sm transition-all" name="faq-accordion">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base">
+            <span>A chi viene pagato l'indennizzo?</span>
+            <span class="ml-4 w-7 h-7 rounded-full bg-slate-200/80 text-slate-700 flex items-center justify-center text-sm group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <p class="mt-3 pt-3 border-t border-slate-200/80 text-sm text-slate-600 leading-relaxed">
+            <strong class="text-slate-900">Sempre e solo a te</strong>, in qualità di proprietario del bene (terreno o fabbricato) e <strong class="text-slate-900">intestatario della notifica</strong>, come tassativamente previsto dalla normativa italiana in materia di espropriazione per pubblica utilità.
+          </p>
+        </details>
+
+        <details class="group bg-slate-50 border border-slate-200 rounded-xl p-6 open:bg-white open:shadow-sm transition-all" name="faq-accordion">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base">
+            <span>Quanto costa la consulenza?</span>
+            <span class="ml-4 w-7 h-7 rounded-full bg-slate-200/80 text-slate-700 flex items-center justify-center text-sm group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <p class="mt-3 pt-3 border-t border-slate-200/80 text-sm text-slate-600 leading-relaxed">
+            Ne parliamo con totale trasparenza al <strong class="text-slate-900">primo incontro senza impegno</strong>. Le modalità si costruiscono insieme, caso per caso, in tutta serenità — anche tenendo conto che nella procedura ex Art. 21 comma 15 le spese del collegio peritale sono poste a carico dell'Ente quando la stima supera di oltre il 10% l'offerta iniziale.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezione Contatto / Form Audit (High-Contrast Dark Section) -->
+  <section id="contatti" class="py-20 lg:py-24 bg-slate-900 text-white border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <!-- Left Direct Contact Info (5 cols) -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="inline-block px-3 py-1 rounded-md bg-amber-400/15 border border-amber-400/30 text-amber-300 text-xs font-bold uppercase tracking-widest">
+            Contatto Diretto · Senza Impegno
+          </span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-white leading-tight">
+            Parliamone, prima che scadano i termini.
+          </h2>
+          <p class="text-slate-300 text-base leading-relaxed">
+            Chiamami direttamente, scrivimi su WhatsApp oppure compila il modulo per fissare un <strong class="text-white">primo incontro senza impegno</strong> presso la tua abitazione o sul luogo interessato dall'opera.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <a href="tel:+393484424717" class="flex items-center gap-4 p-4 rounded-xl bg-slate-800/90 border border-slate-700 hover:border-amber-400/60 transition-colors">
+              <div class="w-11 h-11 rounded-lg bg-amber-400/15 text-amber-300 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+              </div>
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block">Telefono &amp; WhatsApp Diretto</span>
+                <span class="text-lg font-bold text-white">348 442 4717</span>
+              </div>
+            </a>
+
+            <a href="mailto:f.ponso@gmail.com" class="flex items-center gap-4 p-4 rounded-xl bg-slate-800/90 border border-slate-700 hover:border-amber-400/60 transition-colors">
+              <div class="w-11 h-11 rounded-lg bg-amber-400/15 text-amber-300 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+              </div>
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block">Indirizzo Email</span>
+                <span class="text-base font-bold text-white">f.ponso@gmail.com</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Audit Request Form Card (7 cols) -->
+        <div class="lg:col-span-7">
+          <div class="bg-white text-slate-900 rounded-2xl p-8 sm:p-10 shadow-2xl border border-slate-200">
+            <h3 class="text-2xl font-bold text-slate-900">Richiedi l'analisi della tua notifica</h3>
+            <p class="text-sm text-slate-600 mt-1 mb-6">Compila i campi essenziali: ti ricontatto personalmente per valutare insieme la situazione.</p>
+
+            <form id="contact-form" class="space-y-4" novalidate>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="f-name" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Nome e Cognome *</label>
+                  <input type="text" id="f-name" required placeholder="Es. Mario Rossi" class="form-input w-full px-4 py-3 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-blue-700">
+                </div>
+                <div>
+                  <label for="f-phone" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Telefono / Cellulare *</label>
+                  <input type="tel" id="f-phone" required placeholder="Es. 348 1234567" class="form-input w-full px-4 py-3 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-blue-700">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="f-comune" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Comune o Opera Pubblica *</label>
+                  <input type="text" id="f-comune" required placeholder="Es. Verona, AV/AC, Pedemontana..." class="form-input w-full px-4 py-3 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-blue-700">
+                </div>
+                <div>
+                  <label for="f-tipo" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Tipologia di Notifica</label>
+                  <select id="f-tipo" class="w-full px-4 py-3 rounded-lg border border-slate-300 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-700">
+                    <option value="Esproprio per pubblica utilità">Esproprio per pubblica utilità</option>
+                    <option value="Occupazione temporanea / d'urgenza">Occupazione temporanea / d'urgenza</option>
+                    <option value="Servitù / Elettrodotto / Metanodotto">Servitù / Elettrodotto / Metanodotto</option>
+                    <option value="Mitigazione acustica">Mitigazione acustica</option>
+                    <option value="Altro / Da verificare">Altro / Da verificare al primo incontro</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="f-note" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Descrizione sintetica (facoltativa)</label>
+                <textarea id="f-note" rows="3" placeholder="Indica brevemente di che bene si tratta (terreno agricolo, edificabile, abitazione, azienda) o se hai già ricevuto un'offerta economica..." class="w-full px-4 py-3 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-blue-700"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-4 px-6 rounded-lg bg-slate-900 hover:bg-blue-800 text-white font-bold text-base transition-colors shadow-md">
+                Parliamone, senza impegno →
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Dialog Invio -->
-  <dialog id="send-modal" class="modal">
-    <h3 style="color: var(--blue-deep); font-size: 1.35rem; margin-bottom: 0.35rem;">Invia il messaggio a Federico Ponso</h3>
-    <p style="font-size: 0.9rem; color: var(--text-secondary);">
-      Scegli se inviare subito via <strong>WhatsApp (348 442 4717)</strong> o via <strong>Email (f.ponso@gmail.com)</strong>:
-    </p>
-    <div id="modal-summary" class="summary-pre"></div>
-    <div style="display: flex; flex-wrap: wrap; gap: 0.6rem;">
-      <a id="modal-wa" href="#" target="_blank" rel="noopener" class="btn btn-wa" style="flex: 1;">💬 Invia su WhatsApp</a>
-      <a id="modal-mailto" href="#" class="btn btn-blue" style="flex: 1;">✉️ Invia via Email</a>
-      <button type="button" id="modal-close" class="btn btn-outline" style="width: 100%; margin-top: 0.25rem;">Chiudi</button>
+  <!-- Native Confirmation Dialog -->
+  <dialog id="send-modal" class="rounded-2xl p-6 sm:p-8 max-w-lg w-[92%] border border-slate-200 shadow-2xl backdrop:bg-slate-950/70">
+    <h3 class="text-xl font-bold text-slate-900">Invia la richiesta a Federico Ponso</h3>
+    <p class="text-sm text-slate-600 mt-1">Scegli il canale che preferisci per trasmettere subito i dati inseriti:</p>
+    <pre id="modal-summary" class="mt-4 mb-5 p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-800 whitespace-pre-wrap font-sans"></pre>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <a id="modal-wa" href="#" target="_blank" rel="noopener" class="py-3 px-4 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-sm text-center">
+        💬 Invia su WhatsApp
+      </a>
+      <a id="modal-mailto" href="#" class="py-3 px-4 rounded-lg bg-slate-900 hover:bg-blue-800 text-white font-bold text-sm text-center">
+        ✉️ Invia via Email
+      </a>
     </div>
+    <button type="button" id="modal-close" class="mt-3 w-full py-2.5 rounded-lg border border-slate-300 text-slate-700 font-semibold text-xs hover:bg-slate-100">
+      Chiudi finestra
+    </button>
   </dialog>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container footer-inner">
-      <div>
-        <strong>Federico Ponso – Consulente Espropriativo</strong> · <strong>"Dalla parte dell'espropriato!"</strong><br>
-        <span style="color: #cbd5e1;">Tel / WhatsApp: 348 442 4717 · Email: f.ponso@gmail.com</span>
+  <!-- Multi-Column Corporate Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-14 border-t border-slate-800 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 border-b border-slate-800">
+        <div class="md:col-span-5 space-y-3">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded bg-slate-800 text-white flex items-center justify-center font-serif text-lg border border-slate-700">FP</div>
+            <span class="font-bold text-white text-base">Federico Ponso | Consulente Espropriativo</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-md">
+            Consulenza tecnica e coordinamento procedurale a tutela dei proprietari soggetti a esproprio per pubblica utilità, occupazione temporanea, servitù e mitigazione acustica (D.P.R. 327/2001).
+          </p>
+        </div>
+
+        <div class="md:col-span-3 space-y-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-white block mb-2">Navigazione</span>
+          <ul class="space-y-1.5 text-xs">
+            <li><a href="#chi-sono" class="hover:text-white transition-colors">Chi Sono</a></li>
+            <li><a href="#servizi" class="hover:text-white transition-colors">Ambiti di Intervento</a></li>
+            <li><a href="#metodo" class="hover:text-white transition-colors">Come Lavoro (6 Passi)</a></li>
+            <li><a href="#opere" class="hover:text-white transition-colors">Opere Seguite</a></li>
+            <li><a href="#faq" class="hover:text-white transition-colors">Domande Frequenti</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-4 space-y-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-white block mb-2">Recapiti Diretti</span>
+          <p class="text-xs">Telefono e WhatsApp: <a href="tel:+393484424717" class="text-white font-semibold hover:underline">348 442 4717</a></p>
+          <p class="text-xs">Email: <a href="mailto:f.ponso@gmail.com" class="text-white font-semibold hover:underline">f.ponso@gmail.com</a></p>
+          <p class="text-xs text-slate-500 pt-2">
+            Nota informativa: le attività di perizia tecnica asseverata, arbitrato ex Art. 21 D.P.R. 327/2001 e patrocinio legale sono svolte in collaborazione interdisciplinare con professionisti abilitati e avvocati iscritti ai rispettivi Albi.
+          </p>
+        </div>
       </div>
-      <div>
-        <span>Parliamone, senza impegno.</span>
+
+      <div class="pt-6 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-500">
+        <span>© 2026 Federico Ponso — Consulente Espropriativo. Tutti i diritti riservati.</span>
+        <span>"Dalla parte dell'espropriato!" · Parliamone, senza impegno.</span>
       </div>
     </div>
   </footer>
 
+  <!-- Vanilla JS for Mobile Menu & Form Handling -->
   <script>
+    // Mobile Burger Menu
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+
+    mobileBtn.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden', !isHidden);
+      iconOpen.classList.toggle('hidden', isHidden);
+      iconClose.classList.toggle('hidden', !isHidden);
+      mobileBtn.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        iconOpen.classList.remove('hidden');
+        iconClose.classList.add('hidden');
+        mobileBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Contact Form Modal
     const contactForm = document.getElementById('contact-form');
     const sendModal = document.getElementById('send-modal');
     const modalSummary = document.getElementById('modal-summary');
@@ -1201,20 +813,21 @@
 
       const name = document.getElementById('f-name').value.trim();
       const phone = document.getElementById('f-phone').value.trim();
-      const email = document.getElementById('f-email').value.trim() || 'Non indicata';
       const comune = document.getElementById('f-comune').value.trim();
+      const tipo = document.getElementById('f-tipo').value;
       const note = document.getElementById('f-note').value.trim() || 'Vorrei fissare un primo incontro senza impegno.';
 
       const text =
-`Ciao Federico, ti contatto dal tuo sito.
-Nome: ${name}
+`RICHIESTA VALUTAZIONE PRATICA — FEDERICO PONSO
+----------------------------------------------
+Nome e Cognome: ${name}
 Telefono: ${phone}
-Email: ${email}
 Comune / Opera: ${comune}
-Messaggio: ${note}`;
+Tipologia notifica: ${tipo}
+Dettagli: ${note}`;
 
       modalSummary.textContent = text;
-      modalMailto.href = `mailto:f.ponso@gmail.com?subject=${encodeURIComponent('Contatto dal sito - ' + name + ' (' + comune + ')')}&body=${encodeURIComponent(text)}`;
+      modalMailto.href = `mailto:f.ponso@gmail.com?subject=${encodeURIComponent('Richiesta Valutazione Pratica Esproprio - ' + name + ' (' + comune + ')')}&body=${encodeURIComponent(text)}`;
       modalWa.href = `https://wa.me/393484424717?text=${encodeURIComponent(text)}`;
 
       if (typeof sendModal.showModal === 'function') {
