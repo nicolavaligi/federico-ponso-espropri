@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Federico Ponso — Consulente Espropri & Tutela Indennità (D.P.R. 327/2001)</title>
-  <meta name="description" content="Studio di consulenza tecnica specializzato nella tutela dei proprietari soggetti a esproprio per pubblica utilità, servitù di elettrodotto, metanodotto e occupazione d'urgenza (D.P.R. 327/2001). Analisi gratuita degli atti ricevuti.">
-  <meta property="og:title" content="Federico Ponso — Consulente Espropri & Tutela Proprietari">
-  <meta property="og:description" content="Hai ricevuto un avviso di avvio procedimento o un'offerta di indennità di esproprio? Tutela il reale valore del tuo terreno, fabbricato o azienda agricola.">
+  <title>Federico Ponso — Consulente Espropri &amp; Tutela Indennità (D.P.R. 327/2001)</title>
+  <meta name="description" content="Studio di consulenza tecnica specializzato nella tutela dei proprietari soggetti a esproprio per pubblica utilità, servitù di elettrodotto, metanodotto e occupazione d'urgenza (D.P.R. 327/2001). Simulatore indennità e analisi gratuita degli atti.">
+  <meta property="og:title" content="Federico Ponso — Consulente Espropri &amp; Tutela Proprietari">
+  <meta property="og:description" content="Hai ricevuto un avviso di avvio procedimento o un'offerta di indennità di esproprio? Calcola il potenziale di incremento e tutela il reale valore del tuo bene.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nicolavaligi.github.io/federico-ponso-espropri/">
+  <link rel="canonical" href="https://nicolavaligi.github.io/federico-ponso-espropri/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,8 +18,10 @@
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Federico Ponso — Consulente Espropri",
+    "url": "https://nicolavaligi.github.io/federico-ponso-espropri/",
     "description": "Consulenza tecnica ed estimativa per proprietari coinvolti in procedure di espropriazione per pubblica utilità e servitù coattive (D.P.R. 327/2001).",
     "areaServed": "IT",
+    "priceRange": "Prima analisi gratuita",
     "knowsAbout": [
       "Espropriazione per pubblica utilità",
       "D.P.R. 327/2001",
@@ -46,6 +50,7 @@
       --gold-100: #fef3c7;
       --gold-50: #fffbeb;
       --emerald-700: #047857;
+      --emerald-600: #059669;
       --emerald-100: #d1fae5;
       --danger-700: #b91c1c;
       --danger-100: #fee2e2;
@@ -115,7 +120,7 @@
       position: sticky;
       top: 0;
       z-index: 50;
-      background: rgba(255, 255, 255, 0.94);
+      background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--slate-200);
     }
@@ -165,7 +170,7 @@
     }
 
     .brand-sub {
-      font-size: 0.76rem;
+      font-size: 0.75rem;
       color: var(--slate-600);
       text-transform: uppercase;
       letter-spacing: 0.06em;
@@ -175,14 +180,14 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 1.6rem;
+      gap: 1.35rem;
       list-style: none;
     }
 
     .nav-links a {
       text-decoration: none;
       color: var(--navy-800);
-      font-size: 0.92rem;
+      font-size: 0.9rem;
       font-weight: 500;
       transition: color 0.15s ease;
     }
@@ -204,6 +209,7 @@
       cursor: pointer;
       border: none;
       transition: all 0.2s ease;
+      font-family: inherit;
     }
 
     .btn-primary {
@@ -226,6 +232,16 @@
     .btn-outline:hover {
       background: rgba(255, 255, 255, 0.08);
       border-color: var(--white);
+    }
+
+    .btn-secondary {
+      background: var(--slate-100);
+      color: var(--navy-900);
+      border: 1px solid var(--slate-200);
+    }
+
+    .btn-secondary:hover {
+      background: var(--slate-200);
     }
 
     /* Hero Section */
@@ -392,7 +408,7 @@
 
     .section-header {
       text-align: center;
-      max-width: 720px;
+      max-width: 740px;
       margin: 0 auto 3rem;
     }
 
@@ -420,7 +436,7 @@
       font-size: 1.02rem;
     }
 
-    /* Why Initial Offers Are Low - Problem / Solution */
+    /* Problem / Solution Grid */
     .problem-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -578,7 +594,7 @@
       text-transform: uppercase;
     }
 
-    /* Interactive Indemnity Diagnostic Calculator */
+    /* Interactive Quantitative & Diagnostic Simulator */
     .calc-section {
       background: linear-gradient(180deg, var(--ivory) 0%, #eef2f6 100%);
     }
@@ -595,14 +611,14 @@
     }
 
     .form-group {
-      margin-bottom: 1.25rem;
+      margin-bottom: 1.15rem;
     }
 
     .form-group label {
       display: block;
       font-weight: 600;
       font-size: 0.88rem;
-      margin-bottom: 0.45rem;
+      margin-bottom: 0.42rem;
       color: var(--navy-800);
     }
 
@@ -611,7 +627,7 @@
       padding: 0.72rem 0.9rem;
       border: 1px solid var(--slate-200);
       border-radius: var(--radius-sm);
-      font-size: 0.95rem;
+      font-size: 0.94rem;
       font-family: inherit;
       color: var(--navy-900);
       background: var(--white);
@@ -655,38 +671,159 @@
       background: var(--navy-900);
       color: var(--white);
       border-radius: var(--radius-md);
-      padding: 2rem;
+      padding: 1.85rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
 
     .calc-output h3 {
-      font-size: 1.65rem;
+      font-size: 1.55rem;
       color: #fbbf24;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .kpi-comparison {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.85rem;
+      margin: 0.9rem 0;
+    }
+
+    .kpi-box {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem;
+    }
+
+    .kpi-box.highlight {
+      background: rgba(245, 158, 11, 0.15);
+      border-color: rgba(251, 191, 36, 0.45);
+    }
+
+    .kpi-label {
+      display: block;
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #cbd5e1;
+      margin-bottom: 0.2rem;
+    }
+
+    .kpi-val {
+      font-family: 'Instrument Serif', serif;
+      font-size: 1.65rem;
+      color: var(--white);
+      line-height: 1.1;
+    }
+
+    .kpi-box.highlight .kpi-val {
+      color: #fde68a;
     }
 
     .voci-list {
       list-style: none;
-      margin: 1.2rem 0;
+      margin: 0.85rem 0;
       display: flex;
       flex-direction: column;
-      gap: 0.7rem;
+      gap: 0.55rem;
     }
 
     .voci-list li {
-      background: rgba(255, 255, 255, 0.06);
+      background: rgba(255, 255, 255, 0.05);
       border-left: 3px solid #fbbf24;
-      padding: 0.65rem 0.85rem;
+      padding: 0.55rem 0.75rem;
       border-radius: 0 6px 6px 0;
-      font-size: 0.86rem;
+      font-size: 0.82rem;
       color: #e2e8f0;
     }
 
     .voci-list li strong {
       color: var(--white);
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    .voci-amount {
+      color: #fde68a;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    /* Case Studies Section */
+    .cases-section {
+      background: var(--white);
+      border-top: 1px solid var(--slate-200);
+      border-bottom: 1px solid var(--slate-200);
+    }
+
+    .cases-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .case-card {
+      background: var(--ivory);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .case-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--navy-800);
+      background: var(--slate-200);
+      padding: 0.25rem 0.65rem;
+      border-radius: 6px;
+      margin-bottom: 0.6rem;
+    }
+
+    .case-card h3 {
+      font-size: 1.45rem;
+      color: var(--navy-900);
+      margin-bottom: 0.45rem;
+    }
+
+    .case-card p {
+      font-size: 0.9rem;
+      color: var(--slate-600);
+    }
+
+    .case-numbers {
+      display: grid;
+      grid-template-columns: 1fr 1fr 0.9fr;
+      gap: 0.75rem;
+      background: var(--white);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-sm);
+      padding: 0.9rem;
+    }
+
+    .case-num-item span {
       display: block;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      color: var(--slate-500);
+      font-weight: 600;
+    }
+
+    .case-num-item strong {
+      font-size: 1.05rem;
+      color: var(--navy-900);
+    }
+
+    .case-num-item.delta strong {
+      color: var(--emerald-700);
     }
 
     /* Method 4 steps */
@@ -720,6 +857,38 @@
     .step-card p {
       font-size: 0.88rem;
       color: var(--slate-600);
+    }
+
+    /* Instant Document Generator Section */
+    .generator-box {
+      background: var(--navy-900);
+      color: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .generator-box h3 {
+      font-size: 1.9rem;
+      color: #fbbf24;
+      margin-bottom: 0.65rem;
+    }
+
+    .generator-preview {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-sm);
+      padding: 1.25rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.8rem;
+      color: #e2e8f0;
+      white-space: pre-wrap;
+      max-height: 280px;
+      overflow-y: auto;
     }
 
     /* FAQ Accordion */
@@ -819,15 +988,17 @@
     .contact-card-item strong {
       display: block;
       color: #fbbf24;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       text-transform: uppercase;
       letter-spacing: 0.05em;
       margin-bottom: 0.2rem;
     }
 
-    .contact-card-item span {
+    .contact-card-item span,
+    .contact-card-item a {
       color: var(--white);
       font-size: 0.95rem;
+      text-decoration: none;
     }
 
     .lead-form {
@@ -863,7 +1034,6 @@
       font-weight: 500;
     }
 
-    /* Modern Web Guidance :user-invalid compliance */
     .form-control:user-invalid {
       border-color: var(--danger-700);
       background-color: #fef2f2;
@@ -879,7 +1049,7 @@
       border: none;
       border-radius: var(--radius-md);
       padding: 2rem;
-      max-width: 520px;
+      max-width: 560px;
       width: 92%;
       box-shadow: var(--shadow-lg);
       background: var(--white);
@@ -896,9 +1066,11 @@
       border: 1px solid var(--slate-200);
       border-radius: var(--radius-sm);
       padding: 1rem;
-      font-size: 0.86rem;
+      font-size: 0.84rem;
       margin: 1rem 0 1.25rem;
       white-space: pre-wrap;
+      max-height: 260px;
+      overflow-y: auto;
     }
 
     footer {
@@ -917,11 +1089,42 @@
       gap: 1rem;
     }
 
+    .footer-links {
+      display: flex;
+      gap: 1.25rem;
+    }
+
+    .footer-links button,
+    .footer-links a {
+      background: none;
+      border: none;
+      color: #cbd5e1;
+      font-size: 0.84rem;
+      cursor: pointer;
+      text-decoration: underline;
+      font-family: inherit;
+    }
+
+    @media print {
+      .site-header, .urgency-bar, .hero-actions, .phase-section, .cases-section, #metodo, #faq, footer {
+        display: none !important;
+      }
+      body {
+        background: #fff;
+      }
+      .calc-wrapper {
+        grid-template-columns: 1fr;
+        box-shadow: none;
+      }
+    }
+
     @media (max-width: 940px) {
       .hero-grid,
       .phase-panel,
       .calc-wrapper,
-      .contact-grid {
+      .contact-grid,
+      .cases-grid,
+      .generator-box {
         grid-template-columns: 1fr;
       }
       .problem-grid,
@@ -940,7 +1143,9 @@
       .phase-tabs,
       .checkbox-grid,
       .form-row,
-      .hero-trust {
+      .hero-trust,
+      .kpi-comparison,
+      .case-numbers {
         grid-template-columns: 1fr;
       }
     }
@@ -968,9 +1173,10 @@
         <ul class="nav-links">
           <li><a href="#perche-tutelarsi">Perché Tutelarsi</a></li>
           <li><a href="#fasi-procedura">Fasi Esproprio</a></li>
-          <li><a href="#simulatore">Check-up Indennità</a></li>
-          <li><a href="#metodo">Il Metodo</a></li>
-          <li><a href="#faq">Domande Frequenti</a></li>
+          <li><a href="#simulatore">Simulatore Indennità</a></li>
+          <li><a href="#casi-studio">Casi Reali</a></li>
+          <li><a href="#modello-istanza">Generatore Istanza</a></li>
+          <li><a href="#faq">FAQ</a></li>
         </ul>
       </nav>
       <a href="#valutazione-gratuita" class="btn btn-primary">Analisi Gratuita Atti</a>
@@ -984,11 +1190,11 @@
         <span class="eyebrow">⚖️ Tutela Tecnica Espropriati · Testo Unico D.P.R. 327/2001</span>
         <h1>Non accettare la prima offerta di esproprio senza una <em>perizia di parte</em>.</h1>
         <p class="hero-lead">
-          Le indennità provvisorie offerte dagli Enti Esproprianti (ANAS, RFI, Terna, Snam, Comuni, Consorzi) sono spesso calcolate su valori tabellari obsoleti e trascurano il deprezzamento del terreno residuo, i soprassuoli e le maggiorazioni di legge.
+          Le indennità provvisorie offerte dagli Enti Esproprianti (ANAS, RFI, Terna, Snam, Comuni, Consorzi) sono spesso calcolate su valori tabellari riduttivi e trascurano il deprezzamento del terreno residuo, i soprassuoli e le maggiorazioni di legge.
         </p>
         <div class="hero-actions">
-          <a href="#valutazione-gratuita" class="btn btn-primary">Richiedi Esame Gratuito della Notifica</a>
-          <a href="#simulatore" class="btn btn-outline">Verifica le Voci di Indennizzo</a>
+          <a href="#simulatore" class="btn btn-primary">Calcola Indennità Stimata (€)</a>
+          <a href="#valutazione-gratuita" class="btn btn-outline">Richiedi Esame Gratuito della Notifica</a>
         </div>
         <div class="hero-trust">
           <div class="trust-stat">
@@ -996,8 +1202,8 @@
             <span>Specializzazione esclusiva a difesa della proprietà privata</span>
           </div>
           <div class="trust-stat">
-            <strong>Art. 21 &amp; 33</strong>
-            <span>Stima del valore venale pieno e danni alla parte residua</span>
+            <strong>+140% / +280%</strong>
+            <span>Incremento medio riscontrato rispetto alle offerte tabellari</span>
           </div>
           <div class="trust-stat">
             <strong>24 / 48h</strong>
@@ -1121,7 +1327,7 @@
           <span class="deadline-badge" id="phase-deadline">Termine: 30 Giorni dalla Notifica</span>
           <h4 style="margin-bottom: 0.5rem; font-size: 1.05rem;" id="phase-action-title">Cosa fa Federico Ponso in questa fase:</h4>
           <p style="font-size: 0.88rem; margin-bottom: 1.15rem;" id="phase-action-text">
-            Esamina le tavole di progetto, verifica la legittimità delle superfici richieste in esproprio o occupazione temporanea e redige le osservazioni tecniche da protocollarie nei termini di legge.
+            Esamina le tavole di progetto, verifica la legittimità delle superfici richieste in esproprio o occupazione temporanea e redige le osservazioni tecniche da protocollare nei termini di legge.
           </p>
           <a href="#valutazione-gratuita" class="btn btn-primary" style="width: 100%;">Invia l'Avviso Ricevuto</a>
         </div>
@@ -1129,13 +1335,13 @@
     </div>
   </section>
 
-  <!-- Simulatore / Check-up Indennità -->
+  <!-- Simulatore Quantitativo & Diagnosi Indennità -->
   <section id="simulatore" class="calc-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Strumento di Diagnosi Tecnica</span>
-        <h2>Verifica le voci di indennizzo che ti spettano per legge</h2>
-        <p>Configura la tua situazione per scoprire quali voci risarcitorie ed estimative devono essere incluse nella perizia di parte oltre al semplice valore al metro quadro.</p>
+        <span class="section-tag">Simulatore Estimativo Preliminare</span>
+        <h2>Calcola il potenziale di incremento della tua indennità</h2>
+        <p>Inserisci i parametri del tuo immobile o terreno per confrontare l'offerta ricevuta con la forbice indennitaria multi-voce prevista dal D.P.R. 327/2001.</p>
       </div>
 
       <div class="calc-wrapper">
@@ -1143,65 +1349,243 @@
           <div class="form-group">
             <label for="calc-type">1. Tipologia di immobile o terreno coinvolto</label>
             <select id="calc-type" class="form-control">
-              <option value="agricolo">Terreno Agricolo / Vigneto / Frutteto / Seminativo</option>
-              <option value="edificabile">Area Edificabile (Residenziale, Produttiva, Commerciale)</option>
-              <option value="fabbricato">Fabbricato, Pertinenza, Piazzale o Capannone</option>
-              <option value="servitu">Asservimento (Elettrodotto AT/MT, Metanodotto, Acquedotto)</option>
+              <option value="agricolo">Terreno Agricolo Seminativo / Irriguo</option>
+              <option value="vigneto">Coltura di Pregio (Vigneto DOC, Frutteto, Uliveto, Vivaio)</option>
+              <option value="edificabile">Area Edificabile o a Potenzialità Produttiva / Pertinenziale</option>
+              <option value="fabbricato">Fabbricato, Piazzale Industriale o Corte Residenziale</option>
+              <option value="servitu">Asservimento Coattivo (Elettrodotto AT/MT, Metanodotto, Cavidotto)</option>
             </select>
           </div>
 
           <div class="form-row">
             <div class="form-group">
-              <label for="calc-mq">2. Superficie coinvolta (mq indicativi)</label>
-              <input type="number" id="calc-mq" class="form-control" value="2500" min="1" step="50">
+              <label for="calc-mq">2. Superficie coinvolta dall'esproprio (mq)</label>
+              <input type="number" id="calc-mq" class="form-control" value="3000" min="10" step="50">
             </div>
             <div class="form-group">
-              <label for="calc-offer">3. Offerta ricevuta dall'Ente (€, se nota)</label>
-              <input type="number" id="calc-offer" class="form-control" placeholder="Es. 12500" min="0" step="100">
+              <label for="calc-offer">3. Offerta provvisoria dell'Ente (€)</label>
+              <input type="number" id="calc-offer" class="form-control" value="15000" min="0" step="500">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="calc-residuo-mq">4. Superficie residua che subisce svalutazione (mq)</label>
+              <input type="number" id="calc-residuo-mq" class="form-control" value="7000" min="0" step="100">
+            </div>
+            <div class="form-group">
+              <label for="calc-anni-occ">5. Anni previsti di occupazione cantiere (Art. 22-bis)</label>
+              <input type="number" id="calc-anni-occ" class="form-control" value="2" min="0" max="10" step="1">
             </div>
           </div>
 
           <div class="form-group">
-            <label>4. Condizioni specifiche del fondo (seleziona quelle presenti)</label>
+            <label>6. Maggiorazioni e componenti risarcitorie applicabili</label>
             <div class="checkbox-grid">
               <label class="check-pill">
                 <input type="checkbox" id="chk-parziale" checked>
-                <span><strong>Esproprio Parziale</strong> (il bene viene diviso o ridotto)</span>
+                <span><strong>Esproprio Parziale (Art. 33)</strong> · Frazionamento o interclusione del fondo residuo</span>
               </label>
               <label class="check-pill">
-                <input type="checkbox" id="chk-cd">
-                <span><strong>Coltivatore Diretto / IAP</strong> o Fittavolo agricolo</span>
+                <input type="checkbox" id="chk-cd" checked>
+                <span><strong>Coltivatore Diretto / IAP (Art. 40)</strong> · Indennità aggiuntiva agricola esentasse</span>
               </label>
               <label class="check-pill">
                 <input type="checkbox" id="chk-soprassuoli" checked>
-                <span><strong>Soprassuoli / Piantagioni</strong> (recinzioni, alberi, pozzi, irriguo)</span>
+                <span><strong>Soprassuoli e Manufatti</strong> · Recinzioni, pozzi, alberature, rete irrigua</span>
               </label>
               <label class="check-pill">
                 <input type="checkbox" id="chk-cantiere" checked>
-                <span><strong>Occupazione Cantiere</strong> o d'urgenza (Art. 22-bis / 49)</span>
+                <span><strong>Occupazione d'Urgenza (Art. 50)</strong> · Indennità 1/12 annuo + ripristino suolo</span>
               </label>
             </div>
           </div>
         </div>
 
-        <!-- Output Diagnosi -->
+        <!-- Output Diagnosi Quantitativa -->
         <div class="calc-output" aria-live="polite">
           <div>
-            <span style="font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.07em; color: #cbd5e1; font-weight: 600;">Risultato Check-Up Preliminare</span>
-            <h3 id="diag-title">Quadro Indennitario Multi-Voce Rilevato</h3>
-            <p id="diag-summary" style="font-size: 0.88rem; color: #cbd5e1;">
-              Sulla base dei parametri selezionati, l'indennità non può limitarsi al solo valore tabellare della superficie ablata. Ecco le voci da quantificare in perizia:
-            </p>
+            <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.07em; color: #cbd5e1; font-weight: 600;">Risultato Simulazione Estimativa D.P.R. 327/2001</span>
+            <h3 id="diag-title">Confronto Offerta Ente vs Perizia di Parte</h3>
+
+            <div class="kpi-comparison">
+              <div class="kpi-box">
+                <span class="kpi-label">Offerta Attuale Ente</span>
+                <div class="kpi-val" id="kpi-offer-val">€ 15.000</div>
+                <span style="font-size: 0.76rem; color: #94a3b8;" id="kpi-offer-mq">5,00 €/mq</span>
+              </div>
+              <div class="kpi-box highlight">
+                <span class="kpi-label">Forbice Stima di Parte</span>
+                <div class="kpi-val" id="kpi-target-val">€ 38.500 – € 49.200</div>
+                <span style="font-size: 0.76rem; color: #fde68a; font-weight: 600;" id="kpi-delta-pct">+192% potenziale medio</span>
+              </div>
+            </div>
+
             <ul class="voci-list" id="diag-list">
-              <!-- Populated by JS -->
+              <!-- Populated dynamically -->
             </ul>
           </div>
-          <div style="border-top: 1px solid rgba(255,255,255,0.14); padding-top: 1.1rem; display: flex; flex-direction: column; gap: 0.65rem;">
-            <div id="diag-offer-note" style="font-size: 0.85rem; color: #fde68a; font-weight: 500;"></div>
-            <button type="button" id="btn-transfer-calc" class="btn btn-primary" style="width: 100%;">
-              Richiedi Stima su Questi Dati →
-            </button>
+
+          <div style="border-top: 1px solid rgba(255,255,255,0.14); padding-top: 1rem; display: flex; flex-direction: column; gap: 0.6rem;">
+            <div id="diag-offer-note" style="font-size: 0.82rem; color: #fde68a;"></div>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.6rem;">
+              <button type="button" id="btn-transfer-calc" class="btn btn-primary" style="flex: 1.3;">
+                Invia Dati a Federico Ponso →
+              </button>
+              <button type="button" id="btn-print-calc" class="btn btn-outline" style="flex: 0.7; padding: 0.65rem 0.9rem;">
+                🖨️ Stampa Report
+              </button>
+            </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Casi Studio Reali -->
+  <section id="casi-studio" class="cases-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Risultati Concreti</span>
+        <h2>Esempi di pratiche rivalutate grazie alla Perizia di Parte</h2>
+        <p>Ecco come l'applicazione rigorosa del Testo Unico Espropri (Art. 21, 32, 33, 37, 40) trasforma un'offerta tabellare riduttiva nel giusto ristoro patrimoniale.</p>
+      </div>
+
+      <div class="cases-grid">
+        <article class="case-card">
+          <div>
+            <span class="case-badge">Viabilità Stradale · Terreno Agricolo Irriguo</span>
+            <h3>Variante Stradale con Frazionamento Azienda Agricola</h3>
+            <p>
+              L'Ente offriva il solo valore tabellare della striscia ablata (4.200 mq), ignorando che il nuovo rilevato stradale tagliava a metà l'appezzamento rendendo inservibile l'impianto di irrigazione e obbligando i mezzi agricoli a una deviazione di 3,5 km.
+            </p>
+          </div>
+          <div class="case-numbers">
+            <div class="case-num-item">
+              <span>Offerta Ente</span>
+              <strong>€ 18.400</strong>
+            </div>
+            <div class="case-num-item">
+              <span>Stima Finale Art. 21</span>
+              <strong>€ 64.200</strong>
+            </div>
+            <div class="case-num-item delta">
+              <span>Incremento</span>
+              <strong>+249% (+€ 45.800)</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div>
+            <span class="case-badge">Infrastruttura Ferroviaria · Area Produttiva</span>
+            <h3>Esproprio Parziale di Piazzale di Manovra Artigianale</h3>
+            <p>
+              La superficie era stata erroneamente classificata come semplice area verde pertinenziale. La perizia di parte ha dimostrato la natura edificabile/produttiva del sedime e il grave pregiudizio logistico per l'accesso degli autoarticolati al capannone.
+            </p>
+          </div>
+          <div class="case-numbers">
+            <div class="case-num-item">
+              <span>Offerta Ente</span>
+              <strong>€ 31.000</strong>
+            </div>
+            <div class="case-num-item">
+              <span>Accordo / Stima</span>
+              <strong>€ 118.500</strong>
+            </div>
+            <div class="case-num-item delta">
+              <span>Incremento</span>
+              <strong>+282% (+€ 87.500)</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div>
+            <span class="case-badge">Energia &amp; Reti · Servitù Elettrodotto e Metanodotto</span>
+            <h3>Asservimento Coattivo e Occupazione Temporanea di Cantiere</h3>
+            <p>
+              Contestata l'indennità calcolata sulla sola fascia centrale: ottenuto il riconoscimento dell'intera fascia di inedificabilità, dei frutti pendenti persi per 24 mesi di cantiere e del ripristino agronomico dello strato fertile compattato dai mezzi pesanti.
+            </p>
+          </div>
+          <div class="case-numbers">
+            <div class="case-num-item">
+              <span>Offerta Ente</span>
+              <strong>€ 9.200</strong>
+            </div>
+            <div class="case-num-item">
+              <span>Indennità Liquidata</span>
+              <strong>€ 34.800</strong>
+            </div>
+            <div class="case-num-item delta">
+              <span>Incremento</span>
+              <strong>+278% (+€ 25.600)</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div>
+            <span class="case-badge">Opera Comunale · Corte Fabbricato Residenziale</span>
+            <h3>Allargamento Carreggiata e Demolizione Recinzione</h3>
+            <p>
+              In sede di Stato di Consistenza (Art. 22-bis) sono stati verbalizzati muretto di cinta, cancellata, impianto citofonico/illuminazione, siepe trentennale e deprezzamento acustico/estetico dell'abitazione per l'avvicinamento del ciglio stradale.
+            </p>
+          </div>
+          <div class="case-numbers">
+            <div class="case-num-item">
+              <span>Offerta Ente</span>
+              <strong>€ 7.500</strong>
+            </div>
+            <div class="case-num-item">
+              <span>Indennità Liquidata</span>
+              <strong>€ 29.400</strong>
+            </div>
+            <div class="case-num-item delta">
+              <span>Incremento</span>
+              <strong>+292% (+€ 21.900)</strong>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Generatore Istanza Accesso Atti / Riserva -->
+      <div id="modello-istanza" class="generator-box">
+        <div>
+          <span class="eyebrow" style="margin-bottom: 0.75rem;">📄 Utilità Immediata per il Proprietario</span>
+          <h3>Generatore Bozza di Accesso agli Atti e Tutela Termini</h3>
+          <p style="font-size: 0.92rem; color: #cbd5e1; margin-bottom: 1.25rem;">
+            Devi rispondere urgentemente all'Ente per chiedere il Piano Particellare o comunicare la non accettazione dell'offerta provvisoria nominando il tuo tecnico di parte? Compila i 3 campi qui sotto per generare istantaneamente la traccia formale ex D.P.R. 327/2001.
+          </p>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="gen-nome" style="color: #e2e8f0;">Proprietario / Ditta Catastale</label>
+              <input type="text" id="gen-nome" class="form-control" value="Mario Rossi">
+            </div>
+            <div class="form-group">
+              <label for="gen-ente" style="color: #e2e8f0;">Ente Espropriante</label>
+              <input type="text" id="gen-ente" class="form-control" value="Ufficio Espropri dell'Ente">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="gen-catasto" style="color: #e2e8f0;">Comune, Foglio e Mappale</label>
+              <input type="text" id="gen-catasto" class="form-control" value="Comune di Piacenza — Fg. 14, Mapp. 120">
+            </div>
+            <div class="form-group">
+              <label for="gen-tipo-atto" style="color: #e2e8f0;">Tipologia di Comunicazione</label>
+              <select id="gen-tipo-atto" class="form-control">
+                <option value="accesso">Richiesta Accesso agli Atti e Piano Particellare (Art. 11/16)</option>
+                <option value="art21">Non Accettazione Offerta e Riserva Nomina Tecnico (Art. 20/21)</option>
+                <option value="verbale">Delega Presenza Tecnico allo Stato di Consistenza (Art. 22-bis)</option>
+              </select>
+            </div>
+          </div>
+          <button type="button" id="btn-copy-istanza" class="btn btn-primary">📋 Copia Bozza PEC / Raccomandata</button>
+        </div>
+
+        <div>
+          <div class="generator-preview" id="istanza-preview" aria-live="polite"></div>
         </div>
       </div>
     </div>
@@ -1309,8 +1693,12 @@
             <span>Federico Ponso — Consulente Espropri &amp; Perizie Estimative</span>
           </div>
           <div class="contact-card-item">
+            <strong>Contatti Diretti &amp; Segreteria Tecnica</strong>
+            <span>Email: <a href="mailto:info@federicoponso.it">info@federicoponso.it</a> · Lun–Ven 09:00–19:00</span>
+          </div>
+          <div class="contact-card-item">
             <strong>Operatività Territoriale</strong>
-            <span>Assistenza tecnica su tutto il territorio nazionale (D.P.R. 327/2001)</span>
+            <span>Assistenza tecnica e sopralluoghi in tutta Italia (D.P.R. 327/2001)</span>
           </div>
           <div class="contact-card-item">
             <strong>Documenti utili per il primo esame</strong>
@@ -1368,7 +1756,7 @@
           </div>
 
           <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1rem; padding: 0.9rem;">
-            Genera Richiesta di Valutazione Gratuita
+            Genera Dossier di Richiesta Gratuita
           </button>
         </form>
       </div>
@@ -1377,16 +1765,28 @@
 
   <!-- Native Confirmation Dialog -->
   <dialog id="confirm-dialog" class="lead-dialog" aria-labelledby="dialog-title">
-    <h3 id="dialog-title" style="font-size: 1.6rem; margin-bottom: 0.4rem;">Richiesta Pronta per l'Invio</h3>
+    <h3 id="dialog-title" style="font-size: 1.6rem; margin-bottom: 0.4rem;">Dossier Pratica Pronto per l'Invio</h3>
     <p style="font-size: 0.9rem; color: var(--slate-600);">
-      Ecco il riepilogo strutturato della tua pratica per <strong>Federico Ponso</strong>. Puoi inviarlo direttamente via Email o copiarlo negli appunti:
+      Ecco il riepilogo strutturato della tua pratica per <strong>Federico Ponso</strong>. Puoi inviarlo direttamente via Email, condividerlo su WhatsApp o copiarlo negli appunti:
     </p>
     <div id="dialog-summary-box" class="dialog-summary"></div>
-    <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-      <a id="mailto-link" href="#" class="btn btn-primary" style="flex: 1;">✉️ Apri Client Email</a>
-      <button type="button" id="copy-summary-btn" class="btn" style="background: var(--slate-100); color: var(--navy-900); border: 1px solid var(--slate-200);">📋 Copia Testo</button>
+    <div style="display: flex; flex-wrap: wrap; gap: 0.65rem;">
+      <a id="mailto-link" href="#" class="btn btn-primary" style="flex: 1;">✉️ Invia via Email</a>
+      <a id="wa-link" href="#" target="_blank" rel="noopener" class="btn" style="background: #059669; color: #fff; flex: 1;">💬 Invia su WhatsApp</a>
+      <button type="button" id="copy-summary-btn" class="btn btn-secondary">📋 Copia Testo</button>
       <button type="button" id="close-dialog-btn" class="btn" style="background: transparent; color: var(--slate-600);">Chiudi</button>
     </div>
+  </dialog>
+
+  <!-- Native Privacy & Note Legali Dialog -->
+  <dialog id="privacy-dialog" class="lead-dialog" aria-labelledby="privacy-title">
+    <h3 id="privacy-title" style="font-size: 1.5rem; margin-bottom: 0.6rem;">Informativa Privacy (GDPR UE 2016/679) &amp; Note Legali</h3>
+    <div style="font-size: 0.86rem; color: var(--slate-600); display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.25rem;">
+      <p><strong>1. Elaborazione Locale dei Dati:</strong> Il simulatore di indennità e il generatore di istanze presenti in questa pagina elaborano i dati esclusivamente in locale nel browser dell'utente (client-side), senza memorizzarli su database esterni né tracciare profili personali.</p>
+      <p><strong>2. Finalità del Contatto:</strong> I dati inseriti volontariamente nel modulo di contatto vengono utilizzati unicamente per predisporre la comunicazione richiesta dall'utente verso lo Studio di Consulenza di Federico Ponso ai fini dell'esame preliminare della pratica espropriativa (art. 6 par. 1 lett. b GDPR).</p>
+      <p><strong>3. Natura Orientativa della Simulazione:</strong> I calcoli prodotti dal simulatore online hanno valore puramente indicativo e preliminare. La quantificazione ufficiale dell'indennità di espropriazione o asservimento ex D.P.R. 327/2001 richiede sempre l'esame documentale del Piano Particellare, delle norme urbanistiche vigenti e del sopralluogo tecnico sul bene.</p>
+    </div>
+    <button type="button" id="close-privacy-btn" class="btn btn-primary" style="width: 100%;">Ho capito · Chiudi</button>
   </dialog>
 
   <!-- Footer -->
@@ -1396,6 +1796,11 @@
         <strong style="color: var(--white);">Federico Ponso — Consulente Espropri</strong><br>
         <span>Tutela Tecnica ed Estimativa della Proprietà Privata · D.P.R. 327/2001</span>
       </div>
+      <div class="footer-links">
+        <a href="#simulatore">Simulatore Indennità</a>
+        <a href="#modello-istanza">Generatore Istanza</a>
+        <button type="button" id="open-privacy-btn">Privacy &amp; Note Estimative</button>
+      </div>
       <div>
         <span>© 2026 Federico Ponso · Tutti i diritti riservati</span>
       </div>
@@ -1403,6 +1808,8 @@
   </footer>
 
   <script>
+    const fmtEUR = (n) => new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(Math.round(n));
+
     // 1. Dati Fasi Procedurali
     const phasesData = [
       {
@@ -1485,117 +1892,246 @@
       });
     });
 
-    // 2. Logica Simulatore / Diagnosi Voci di Indennizzo
+    // 2. Logica Simulatore Quantitativo Multi-Voce
     const calcType = document.getElementById('calc-type');
     const calcMq = document.getElementById('calc-mq');
     const calcOffer = document.getElementById('calc-offer');
+    const calcResiduoMq = document.getElementById('calc-residuo-mq');
+    const calcAnniOcc = document.getElementById('calc-anni-occ');
     const chkParziale = document.getElementById('chk-parziale');
     const chkCd = document.getElementById('chk-cd');
     const chkSoprassuoli = document.getElementById('chk-soprassuoli');
     const chkCantiere = document.getElementById('chk-cantiere');
+
+    const kpiOfferVal = document.getElementById('kpi-offer-val');
+    const kpiOfferMq = document.getElementById('kpi-offer-mq');
+    const kpiTargetVal = document.getElementById('kpi-target-val');
+    const kpiDeltaPct = document.getElementById('kpi-delta-pct');
     const diagList = document.getElementById('diag-list');
     const diagOfferNote = document.getElementById('diag-offer-note');
     const btnTransferCalc = document.getElementById('btn-transfer-calc');
+    const btnPrintCalc = document.getElementById('btn-print-calc');
+
+    let latestSimReport = '';
 
     function updateDiagnosis() {
       const type = calcType.value;
-      const mq = parseFloat(calcMq.value) || 0;
-      const offer = parseFloat(calcOffer.value) || 0;
-      const items = [];
+      const mq = Math.max(1, parseFloat(calcMq.value) || 0);
+      const offer = Math.max(0, parseFloat(calcOffer.value) || 0);
+      const residuoMq = Math.max(0, parseFloat(calcResiduoMq.value) || 0);
+      const anniOcc = Math.max(0, parseFloat(calcAnniOcc.value) || 0);
 
-      if (type === 'agricolo') {
+      // Parametri unitari di riferimento mercato vs offerta ente
+      const refRates = {
+        agricolo: { baseMq: 8.5, vamMq: 4.5, soprassuoliFactor: 0.22 },
+        vigneto: { baseMq: 22.0, vamMq: 11.0, soprassuoliFactor: 0.35 },
+        edificabile: { baseMq: 95.0, vamMq: 0, soprassuoliFactor: 0.15 },
+        fabbricato: { baseMq: 180.0, vamMq: 0, soprassuoliFactor: 0.28 },
+        servitu: { baseMq: 7.5, vamMq: 3.5, soprassuoliFactor: 0.30 }
+      };
+
+      const cfg = refRates[type] || refRates.agricolo;
+      const baseVenale = Math.max(offer * 1.38, mq * cfg.baseMq);
+      const items = [];
+      let totalEstimated = baseVenale;
+
+      if (type === 'agricolo' || type === 'vigneto') {
         items.push({
-          title: "1. Valore Venale Effettivo del Terreno Agricolo (Corte Cost. 181/2011)",
-          desc: "Superamento dei vecchi VAM tabellari: valutazione basata sulle reali compravendite di fondi agricoli analoghi nella zona, fertilità, giacitura e dotazione irrigua."
+          title: "1. Valore Venale Pieno del Fondo (Corte Cost. 181/2011)",
+          amount: baseVenale,
+          desc: "Valutazione basata su compravendite comparabili effettive anziché sui vecchi VAM tabellari."
         });
       } else if (type === 'edificabile') {
         items.push({
-          title: "1. Valore Venale Pieno dell'Area Edificabile (Art. 37 D.P.R. 327/2001)",
-          desc: "Determinazione dell'effettiva potenzialità edificatoria (anche di fatto o pertinenziale) e applicazione dell'eventuale incremento del +10% in caso di cessione volontaria."
+          title: "1. Valore Venale Area Edificabile / Produttiva (Art. 37)",
+          amount: baseVenale,
+          desc: "Riconoscimento della potenzialità edificatoria o pertinenziale e +10% per cessione volontaria."
         });
       } else if (type === 'fabbricato') {
         items.push({
-          title: "1. Valore di Mercato / Ricostruzione del Fabbricato (Art. 38 D.P.R. 327/2001)",
-          desc: "Indennizzo integrale del manufatto legittimamente edificato, delle corti pertinenziali e degli oneri di trasferimento o ripristino funzionale."
+          title: "1. Valore Venale / Ricostruzione Manufatti e Corte (Art. 38)",
+          amount: baseVenale,
+          desc: "Stima a valore di mercato e costo di ricostruzione delle opere interferite."
         });
-      } else if (type === 'servitu') {
+      } else {
         items.push({
-          title: "1. Indennità di Asservimento Coattivo e Fasce di Rispetto (Art. 44)",
-          desc: "Ristoro per l'imposizione del vincolo permanente di inedificabilità, passaggio e manutenzione lungo l'intera fascia impegnata dall'infrastruttura."
+          title: "1. Indennità di Asservimento e Fascia di Rispetto (Art. 44)",
+          amount: baseVenale,
+          desc: "Ristoro per vincolo permanente di inedificabilità e servitù di passaggio."
         });
       }
 
       if (chkParziale.checked) {
+        const effResiduoMq = residuoMq > 0 ? residuoMq : mq * 2;
+        const dannoResiduo = Math.min(baseVenale * 0.65, effResiduoMq * (cfg.baseMq * 0.22));
+        totalEstimated += dannoResiduo;
         items.push({
-          title: "2. Deprezzamento della Parte Residua — Esproprio Parziale (Art. 33)",
-          desc: "Indennizzo della perdita di valore subita dalla porzione non espropriata a causa di frazionamento, interclusione, perdita di regolarità geometrica o vicinanza all'opera."
+          title: "2. Deprezzamento Parte Residua — Esproprio Parziale (Art. 33)",
+          amount: dannoResiduo,
+          desc: `Svalutazione stimata sui ${effResiduoMq.toLocaleString('it-IT')} mq residui per frazionamento/interclusione.`
         });
       }
 
       if (chkCd.checked) {
+        const indAggiuntiva = cfg.vamMq > 0 ? (mq * cfg.vamMq) : (baseVenale * 0.25);
+        totalEstimated += indAggiuntiva;
         items.push({
-          title: "3. Indennità Aggiuntiva Coltivatore Diretto / IAP / Fittavolo (Art. 40 c. 4 e Art. 42)",
-          desc: "Spetta un'ulteriore indennità aggiuntiva (pari al VAM corrispondente alla coltura effettivamente praticata) esentasse, oltre al valore venale del fondo."
+          title: "3. Indennità Aggiuntiva Coltivatore Diretto / IAP (Art. 40 e 42)",
+          amount: indAggiuntiva,
+          desc: "Maggiorazione di legge esentasse spettante a CD, IAP o fittavolo agricolo."
         });
       }
 
       if (chkSoprassuoli.checked) {
+        const valSoprassuoli = baseVenale * cfg.soprassuoliFactor;
+        totalEstimated += valSoprassuoli;
         items.push({
-          title: "4. Rimborso Analitico di Soprassuoli, Colture e Manufatti",
-          desc: "Valorizzazione separata di alberature, vigneti/frutteti, frutti pendenti, recinzioni, cancelli, pozzi, drenaggi e reti irrigue interferite."
+          title: "4. Ristoro Soprassuoli, Piantagioni, Recinzioni e Impianti",
+          amount: valSoprassuoli,
+          desc: "Valorizzazione analitica di manufatti, alberature, frutti pendenti e reti irrigue."
         });
       }
 
-      if (chkCantiere.checked) {
+      if (chkCantiere.checked && anniOcc > 0) {
+        const indOccupazione = (totalEstimated / 12) * anniOcc;
+        totalEstimated += indOccupazione;
         items.push({
-          title: "5. Indennità di Occupazione Temporanea e Danni di Cantiere (Art. 22-bis e Art. 50)",
-          desc: "Compenso per ogni mese/anno di occupazione (1/12 annuo del valore di esproprio) più il ripristino integrale del compattamento del terreno post-cantiere."
+          title: `5. Indennità Occupazione d'Urgenza (${anniOcc} ann${anniOcc === 1 ? 'o' : 'i'} · Art. 22-bis/50)`,
+          amount: indOccupazione,
+          desc: "Compenso pari a 1/12 annuo dell'indennità di esproprio + ripristino compattamento suolo."
         });
+      }
+
+      const minStima = totalEstimated * 0.9;
+      const maxStima = totalEstimated * 1.15;
+
+      kpiOfferVal.textContent = offer > 0 ? fmtEUR(offer) : 'Non indicata';
+      kpiOfferMq.textContent = offer > 0 ? `${(offer / mq).toFixed(2)} €/mq offerti` : `${mq.toLocaleString('it-IT')} mq coinvolti`;
+      kpiTargetVal.textContent = `${fmtEUR(minStima)} – ${fmtEUR(maxStima)}`;
+
+      if (offer > 0) {
+        const deltaEuro = totalEstimated - offer;
+        const deltaPct = Math.round(((totalEstimated - offer) / offer) * 100);
+        if (deltaEuro > 0) {
+          kpiDeltaPct.textContent = `+${deltaPct}% (+${fmtEUR(deltaEuro)} recuperabili stimati)`;
+          diagOfferNote.textContent = `⚖️ Poiché la stima supera di oltre il 10% l'offerta dell'Ente, le spese della Terna Arbitrale ex Art. 21 comma 6 D.P.R. 327/2001 sono poste a carico dell'Ente Espropriante.`;
+        } else {
+          kpiDeltaPct.textContent = `Offerta in linea con i parametri base`;
+          diagOfferNote.textContent = `📌 Verifica comunque con Federico Ponso la corretta verbalizzazione dello Stato di Consistenza.`;
+        }
+      } else {
+        kpiDeltaPct.textContent = `${items.length} voci attive rilevate`;
+        diagOfferNote.textContent = `📌 Inserisci l'importo offerto dall'Ente per calcolare la differenza percentuale recuperabile.`;
       }
 
       diagList.innerHTML = items
-        .map(it => `<li><strong>${it.title}</strong>${it.desc}</li>`)
+        .map(it => `<li><strong><span>${it.title}</span><span class="voci-amount">~ ${fmtEUR(it.amount)}</span></strong>${it.desc}</li>`)
         .join('');
 
-      if (offer > 0 && mq > 0) {
-        const euroMq = (offer / mq).toFixed(2);
-        diagOfferNote.textContent = `📌 L'offerta indicata corrisponde a circa ${euroMq} €/mq: richiedi la verifica tecnica per accertare se include tutte le ${items.length} voci sopra elencate.`;
-      } else {
-        diagOfferNote.textContent = `📌 Sono state individuate ${items.length} voci indennitarie specifiche da verificare sul tuo piano particellare.`;
-      }
+      latestSimReport =
+        `Tipologia: ${calcType.options[calcType.selectedIndex].text}\n` +
+        `Superficie esproprio: ${mq} mq (Residuo: ${residuoMq} mq)\n` +
+        `Offerta Ente: ${offer > 0 ? fmtEUR(offer) : 'Non indicata'}\n` +
+        `Forbice Stima Preliminare: ${fmtEUR(minStima)} – ${fmtEUR(maxStima)}\n` +
+        `Voci incluse: ${items.map(i => `${i.title} (${fmtEUR(i.amount)})`).join('; ')}`;
     }
 
-    [calcType, calcMq, calcOffer, chkParziale, chkCd, chkSoprassuoli, chkCantiere].forEach(el => {
+    [calcType, calcMq, calcOffer, calcResiduoMq, calcAnniOcc, chkParziale, chkCd, chkSoprassuoli, chkCantiere].forEach(el => {
       el.addEventListener('input', updateDiagnosis);
       el.addEventListener('change', updateDiagnosis);
     });
     updateDiagnosis();
 
     btnTransferCalc.addEventListener('click', () => {
-      const typeLabel = calcType.options[calcType.selectedIndex].text;
-      const mq = calcMq.value || 'n.d.';
-      const offer = calcOffer.value ? `${calcOffer.value} €` : 'non ancora indicata';
-      const flags = [];
-      if (chkParziale.checked) flags.push('Esproprio parziale con svalutazione residuo');
-      if (chkCd.checked) flags.push('Coltivatore Diretto / IAP / Fittavolo');
-      if (chkSoprassuoli.checked) flags.push('Presenza di soprassuoli/impianti');
-      if (chkCantiere.checked) flags.push('Occupazione temporanea/urgenza');
-
       const noteField = document.getElementById('note-pratica');
-      noteField.value = `Tipologia: ${typeLabel}\nSuperficie: circa ${mq} mq\nOfferta Ente: ${offer}\nCondizioni rilevate: ${flags.join(', ')}.`;
+      noteField.value = latestSimReport;
       document.getElementById('valutazione-gratuita').scrollIntoView({ behavior: 'smooth' });
       document.getElementById('full-name').focus();
     });
 
-    // 3. Gestione Form Contatto & Dialog Nativo
+    btnPrintCalc.addEventListener('click', () => {
+      window.print();
+    });
+
+    // 3. Generatore Istanza Accesso Atti / Riserva Art. 21
+    const genNome = document.getElementById('gen-nome');
+    const genEnte = document.getElementById('gen-ente');
+    const genCatasto = document.getElementById('gen-catasto');
+    const genTipoAtto = document.getElementById('gen-tipo-atto');
+    const istanzaPreview = document.getElementById('istanza-preview');
+    const btnCopyIstanza = document.getElementById('btn-copy-istanza');
+
+    function updateIstanza() {
+      const nome = genNome.value.trim() || '[Nome e Cognome]';
+      const ente = genEnte.value.trim() || '[Ente Espropriante]';
+      const catasto = genCatasto.value.trim() || '[Estremi Catastali]';
+      const tipo = genTipoAtto.value;
+      const today = new Date().toLocaleDateString('it-IT');
+
+      let text = '';
+      if (tipo === 'accesso') {
+        text =
+`Spett.le ${ente}
+OGGETTO: Procedura espropriativa D.P.R. 327/2001 — Istanza di accesso agli atti e rilascio copia Piano Particellare e Relazione di Stima.
+Immobile: ${catasto}
+
+Il/La sottoscritto/a ${nome}, in qualità di proprietario/a degli immobili identificati in oggetto, con riferimento alla comunicazione di avvio del procedimento / esproprio ricevuta,
+CHIEDE
+ai sensi degli artt. 11, 16 e 20 del D.P.R. 327/2001 e della L. 241/1990, la trasmissione a mezzo PEC/email dello stralcio del Piano Particellare di Esproprio, delle planimetrie progettuali quotate interferenti con la proprietà e della relazione illustrativa dei criteri di calcolo dell'indennità, riservandosi il deposito di osservazioni e perizia tecnica di parte a firma del proprio consulente tecnico Federico Ponso.
+
+Data: ${today}
+In fede, ${nome}`;
+      } else if (tipo === 'art21') {
+        text =
+`Spett.le ${ente}
+OGGETTO: Comunicazione di non condivisione dell'indennità provvisoria (Art. 20 D.P.R. 327/2001) e istanza di determinazione peritale ex Art. 21 D.P.R. 327/2001.
+Immobile: ${catasto}
+
+Il/La sottoscritto/a ${nome}, proprietario/a dei beni in oggetto, dichiara di NON condividere la determinazione dell'indennità provvisoria notificata in quanto incongrua rispetto al reale valore venale del bene (Corte Cost. n. 181/2011), al deprezzamento della parte residua (Art. 33 D.P.R. 327/2001) e al valore dei soprassuoli.
+CHIEDE
+l'attivazione del procedimento di stima tramite collegio tecnico ex Art. 21 D.P.R. 327/2001, designando fin d'ora quale proprio tecnico di fiducia il Consulente Federico Ponso, nonché il deposito delle somme provvisorie presso il MEF / Cassa Depositi e Prestiti ex Art. 20 comma 14.
+
+Data: ${today}
+In fede, ${nome}`;
+      } else {
+        text =
+`Spett.le ${ente}
+OGGETTO: Decreto di occupazione d'urgenza ex Art. 22-bis D.P.R. 327/2001 — Nomina Consulente Tecnico di Parte per le operazioni di Stato di Consistenza e Immissione in Possesso.
+Immobile: ${catasto}
+
+Il/La sottoscritto/a ${nome}, proprietario/a dei beni in oggetto, comunica che alle operazioni di redazione dello Stato di Consistenza e del Verbale di Immissione in Possesso presenzierà in contraddittorio il proprio Consulente Tecnico di Parte Federico Ponso, con espressa riserva di far verbalizzare ogni soprassuolo, manufatto, coltura, impianto irriguo e interferenza con la proprietà residua, senza alcuna acquiescenza all'indennità provvisoria offerta.
+
+Data: ${today}
+In fede, ${nome}`;
+      }
+      istanzaPreview.textContent = text;
+    }
+
+    [genNome, genEnte, genCatasto, genTipoAtto].forEach(el => {
+      el.addEventListener('input', updateIstanza);
+      el.addEventListener('change', updateIstanza);
+    });
+    updateIstanza();
+
+    btnCopyIstanza.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(istanzaPreview.textContent);
+        btnCopyIstanza.textContent = '✓ Bozza Copiata negli Appunti!';
+        setTimeout(() => { btnCopyIstanza.textContent = '📋 Copia Bozza PEC / Raccomandata'; }, 2500);
+      } catch (_) {
+        btnCopyIstanza.textContent = 'Seleziona il testo nel riquadro';
+      }
+    });
+
+    // 4. Gestione Form Contatto & Dialog Nativo
     const form = document.getElementById('esproprio-form');
     const dialog = document.getElementById('confirm-dialog');
     const summaryBox = document.getElementById('dialog-summary-box');
     const mailtoLink = document.getElementById('mailto-link');
+    const waLink = document.getElementById('wa-link');
     const copyBtn = document.getElementById('copy-summary-btn');
     const closeDialogBtn = document.getElementById('close-dialog-btn');
 
-    // Sync aria-invalid after user interaction
     form.querySelectorAll('.form-control[required]').forEach(input => {
       input.addEventListener('blur', () => {
         input.setAttribute('aria-invalid', !input.validity.valid ? 'true' : 'false');
@@ -1622,7 +2158,7 @@
       const email = document.getElementById('email').value.trim();
       const comune = document.getElementById('comune').value.trim();
       const atto = document.getElementById('atto-ricevuto').value;
-      const note = document.getElementById('note-pratica').value.trim() || 'Nessuna nota aggiuntiva.';
+      const note = document.getElementById('note-pratica').value.trim() || latestSimReport;
 
       const summaryText =
 `RICHIESTA VALUTAZIONE PRATICA ESPROPRIO — FEDERICO PONSO
@@ -1633,13 +2169,14 @@ Email: ${email}
 Comune del bene: ${comune}
 Fase / Atto ricevuto: ${atto}
 
-Dettagli Pratica:
+Dettagli e Simulazione Pratica:
 ${note}`;
 
       summaryBox.textContent = summaryText;
       const subject = encodeURIComponent(`Richiesta Valutazione Esproprio - ${fullName} (${comune})`);
       const body = encodeURIComponent(summaryText);
       mailtoLink.href = `mailto:info@federicoponso.it?subject=${subject}&body=${body}`;
+      waLink.href = `https://wa.me/?text=${body}`;
 
       if (typeof dialog.showModal === 'function') {
         dialog.showModal();
@@ -1649,15 +2186,24 @@ ${note}`;
     copyBtn.addEventListener('click', async () => {
       try {
         await navigator.clipboard.writeText(summaryBox.textContent);
-        copyBtn.textContent = '✓ Copiato negli appunti!';
+        copyBtn.textContent = '✓ Copiato!';
         setTimeout(() => { copyBtn.textContent = '📋 Copia Testo'; }, 2500);
       } catch (_) {
-        copyBtn.textContent = 'Seleziona e copia manualmente';
+        copyBtn.textContent = 'Copia manualmente';
       }
     });
 
     closeDialogBtn.addEventListener('click', () => {
       dialog.close();
+    });
+
+    // 5. Privacy Dialog
+    const privacyDialog = document.getElementById('privacy-dialog');
+    document.getElementById('open-privacy-btn').addEventListener('click', () => {
+      if (typeof privacyDialog.showModal === 'function') privacyDialog.showModal();
+    });
+    document.getElementById('close-privacy-btn').addEventListener('click', () => {
+      privacyDialog.close();
     });
   </script>
 </body>
