@@ -1,3 +1,2 @@
 User-agent: *
-Allow: /
-Sitemap: https://nicolavaligi.github.io/federico-ponso-espropri/sitemap.xml
+Disallow: /
