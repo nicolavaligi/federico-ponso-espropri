@@ -12,6 +12,9 @@
   <meta property="og:description" content="Hai ricevuto una notifica di esproprio, occupazione temporanea, servitù o mitigazione acustica per pubblica utilità? Prima di accettare, parliamone.">
   <meta property="og:image" content="https://nicolavaligi.github.io/federico-ponso-espropri/federico-ponso.jpg">
   <link rel="canonical" href="https://nicolavaligi.github.io/federico-ponso-espropri/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -19,6 +22,8 @@
         extend: {
           fontFamily: {
             sans: ['Arial', 'Helvetica', 'sans-serif'],
+            brand: ['"Cinzel"', '"Playfair Display"', 'Georgia', 'serif'],
+            signature: ['"Playfair Display"', 'Georgia', 'serif'],
           },
           colors: {
             navy: {
@@ -78,8 +83,13 @@
 
     <!-- Top Navigation Bar minimale integrata nella Hero -->
     <header class="relative z-20 max-w-6xl mx-auto px-6 lg:px-8 pt-7 pb-4 flex flex-wrap items-center justify-between gap-4">
-      <a href="#" class="text-sm sm:text-base font-bold uppercase tracking-[0.22em] text-white">
-        Federico Ponso
+      <a href="#" class="group flex flex-col">
+        <span class="font-brand text-xl sm:text-2xl font-bold uppercase tracking-[0.22em] text-white border-b border-amber-300/60 pb-1">
+          Federico Ponso
+        </span>
+        <span class="text-[10px] font-bold uppercase tracking-[0.28em] text-blue-300 mt-1">
+          Consulente Espropriativo
+        </span>
       </a>
 
       <div class="flex flex-wrap items-center gap-6 sm:gap-8 text-xs sm:text-sm">
@@ -163,9 +173,12 @@
         </span>
       </div>
 
-      <h2 class="text-base font-bold text-slate-900 tracking-wide">
-        Federico Ponso — Consulente Espropriativo
+      <h2 class="font-brand text-xl sm:text-2xl font-bold text-navy-900 uppercase tracking-[0.18em]">
+        Federico Ponso
       </h2>
+      <div class="text-xs font-bold uppercase tracking-[0.22em] text-navy-700 mt-1">
+        Consulente Espropriativo
+      </div>
 
       <p class="mt-4 text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto">
         Ho sempre dedicato tempo agli altri. Quando gli espropri hanno toccato il mio territorio, ho scelto di stare dalla parte dei proprietari. Ancora oggi le persone che ho seguito mi chiamano. <strong class="text-slate-900">Ti seguo io, in prima persona: un volto, un nome e un numero di telefono a cui rispondo direttamente.</strong>
@@ -742,7 +755,8 @@
     <div class="max-w-6xl mx-auto px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 border-b border-navy-800">
         <div class="md:col-span-5 space-y-3">
-          <span class="font-bold text-white text-base tracking-wide block">Federico Ponso – P. IVA 02594850246</span>
+          <span class="font-brand font-bold text-white text-lg sm:text-xl uppercase tracking-[0.18em] block">Federico Ponso</span>
+          <span class="text-xs font-bold text-slate-300 block">P. IVA 02594850246</span>
           <span class="text-xs font-bold uppercase tracking-[0.16em] text-blue-300 block">Consulente Espropriativo — Dalla parte dell'espropriato</span>
           <p class="text-xs text-slate-400 leading-relaxed max-w-md">
             Espropri per pubblica utilità, occupazioni temporanee, mitigazione acustica e servitù, anche per elettrodotti.
