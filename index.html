@@ -134,46 +134,54 @@
     </div>
   </header>
 
-  <!-- 1. HERO SECTION: EMPATICA, VISIVA E RASSICURANTE (SFONDO CHIARO #FAF8F5) -->
-  <section class="py-14 lg:py-20 bg-biancoCaldo border-b border-neutral-200">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+  <!-- 1. HERO SECTION OTTIMIZZATA -->
+  <section class="relative bg-biancoCaldo text-antracite overflow-hidden py-12 md:py-20 border-b border-neutral-200">
+    <!-- Sfondo con leggero gradiente radiale caldo per dare profondità senza appesantire -->
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(211,84,0,0.12),rgba(255,255,255,0))] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+      <!-- Top Pill: Posizionamento chiaro e inequivocabile -->
+      <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-arancioneChiaro border border-arancione/30 text-antracite text-xs sm:text-sm font-bold mb-6">
+        <span class="w-2.5 h-2.5 rounded-full bg-arancione animate-pulse"></span>
+        <span>Esclusivamente dalla parte dei proprietari privati e delle aziende agricole · Dalla parte dell'espropriato</span>
+      </div>
+
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
 
         <!-- Colonna Sinistra (7 col): Aggancio sulla Notifica, Volto di Federico e CTA -->
         <div class="lg:col-span-7 space-y-6">
-          <div class="inline-block px-3.5 py-1.5 rounded-md bg-arancioneChiaro text-antracite text-xs font-bold uppercase tracking-wider">
-            Dalla parte dell'espropriato · Tutela 100% lato proprietario
-          </div>
-
-          <h1 class="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold tracking-tight text-antracite leading-[1.15]">
-            Hai ricevuto una raccomandata di esproprio, occupazione temporanea, servitù o mitigazione acustica?
+          <h1 class="text-3xl sm:text-4xl lg:text-[2.85rem] font-bold tracking-tight text-antracite leading-[1.14]">
+            Hai ricevuto una notifica di esproprio, occupazione temporanea, servitù o mitigazione acustica?
             <span class="block text-arancione mt-2">Prima di firmare o accettare l'offerta, parliamone.</span>
           </h1>
 
-          <p class="text-base sm:text-lg text-antracite leading-relaxed">
-            Quando arriva la comunicazione di un'opera pubblica, la prima offerta dell'ente spesso <strong>non tiene conto di tutti gli elementi che compongono il vero valore della tua proprietà</strong>. Non affrontare da solo scadenze e carte tecniche: facciamo insieme un punto chiaro, a casa tua e senza alcun impegno.
+          <p class="text-base sm:text-lg text-antracite leading-relaxed max-w-2xl">
+            Chi ha in mano una raccomandata o una comunicazione di pubblica utilità si trova davanti a scadenze strette e a una prima stima che spesso <strong>non considera tutti gli aspetti del bene</strong>. Non firmare al buio: analizziamo insieme le carte con un <strong>primo incontro gratuito direttamente a casa tua</strong>.
           </p>
 
-          <!-- Card Identità con Foto n. 1 di Federico Ponso -->
-          <div class="flex flex-col sm:flex-row sm:items-center gap-5 p-5 rounded-2xl bg-white border border-neutral-300 shadow-sm">
+          <!-- Card Identità Visiva con Foto n. 1 di Federico Ponso -->
+          <div class="flex flex-col sm:flex-row sm:items-center gap-5 p-5 rounded-2xl bg-white border border-neutral-300 shadow-sm max-w-2xl">
             <img
               src="federico-ponso.jpg?v=ponz"
               alt="Federico Ponso – Consulente Espropriativo"
               class="w-28 h-28 rounded-xl object-cover border border-neutral-200 shrink-0"
             >
             <div class="space-y-1">
-              <div class="text-xl font-bold text-antracite">Federico Ponso</div>
-              <div class="text-xs font-bold uppercase tracking-wider text-arancione">Consulente Espropriativo Indipendente</div>
-              <p class="text-sm text-antracite font-bold pt-1">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="text-xl font-bold text-antracite">Federico Ponso</span>
+                <span class="px-2.5 py-0.5 rounded bg-arancioneChiaro text-arancione text-xs font-bold uppercase tracking-wider">Consulente Espropriativo</span>
+              </div>
+              <p class="text-sm text-antracite font-bold pt-1 leading-snug">
                 "Ti seguo io, in prima persona: un volto, un nome e un numero di telefono a cui rispondo direttamente."
               </p>
-              <p class="text-xs text-grigioMedio">
-                Vengo direttamente a casa tua o sul terreno toccato dall'opera.
+              <p class="text-xs text-grigioMedio pt-0.5">
+                Vengo io da te, presso la tua abitazione o sul terreno toccato dall'opera pubblica, oppure in un ufficio di appoggio.
               </p>
             </div>
           </div>
 
-          <!-- Doppia CTA Primaria + Micro-copy Rassicurante -->
+          <!-- Doppia CTA Primaria (WhatsApp + Primo Incontro) + Micro-copy Rassicurante -->
           <div class="pt-1 space-y-3">
             <div class="flex flex-col sm:flex-row gap-3.5">
               <a href="#contatti" class="inline-flex items-center justify-center px-7 py-4 rounded-xl text-base font-bold text-white bg-arancione hover:bg-arancioneHover transition-colors shadow-sm text-center">
@@ -184,31 +192,34 @@
               </a>
             </div>
             <p class="text-xs text-grigioMedio font-bold">
-              Primo incontro gratuito · Risposta diretta di Federico · Nessun anticipo al buio · Pagamento dell'ente sempre sul tuo conto
+              Primo incontro gratuito e senza impegno · Puoi inviarmi anche una foto della notifica su WhatsApp · Pagamento dell'ente sempre e solo sul tuo conto
             </p>
           </div>
         </div>
 
-        <!-- Colonna Destra (5 col): Box "Gli errori più comuni" + Finestra dei 30 Giorni -->
+        <!-- Colonna Destra (5 col): Box "I 3 rischi / errori più comuni" + Scadenza 30 Giorni -->
         <div class="lg:col-span-5" id="scadenze">
           <div class="bg-arancioneChiaro border border-neutral-300 rounded-2xl p-7 sm:p-8 shadow-sm">
-            <div class="pb-4 mb-5 border-b border-neutral-300">
-              <span class="text-xs font-bold uppercase tracking-widest text-arancione block">Attenzione ai tempi della notifica</span>
-              <h2 class="text-xl font-bold text-antracite mt-1">Gli errori più comuni che riducono l'indennizzo</h2>
+            <div class="pb-4 mb-5 border-b border-neutral-300 flex items-center justify-between gap-2">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-widest text-arancione block">Attenzione alle scadenze di legge</span>
+                <h2 class="text-xl font-bold text-antracite mt-1">Gli errori più comuni da evitare</h2>
+              </div>
+              <span class="px-2.5 py-1 rounded bg-white text-antracite text-xs font-bold border border-neutral-300 shrink-0">Termine: 30 gg</span>
             </div>
 
             <ul class="space-y-4 text-sm text-antracite leading-relaxed">
-              <li class="bg-white/80 p-4 rounded-xl border-l-4 border-arancione">
-                <strong class="block text-antracite mb-0.5">Ascoltare chi non è specializzato in espropri</strong>
-                Seguire il consiglio di professionisti bravissimi nel proprio campo ma non esperti di espropri, che suggeriscono di lasciar perdere: <em>"è un'opera pubblica, non metterti contro lo Stato"</em>.
+              <li class="bg-white/90 p-4 rounded-xl border-l-4 border-arancione">
+                <strong class="block text-antracite mb-0.5">Seguire il consiglio di professionisti non esperti di espropri</strong>
+                Anche ottimi professionisti nel proprio campo spesso suggeriscono di lasciar perdere: <em>"è un'opera pubblica, non metterti contro lo Stato"</em>.
               </li>
-              <li class="bg-white/80 p-4 rounded-xl border-l-4 border-arancione">
+              <li class="bg-white/90 p-4 rounded-xl border-l-4 border-arancione">
                 <strong class="block text-antracite mb-0.5">Accettare subito la prima offerta</strong>
-                Firmare la cessione volontaria senza aver prima verificato se la cifra proposta copre davvero l'intero valore del bene e tutti i pregiudizi subiti.
+                Firmare senza verificare prima se la stima iniziale copre davvero tutti gli aspetti patrimoniali della tua proprietà.
               </li>
-              <li class="bg-white/80 p-4 rounded-xl border-l-4 border-arancione">
+              <li class="bg-white/90 p-4 rounded-xl border-l-4 border-arancione">
                 <strong class="block text-antracite mb-0.5">Restare fermi dopo la notifica, aspettando</strong>
-                Il tempo passa e si riducono i margini per lavorare bene: la legge fissa <strong>termini stretti (spesso 30 giorni dalla notifica)</strong> per presentare osservazioni, documentare lo stato dei luoghi e tutelare l'indennità.
+                Il tempo passa e si riducono i margini per lavorare bene: dalla notifica decorrono <strong>termini stretti (30 giorni)</strong> per presentare osservazioni e tutelare il giusto indennizzo.
               </li>
             </ul>
 
