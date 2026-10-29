@@ -4,36 +4,206 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Promemoria pubblicazione su dominio definitivo (federicoponso.it + redirect da federicoponso.com):
-       1. Rimuovere questa riga meta robots="noindex, nofollow" e aprire robots.txt (Allow: /)
-       2. Verificare con il commercialista se indicare un ufficio di appoggio oltre al comune della sede legale Montegalda (VI)
-       3. Testare da smartphone il modulo contatti verso WhatsApp e verso la casella attiva office@federicoponso.it -->
+       1. Sostituire meta robots="noindex, nofollow" con meta robots="index, follow, max-image-preview:large, max-snippet:-1" e aprire robots.txt (Allow: /)
+       2. Aggiornare canonical e og:url con https://www.federicoponso.it/
+       3. Verificare con il commercialista se indicare un ufficio di appoggio oltre al comune della sede legale Montegalda (VI)
+       4. Testare da smartphone il modulo contatti verso WhatsApp e verso la casella attiva office@federicoponso.it -->
   <meta name="robots" content="noindex, nofollow">
   <title>Federico Ponso — Consulente Espropriativo | Dalla parte dell'espropriato</title>
-  <meta name="description" content="Federico Ponso, Consulente Espropriativo — Dalla parte dell'espropriato. Espropri, occupazioni temporanee, mitigazione acustica e servitù per pubblica utilità, anche per elettrodotti.">
+  <meta name="description" content="Federico Ponso, Consulente Espropriativo — Dalla parte dell'espropriato. Tutela per espropri per pubblica utilità, occupazioni temporanee, servitù di elettrodotto e mitigazione acustica per ottenere un indennizzo giusto.">
+  <meta name="author" content="Federico Ponso">
+  <meta name="geo.region" content="IT-VI">
+  <meta name="geo.placename" content="Montegalda (VI)">
+  <meta name="theme-color" content="#0B1524">
+  <link rel="canonical" href="https://www.federicoponso.it/">
+
+  <!-- Open Graph / WhatsApp / LinkedIn / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Federico Ponso — Consulente Espropriativo">
+  <meta property="og:url" content="https://www.federicoponso.it/">
   <meta property="og:title" content="Federico Ponso — Consulente Espropriativo | Dalla parte dell'espropriato">
   <meta property="og:description" content="Hai ricevuto una notifica di esproprio, occupazione, servitù o mitigazione acustica? La legge dice giusta indennità. Io mi assicuro che sia giusta per te.">
-  <meta property="og:image" content="federico-ponso.jpg">
+  <meta property="og:image" content="https://nicolavaligi.github.io/federico-ponso-espropri/federico-ponso.jpg">
+  <meta property="og:image:alt" content="Federico Ponso — Consulente Espropriativo, dalla parte dell'espropriato">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Federico Ponso — Consulente Espropriativo | Dalla parte dell'espropriato">
+  <meta name="twitter:description" content="Hai ricevuto una notifica di esproprio, occupazione, servitù o mitigazione acustica? La legge dice giusta indennità. Io mi assicuro che sia giusta per te.">
+  <meta name="twitter:image" content="https://nicolavaligi.github.io/federico-ponso-espropri/federico-ponso.jpg">
+
+  <!-- Preload immagine Hero (LCP Core Web Vitals) -->
+  <link rel="preload" as="image" href="federico-ponso.jpg?v=ponz" fetchpriority="high">
   <link rel="stylesheet" href="styles.css?v=ambra">
+
+  <!-- Dati Strutturati Schema.org (@graph: ProfessionalService, Person, WebPage, FAQPage) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Federico Ponso — Consulente Espropriativo",
-    "slogan": "Dalla parte dell'espropriato",
-    "telephone": "+393484424717",
-    "email": "office@federicoponso.it",
-    "vatID": "IT02594850246",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Montegalda",
-      "addressRegion": "VI",
-      "addressCountry": "IT"
-    },
-    "image": "federico-ponso.jpg",
-    "description": "Consulente Espropriativo — Dalla parte dell'espropriato. Espropri, occupazioni temporanee, mitigazione acustica e servitù per pubblica utilità, anche per elettrodotti.",
-    "areaServed": { "@type": "Country", "name": "Italia" }
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://www.federicoponso.it/#organization",
+        "name": "Federico Ponso — Consulente Espropriativo",
+        "alternateName": "Federico Ponso Espropri",
+        "slogan": "Dalla parte dell'espropriato",
+        "url": "https://www.federicoponso.it/",
+        "telephone": "+393484424717",
+        "email": "office@federicoponso.it",
+        "vatID": "IT02594850246",
+        "image": "https://nicolavaligi.github.io/federico-ponso-espropri/federico-ponso.jpg",
+        "priceRange": "Primo incontro senza impegno",
+        "description": "Consulente Espropriativo indipendente — Dalla parte dell'espropriato. Assistenza e coordinamento tecnico-legale per espropri per pubblica utilità, occupazioni temporanee, mitigazione acustica e servitù di elettrodotto o metanodotto, per ottenere un indennizzo giusto.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Montegalda",
+          "addressRegion": "VI",
+          "addressCountry": "IT"
+        },
+        "founder": {
+          "@id": "https://www.federicoponso.it/#person"
+        },
+        "areaServed": [
+          { "@type": "Country", "name": "Italia" },
+          { "@type": "AdministrativeArea", "name": "Nord Italia" },
+          { "@type": "AdministrativeArea", "name": "Centro Italia" },
+          { "@type": "AdministrativeArea", "name": "Veneto" },
+          { "@type": "AdministrativeArea", "name": "Lombardia" },
+          { "@type": "AdministrativeArea", "name": "Emilia-Romagna" },
+          { "@type": "AdministrativeArea", "name": "Piemonte" },
+          { "@type": "AdministrativeArea", "name": "Toscana" }
+        ],
+        "knowsAbout": [
+          "Esproprio per pubblica utilità",
+          "Giusta indennità di esproprio (Art. 834 Codice Civile)",
+          "Occupazione temporanea d'urgenza e stato di consistenza",
+          "Servitù di elettrodotto, metanodotto e sottoservizi",
+          "Mitigazione acustica e deprezzamento immobiliare",
+          "Terna tecnica (collegio peritale) e accordi bonari",
+          "Indennizzo per affittuario, fittavolo e coltivatore diretto",
+          "Linea AV/AC Alta Velocità Brescia-Verona-Padova",
+          "Autostrada Pedemontana Lombarda",
+          "Potenziamento ferroviario Rho-Arona",
+          "Autostrada A11 Firenze-Mare",
+          "Autostrada Campogalliano-Sassuolo",
+          "Variante SS12 Verona Sud-Isola della Scala"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servizi di Consulenza Espropriativa",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Consulenza per Espropri per Pubblica Utilità",
+                "description": "Verifica delle superfici coinvolte e determinazione del reale valore di mercato di terreni agricoli, aree edificabili, fabbricati e aziende agricole."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Tutela per Occupazioni Temporanee e Cantieri",
+                "description": "Tutela durante lo stato di consistenza prima dell'ingresso dei mezzi, calcolo dell'indennità di occupazione e ripristino dei danni da cantiere."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Indennizzo per Servitù ed Elettrodotti",
+                "description": "Quantificazione dell'indennizzo per servitù di elettrodotto, metanodotto o sottoservizi, includendo le fasce di rispetto e la perdita di valore del fondo."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Indennizzo per Mitigazione Acustica",
+                "description": "Affiancamento ai proprietari di immobili prossimi a nuove infrastrutture per richiedere l'indennizzo per deprezzamento."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.federicoponso.it/#person",
+        "name": "Federico Ponso",
+        "jobTitle": "Consulente Espropriativo",
+        "description": "Consulente espropriativo indipendente dalla parte dei proprietari espropriati, affittuari e aziende agricole.",
+        "telephone": "+393484424717",
+        "email": "office@federicoponso.it",
+        "image": "https://nicolavaligi.github.io/federico-ponso-espropri/federico-ponso.jpg",
+        "worksFor": {
+          "@id": "https://www.federicoponso.it/#organization"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.federicoponso.it/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "L'opera si farà davvero?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Quando arrivano le notifiche ai proprietari, l'iter è avviato. Aspettare sperando che si fermi fa solo perdere tempo prezioso."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ci sono i soldi per pagare gli indennizzi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sì: gli indennizzi fanno parte del quadro economico dell'opera e sono a carico dell'ente che espropria. Il punto non è se arriveranno, ma se saranno giusti."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Posso trattare da solo con l'ente?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Certo, è un tuo diritto. Ma la materia ha regole, scadenze e criteri specifici: farsi affiancare da chi la conosce aiuta a non lasciare sul tavolo aspetti importanti."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Cosa succede se non accetto l'offerta?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La legge prevede strade precise, come la terna tecnica (collegio peritale) o il ricorso. Non accettare non significa perdere tutto, ma chiedere una valutazione corretta. L'importante è muoversi nei tempi giusti."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A chi viene pagato l'indennizzo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sempre a chi ne ha diritto, cioè a te come proprietario: mai al consulente. Il pagamento arriva direttamente dall'ente, come previsto dalla legge."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Sono affittuario o coltivatore del terreno: ho diritto a qualcosa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sì, in molti casi anche chi coltiva il terreno ha diritto a un indennizzo proprio, distinto da quello del proprietario. Ne parliamo al primo incontro."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quanto costa la consulenza?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ogni pratica è diversa, e anche il compenso: a seconda dei casi può essere un importo fisso, una parte della differenza ottenuta rispetto all'offerta iniziale, oppure solo a risultato. Ne parliamo con chiarezza al primo incontro senza impegno e lo definiamo insieme prima di iniziare."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -56,7 +226,7 @@
       </a>
 
       <div class="flex flex-wrap items-center gap-6 sm:gap-8 text-xs sm:text-sm">
-        <nav class="hidden md:flex items-center gap-6 uppercase tracking-[0.12em] text-xs font-bold text-slate-200">
+        <nav aria-label="Menu principale" class="hidden md:flex items-center gap-6 uppercase tracking-[0.12em] text-xs font-bold text-slate-200">
           <a href="#chi-sono" class="hover:text-amber-300 transition-colors">Chi sono</a>
           <a href="#servizi" class="hover:text-amber-300 transition-colors">Di cosa mi occupo</a>
           <a href="#metodo" class="hover:text-amber-300 transition-colors">Come lavoro</a>
@@ -78,7 +248,11 @@
           <div class="relative w-72 sm:w-80 md:w-full max-w-sm">
             <img
               src="federico-ponso.jpg?v=ponz"
-              alt="Federico Ponso — Consulente Espropriativo"
+              alt="Federico Ponso — Consulente Espropriativo, dalla parte dell'espropriato"
+              width="600"
+              height="600"
+              fetchpriority="high"
+              decoding="async"
               class="w-full aspect-square object-cover object-top rounded-2xl shadow-2xl border border-white/15"
             />
           </div>
@@ -127,6 +301,8 @@
     </div>
   </section>
 
+  <main id="contenuto-principale">
+
   <!-- 2. SEZIONE CHI SONO CON AVATAR TONDO -->
   <section id="chi-sono" class="bg-[#EEF3F9] py-16 md:py-22 border-b border-navy-700/15">
     <div class="max-w-3xl mx-auto px-6 text-center">
@@ -134,10 +310,14 @@
       <div class="relative inline-block mb-5">
         <img
           src="federico-ponso.jpg?v=ponz"
-          alt="Federico Ponso"
+          alt="Federico Ponso — Consulente Espropriativo"
+          width="96"
+          height="96"
+          loading="lazy"
+          decoding="async"
           class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mx-auto"
         />
-        <span class="absolute bottom-0 right-0 w-8 h-8 rounded-full bg-navy-800 text-amber-300 flex items-center justify-center font-serif text-lg font-bold shadow border-2 border-white">
+        <span aria-hidden="true" class="absolute bottom-0 right-0 w-8 h-8 rounded-full bg-navy-800 text-amber-300 flex items-center justify-center font-serif text-lg font-bold shadow border-2 border-white">
           “
         </span>
       </div>
@@ -187,7 +367,7 @@
             <!-- 1. Dove ci incontriamo + Dove lavoro -->
             <div class="flex items-start gap-4 p-4 rounded-xl border border-slate-200 hover:border-navy-700/50 transition-colors">
               <div class="w-11 h-11 rounded-lg bg-navy-900 text-amber-300 flex items-center justify-center shrink-0 mt-0.5">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
                   <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
                 </svg>
@@ -206,7 +386,7 @@
             <!-- 2. Pagamento diretto a te per legge -->
             <div class="flex items-start gap-4 p-4 rounded-xl border border-slate-200 hover:border-navy-700/50 transition-colors">
               <div class="w-11 h-11 rounded-lg bg-navy-900 text-amber-300 flex items-center justify-center shrink-0 mt-0.5">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
                 </svg>
               </div>
@@ -221,7 +401,7 @@
             <!-- 3. La mia rete di professionisti -->
             <div class="flex items-start gap-4 p-4 rounded-xl border border-slate-200 hover:border-navy-700/50 transition-colors">
               <div class="w-11 h-11 rounded-lg bg-navy-900 text-amber-300 flex items-center justify-center shrink-0 mt-0.5">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
                 </svg>
               </div>
@@ -236,7 +416,7 @@
             <!-- 4. Professionisti abilitati -->
             <div class="flex items-start gap-4 p-4 rounded-xl border border-slate-200 hover:border-navy-700/50 transition-colors">
               <div class="w-11 h-11 rounded-lg bg-navy-900 text-amber-300 flex items-center justify-center shrink-0 mt-0.5">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/>
                 </svg>
               </div>
@@ -324,7 +504,7 @@
         <!-- Primo riquadro: Espropri -->
         <div class="bg-white rounded-xl p-7 border border-slate-200 border-t-4 border-t-amber-300 shadow-sm">
           <div class="w-11 h-11 rounded-lg bg-navy-900 text-amber-300 flex items-center justify-center mb-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+            <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/>
             </svg>
           </div>
@@ -337,7 +517,7 @@
         <!-- Secondo riquadro: Occupazioni temporanee -->
         <div class="bg-white rounded-xl p-7 border border-slate-200 border-t-4 border-t-amber-300 shadow-sm">
           <div class="w-11 h-11 rounded-lg bg-navy-900 text-amber-300 flex items-center justify-center mb-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+            <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
           </div>
@@ -350,7 +530,7 @@
         <!-- Terzo riquadro: Servitù ed elettrodotti -->
         <div class="bg-white rounded-xl p-7 border border-slate-200 border-t-4 border-t-amber-300 shadow-sm">
           <div class="w-11 h-11 rounded-lg bg-navy-900 text-amber-300 flex items-center justify-center mb-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+            <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
             </svg>
           </div>
@@ -363,7 +543,7 @@
         <!-- Quarto riquadro: Mitigazione acustica -->
         <div class="bg-white rounded-xl p-7 border border-slate-200 border-t-4 border-t-amber-300 shadow-sm">
           <div class="w-11 h-11 rounded-lg bg-navy-900 text-amber-300 flex items-center justify-center mb-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+            <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"/>
             </svg>
           </div>
@@ -715,11 +895,11 @@
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label for="f-name" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1.5">Nome e cognome *</label>
-                  <input type="text" id="f-name" required placeholder="Il tuo nome e cognome" class="form-input w-full px-4 py-3 rounded-lg bg-[#EEF3F9] border border-slate-300 text-slate-900 text-sm focus:outline-none focus:border-navy-800">
+                  <input type="text" id="f-name" name="name" autocomplete="name" required placeholder="Il tuo nome e cognome" class="form-input w-full px-4 py-3 rounded-lg bg-[#EEF3F9] border border-slate-300 text-slate-900 text-sm focus:outline-none focus:border-navy-800">
                 </div>
                 <div>
                   <label for="f-phone" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1.5">Telefono *</label>
-                  <input type="tel" id="f-phone" required placeholder="Il tuo numero di telefono" class="form-input w-full px-4 py-3 rounded-lg bg-[#EEF3F9] border border-slate-300 text-slate-900 text-sm focus:outline-none focus:border-navy-800">
+                  <input type="tel" id="f-phone" name="phone" autocomplete="tel" required placeholder="Il tuo numero di telefono" class="form-input w-full px-4 py-3 rounded-lg bg-[#EEF3F9] border border-slate-300 text-slate-900 text-sm focus:outline-none focus:border-navy-800">
                 </div>
               </div>
 
@@ -753,6 +933,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- 9. PIÈ DI PAGINA IN BLU NAVY SCURO -->
   <footer class="bg-navy-950 text-slate-300 py-14 text-sm">
