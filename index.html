@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Promemoria pubblicazione su dominio definitivo (federicoponso.it + redirect da federicoponso.com):
        1. Sostituire meta robots="noindex, nofollow" con meta robots="index, follow, max-image-preview:large, max-snippet:-1" e aprire robots.txt (Allow: /)
-       2. Aggiornare canonical e og:url con https://www.federicoponso.it/
+       2. Aggiornare canonical, og:url, og:image, twitter:image e Schema.org image con https://www.federicoponso.it/ (compreso federico-ponso.jpg) al passaggio sul dominio definitivo
        3. Verificare con il commercialista se indicare un ufficio di appoggio oltre al comune della sede legale Montegalda (VI)
        4. Testare da smartphone il modulo contatti verso WhatsApp e verso la casella attiva office@federicoponso.it -->
   <meta name="robots" content="noindex, nofollow">
@@ -15,6 +15,8 @@
   <meta name="geo.region" content="IT-VI">
   <meta name="geo.placename" content="Montegalda (VI)">
   <meta name="theme-color" content="#0B1524">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.png">
   <link rel="canonical" href="https://www.federicoponso.it/">
 
   <!-- Open Graph / WhatsApp / LinkedIn / Facebook -->
@@ -98,7 +100,7 @@
               "itemOffered": {
                 "@type": "Service",
                 "name": "Consulenza per Espropri per Pubblica Utilità",
-                "description": "Verifica delle superfici coinvolte e determinazione del reale valore di mercato di terreni agricoli, aree edificabili, fabbricati e aziende agricole."
+                "description": "Verifica delle superfici coinvolte e determinazione, insieme al professionista più adatto, del reale valore di mercato di terreni agricoli, aree edificabili, fabbricati e aziende agricole."
               }
             },
             {
@@ -106,7 +108,7 @@
               "itemOffered": {
                 "@type": "Service",
                 "name": "Tutela per Occupazioni Temporanee e Cantieri",
-                "description": "Tutela durante lo stato di consistenza prima dell'ingresso dei mezzi, calcolo dell'indennità di occupazione e ripristino dei danni da cantiere."
+                "description": "Tutela durante lo stato di consistenza prima dell'ingresso dei mezzi e, insieme al professionista più adatto, calcolo dell'indennità di occupazione e ripristino dei danni da cantiere."
               }
             },
             {
@@ -114,7 +116,7 @@
               "itemOffered": {
                 "@type": "Service",
                 "name": "Indennizzo per Servitù ed Elettrodotti",
-                "description": "Quantificazione dell'indennizzo per servitù di elettrodotto, metanodotto o sottoservizi, includendo le fasce di rispetto e la perdita di valore del fondo."
+                "description": "Quantificazione, insieme al professionista più adatto, dell'indennizzo per servitù di elettrodotto, metanodotto o sottoservizi, includendo le fasce di rispetto e la perdita di valore del fondo."
               }
             },
             {
@@ -122,7 +124,7 @@
               "itemOffered": {
                 "@type": "Service",
                 "name": "Indennizzo per Mitigazione Acustica",
-                "description": "Affiancamento ai proprietari di immobili prossimi a nuove infrastrutture per richiedere l'indennizzo per deprezzamento."
+                "description": "Affiancamento ai proprietari di immobili prossimi a nuove infrastrutture per richiedere, insieme al professionista più adatto, l'indennizzo per deprezzamento."
               }
             }
           ]
@@ -220,8 +222,10 @@
         <span class="text-xl sm:text-2xl font-bold tracking-wide text-white leading-tight">
           Federico Ponso
         </span>
-        <span class="text-[11px] font-bold uppercase tracking-[0.18em] text-amber-300 mt-0.5">
-          Consulente Espropriativo · Dalla parte dell'espropriato
+        <span class="text-[11px] font-bold uppercase tracking-[0.18em] mt-0.5 leading-snug">
+          <span class="text-white block sm:inline">Consulente Espropriativo</span>
+          <span class="hidden sm:inline text-slate-400"> · </span>
+          <span class="text-amber-300 block sm:inline">Dalla parte dell'espropriato</span>
         </span>
       </a>
 
@@ -325,16 +329,19 @@
       <h2 class="text-xl sm:text-2xl font-bold text-navy-900 tracking-wide">
         Federico Ponso
       </h2>
-      <div class="text-xs font-bold uppercase tracking-[0.18em] text-navy-700 mt-1">
-        Consulente Espropriativo · Dalla parte dell'espropriato
+      <div class="text-xs font-bold uppercase tracking-[0.18em] mt-1 leading-snug">
+        <span class="text-navy-900 block sm:inline">Consulente Espropriativo</span>
+        <span class="hidden sm:inline text-slate-400"> · </span>
+        <span class="text-amber-600 block sm:inline" style="color: #D97706;">Dalla parte dell'espropriato</span>
       </div>
 
       <p class="mt-5 text-base sm:text-lg text-slate-700 leading-relaxed max-w-2xl mx-auto">
         Ho sempre dedicato tempo agli altri, e intendo continuare a farlo. Quando gli espropri hanno toccato il mio territorio, ho scelto di stare dalla parte dei proprietari. Da anni affianco i proprietari coinvolti in espropri, occupazioni e servitù, lavorando insieme a tecnici, avvocati e realtà specializzate del settore. Le persone che ho seguito sanno di poter contare su di me: ancora oggi mi chiamano, e io rispondo sempre. Per me un rapporto di fiducia non finisce con la pratica.
       </p>
 
-      <p class="mt-4 text-base font-bold text-navy-900 max-w-2xl mx-auto">
-        Ti seguo io, in prima persona: un volto, un nome e un numero di telefono a cui rispondo direttamente.
+      <p class="mt-4 text-base font-bold text-navy-900 max-w-2xl mx-auto text-balance" style="text-wrap: balance;">
+        Ti seguo io, in prima persona:<br class="hidden sm:inline">
+        un volto, un nome e un numero di telefono a cui rispondo direttamente.
       </p>
     </div>
   </section>
@@ -868,19 +875,19 @@
             </a>
           </div>
 
-          <!-- Nuovo riquadro: Cosa portare al primo incontro -->
+          <!-- Riquadro: Cosa portare al primo incontro -->
           <div class="bg-white rounded-xl p-6 border border-slate-200 border-l-4 border-l-amber-300 shadow-sm">
             <h3 class="text-base font-bold text-navy-900 mb-3">
               Cosa portare al primo incontro
             </h3>
             <ul class="space-y-2 text-sm text-slate-700 leading-relaxed list-disc pl-5">
               <li>la notifica ricevuta ed eventuali altre comunicazioni dell'ente;</li>
-              <li>visure e planimetrie, se le hai;</li>
-              <li>contratti d'affitto o di comodato, se il terreno o l'immobile è dato in uso;</li>
-              <li>qualche fotografia del terreno o dell'immobile.</li>
+              <li>il verbale di consistenza;</li>
+              <li>eventuali comunicazioni inviate all'ente da parte tua o di un tuo incaricato, e le eventuali risposte ricevute;</li>
+              <li>contratti d'affitto o di comodato, se il terreno o l'immobile è dato in uso.</li>
             </ul>
             <p class="mt-3 pt-3 border-t border-slate-200 text-xs sm:text-sm font-bold text-navy-900">
-              Se ti manca qualcosa, nessun problema: lo recuperiamo insieme.
+              Se ti manca qualcosa, nessun problema: lo recuperiamo insieme o lo chiediamo direttamente all'ente.
             </p>
           </div>
         </div>
@@ -947,6 +954,9 @@
           </p>
           <p class="text-xs text-slate-300 leading-relaxed max-w-xl pt-1">
             <strong class="text-white">Accordi bonari con gli enti:</strong> a volte mi confronto direttamente con enti e società che realizzano opere pubbliche e gestiscono espropri, occupazioni temporanee e servitù. Non sempre è possibile, ma quando la pratica lo consente è una strada per raggiungere un accordo bonario giusto per te, senza perizie o terne tecniche e in tempi più brevi.
+          </p>
+          <p class="text-xs text-slate-300 leading-relaxed max-w-xl pt-1">
+            <strong class="text-white">Sei un professionista?</strong> Se un tuo cliente è coinvolto in un esproprio, un'occupazione temporanea, una servitù o una mitigazione acustica e non puoi seguire questa parte, o se vuoi proporre una collaborazione, parliamone. Il cliente resta tuo: io mi occupo solo di questa parte.
           </p>
         </div>
 
