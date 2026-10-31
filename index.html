@@ -26,17 +26,18 @@
   <meta property="og:url" content="https://www.federicoponso.it/">
   <meta property="og:title" content="Federico Ponso — Consulente Espropriativo | Dalla parte dell'espropriato">
   <meta property="og:description" content="Hai ricevuto una notifica di esproprio, occupazione, servitù o mitigazione acustica? La legge dice “giusta indennità”. Io ti affianco perché sia giusta per te.">
-  <meta property="og:image" content="https://nicolavaligi.github.io/federico-ponso-espropri/federico-ponso.jpg">
+  <meta property="og:image" content="https://nicolavaligi.github.io/federico-ponso-espropri/federico-ponso-social.jpg?v=20261031">
   <meta property="og:image:alt" content="Federico Ponso — Consulente Espropriativo, dalla parte dell'espropriato">
 
   <!-- Twitter / X Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Federico Ponso — Consulente Espropriativo | Dalla parte dell'espropriato">
   <meta name="twitter:description" content="Hai ricevuto una notifica di esproprio, occupazione, servitù o mitigazione acustica? La legge dice “giusta indennità”. Io ti affianco perché sia giusta per te.">
-  <meta name="twitter:image" content="https://nicolavaligi.github.io/federico-ponso-espropri/federico-ponso.jpg">
+  <meta name="twitter:image" content="https://nicolavaligi.github.io/federico-ponso-espropri/federico-ponso-social.jpg?v=20261031">
+  <meta name="twitter:image:alt" content="Federico Ponso nel suo studio, davanti alla libreria">
 
   <!-- Preload immagine Hero (LCP Core Web Vitals) -->
-  <link rel="preload" as="image" href="federico-ponso.jpg?v=ponz" fetchpriority="high">
+  <link rel="preload" as="image" href="federico-ponso.jpg?v=20261031" fetchpriority="high">
   <link rel="stylesheet" href="styles.css?v=3">
 
   <!-- Dati Strutturati Schema.org (@graph: ProfessionalService, Person, WebPage, FAQPage) -->
@@ -54,7 +55,7 @@
         "telephone": "+393484424717",
         "email": "office@federicoponso.it",
         "vatID": "IT02594850246",
-        "image": "https://nicolavaligi.github.io/federico-ponso-espropri/federico-ponso.jpg",
+        "image": "https://nicolavaligi.github.io/federico-ponso-espropri/federico-ponso.jpg?v=20261031",
         "description": "Consulenza e affiancamento ai proprietari per espropri, occupazioni temporanee, servitù e mitigazione acustica per pubblica utilità, con il coordinamento di tecnici e avvocati.",
         "address": {
           "@type": "PostalAddress",
@@ -137,7 +138,7 @@
         "description": "Consulente espropriativo indipendente dalla parte dei proprietari espropriati, affittuari e aziende agricole.",
         "telephone": "+393484424717",
         "email": "office@federicoponso.it",
-        "image": "https://nicolavaligi.github.io/federico-ponso-espropri/federico-ponso.jpg",
+        "image": "https://nicolavaligi.github.io/federico-ponso-espropri/federico-ponso.jpg?v=20261031",
         "worksFor": {
           "@id": "https://www.federicoponso.it/#organization"
         }
@@ -226,6 +227,8 @@
 </head>
 <body class="bg-white text-slate-800 font-sans antialiased selection:bg-navy-800 selection:text-white">
 
+  <a class="skip-link" href="#contenuto-principale">Salta al contenuto</a>
+
   <!-- Top Navigation Bar fissa sui toni del blu notte pieno -->
   <header id="site-header">
     <div id="header-inner" class="max-w-6xl mx-auto px-6 lg:px-8 py-4 sm:py-5 flex items-center justify-between gap-4 transition-all duration-200">
@@ -240,7 +243,7 @@
         </div>
       </a>
 
-      <div class="flex items-center gap-6 sm:gap-8 text-xs sm:text-sm">
+      <div class="flex items-center gap-3 sm:gap-8 text-xs sm:text-sm">
         <nav aria-label="Menu principale" class="hidden md:flex items-center gap-6 uppercase tracking-[0.12em] text-xs font-bold text-slate-200">
           <a href="#chi-sono" class="hover:text-amber-300 transition-colors">Chi sono</a>
           <a href="#servizi" class="hover:text-amber-300 transition-colors">Di cosa mi occupo</a>
@@ -248,12 +251,32 @@
           <a href="#opere" class="hover:text-amber-300 transition-colors">Opere</a>
           <a href="#faq" class="hover:text-amber-300 transition-colors">Domande frequenti</a>
         </nav>
-        <a href="tel:+393484424717" class="font-bold tracking-wider text-amber-300 hover:text-white transition-colors whitespace-nowrap">
+        <a href="tel:+393484424717" class="mobile-header-phone font-bold tracking-wider text-amber-300 hover:text-white transition-colors whitespace-nowrap">
           348 442 4717
         </a>
+        <button
+          id="mobile-nav-toggle"
+          type="button"
+          class="mobile-nav-toggle md:hidden"
+          aria-label="Menu di navigazione"
+          aria-expanded="false"
+          aria-controls="mobile-navigation"
+        >
+          Menu
+        </button>
       </div>
     </div>
+    <nav id="mobile-navigation" class="mobile-navigation hidden md:hidden" aria-label="Menu mobile">
+      <a href="#chi-sono">Chi sono</a>
+      <a href="#servizi">Di cosa mi occupo</a>
+      <a href="#metodo">Come lavoro</a>
+      <a href="#opere">Opere</a>
+      <a href="#faq">Domande frequenti</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
   </header>
+
+  <main id="contenuto-principale">
 
   <!-- 1. HERO SECTION SUI TONI DEL BLU NOTTE E GIALLO AMBRA -->
   <section class="relative bg-gradient-to-br from-navy-900 via-navy-800 to-navy-950 text-white overflow-hidden">
@@ -268,7 +291,7 @@
         <div class="md:col-span-5 flex justify-center md:justify-end items-center">
           <div class="relative w-72 sm:w-80 md:w-full max-w-sm">
             <img
-              src="federico-ponso.jpg?v=ponz"
+              src="federico-ponso.jpg?v=20261031"
               alt="Federico Ponso — Consulente Espropriativo, dalla parte dell'espropriato"
               width="600"
               height="600"
@@ -322,15 +345,13 @@
     </div>
   </section>
 
-  <main id="contenuto-principale">
-
   <!-- 2. SEZIONE CHI SONO CON AVATAR TONDO -->
   <section id="chi-sono" class="bg-[#EEF3F9] py-16 md:py-22 border-b border-navy-700/15">
     <div class="max-w-3xl mx-auto px-6 text-center">
       <!-- Avatar Circolare con Badge Citazione Blu e Giallo Ambra -->
       <div class="relative inline-block mb-5">
         <img
-          src="federico-ponso.jpg?v=ponz"
+          src="federico-ponso.jpg?v=20261031"
           alt="Federico Ponso — Consulente Espropriativo"
           width="96"
           height="96"
@@ -1151,25 +1172,47 @@
     window.addEventListener('scroll', updateHeaderOnScroll, { passive: true });
     updateHeaderOnScroll();
 
+    // Menu mobile accessibile da tastiera e touch
+    const mobileNavToggle = document.getElementById('mobile-nav-toggle');
+    const mobileNavigation = document.getElementById('mobile-navigation');
+    function closeMobileNavigation({ returnFocus = false } = {}) {
+      mobileNavigation.classList.add('hidden');
+      mobileNavToggle.setAttribute('aria-expanded', 'false');
+      if (returnFocus) mobileNavToggle.focus();
+    }
+    mobileNavToggle.addEventListener('click', () => {
+      const isExpanded = mobileNavToggle.getAttribute('aria-expanded') === 'true';
+      mobileNavToggle.setAttribute('aria-expanded', String(!isExpanded));
+      mobileNavigation.classList.toggle('hidden', isExpanded);
+    });
+    mobileNavigation.addEventListener('click', (event) => {
+      if (event.target.closest('a')) closeMobileNavigation();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && mobileNavToggle.getAttribute('aria-expanded') === 'true') {
+        closeMobileNavigation({ returnFocus: true });
+      }
+    });
+
     // Gestione invio modulo di contatto
     const contactForm = document.getElementById('contact-form');
-    let submitMode = 'whatsapp';
-
-    contactForm.querySelectorAll('button[type="submit"]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        submitMode = btn.getAttribute('data-mode') || 'whatsapp';
-      });
+    const nameField = document.getElementById('f-name');
+    const phoneField = document.getElementById('f-phone');
+    [nameField, phoneField].forEach((field) => {
+      field.addEventListener('input', () => field.setCustomValidity(''));
     });
 
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
+      nameField.setCustomValidity(nameField.value.trim() ? '' : 'Inserisci nome e cognome.');
+      phoneField.setCustomValidity(phoneField.value.trim() ? '' : 'Inserisci un numero di telefono.');
       if (!contactForm.checkValidity()) {
         contactForm.reportValidity();
         return;
       }
 
-      const name = document.getElementById('f-name').value.trim();
-      const phone = document.getElementById('f-phone').value.trim();
+      const name = nameField.value.trim();
+      const phone = phoneField.value.trim();
       const note = document.getElementById('f-note').value.trim() || 'Vorrei fissare un primo incontro senza impegno.';
 
       const text =
@@ -1179,10 +1222,10 @@ Telefono: ${phone}
 Messaggio: ${note}
 Informativa privacy: letta`;
 
-      if (submitMode === 'whatsapp') {
-        window.open(`https://wa.me/393484424717?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
-      } else {
+      if (e.submitter?.dataset.mode === 'email') {
         window.location.href = `mailto:office@federicoponso.it?subject=${encodeURIComponent('Richiesta incontro senza impegno - ' + name)}&body=${encodeURIComponent(text)}`;
+      } else {
+        window.open(`https://wa.me/393484424717?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
       }
     });
   </script>

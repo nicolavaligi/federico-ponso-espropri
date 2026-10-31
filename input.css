@@ -14,6 +14,94 @@ section[id], div[id] {
   scroll-margin-top: 5.5rem;
 }
 
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 100;
+  transform: translateY(-150%);
+  border-radius: 0.5rem;
+  background: #fff;
+  color: #0b1524;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.mobile-nav-toggle {
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 0.5rem;
+  padding: 0;
+  color: #fff;
+  font-size: 0;
+  font-weight: 700;
+}
+
+.mobile-nav-toggle::before {
+  content: "☰";
+  font-size: 1.125rem;
+}
+
+.mobile-navigation {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  padding: 0.5rem 1.5rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  background: #0b1524;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-navigation a {
+  display: block;
+  padding: 0.8rem 0;
+  color: #e2e8f0;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.mobile-navigation a:hover {
+  color: #fcd34d;
+}
+
+.form-input:focus-visible,
+#f-note:focus-visible,
+#contact-form button:focus-visible,
+.mobile-nav-toggle:focus-visible,
+a:focus-visible,
+summary:focus-visible {
+  outline: 3px solid #d97706;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .mobile-header-phone {
+    display: none;
+  }
+}
+
 #site-header {
   position: sticky;
   top: 0;
