@@ -7,7 +7,7 @@
        1. Sostituire meta robots="noindex, nofollow" con meta robots="index, follow, max-image-preview:large, max-snippet:-1" e aprire robots.txt (Allow: /)
        2. Aggiornare canonical, og:url, og:image, twitter:image e Schema.org image con https://www.federicoponso.it/ (compreso federico-ponso.jpg) al passaggio sul dominio definitivo
        3. Verificare con il commercialista se indicare un ufficio di appoggio oltre al comune della sede legale Montegalda (VI)
-       4. Testare da smartphone il modulo contatti verso WhatsApp e verso la casella attiva office@federicoponso.it -->
+       4. Testare da smartphone il modulo contatti verso WhatsApp e verso la casella attiva federico@federicoponso.it -->
   <meta name="robots" content="noindex, nofollow">
   <title>Federico Ponso — Consulente Espropriativo | Dalla parte dell'espropriato</title>
   <meta name="description" content="Consulenza e affiancamento ai proprietari per espropri, occupazioni temporanee, servitù e mitigazione acustica per pubblica utilità, con il coordinamento di tecnici e avvocati.">
@@ -53,7 +53,7 @@
         "slogan": "Dalla parte dell'espropriato",
         "url": "https://www.federicoponso.it/",
         "telephone": "+393484424717",
-        "email": "office@federicoponso.it",
+        "email": "federico@federicoponso.it",
         "vatID": "IT02594850246",
         "image": "https://nicolavaligi.github.io/federico-ponso-espropri/federico-ponso.jpg?v=20261031",
         "description": "Consulenza e affiancamento ai proprietari per espropri, occupazioni temporanee, servitù e mitigazione acustica per pubblica utilità, con il coordinamento di tecnici e avvocati.",
@@ -137,7 +137,7 @@
         "jobTitle": "Consulente Espropriativo",
         "description": "Consulente espropriativo indipendente dalla parte dei proprietari espropriati, affittuari e aziende agricole.",
         "telephone": "+393484424717",
-        "email": "office@federicoponso.it",
+        "email": "federico@federicoponso.it",
         "image": "https://nicolavaligi.github.io/federico-ponso-espropri/federico-ponso.jpg?v=20261031",
         "worksFor": {
           "@id": "https://www.federicoponso.it/#organization"
@@ -213,6 +213,22 @@
           },
           {
             "@type": "Question",
+            "name": "Se accetto l'offerta, posso cambiare idea?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Una volta firmata e inviata all'ente, la dichiarazione è definitiva per legge e non può essere ritirata. Inoltre l'offerta si accetta così com'è: non è possibile aggiungere eccezioni o clausole. Per questo, prima di firmare, è utile controllare che l'offerta tenga conto di tutto: il terreno, quello che c'è sopra (colture, piante, manufatti) e il minor valore di ciò che rimane. Ci sono casi in cui accettare è la soluzione migliore: conta saperlo prima di firmare."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Se non rispondo all'offerta, perdo l'indennità?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Se la lettera resta senza risposta nei termini indicati, l'offerta vale come non condivisa, ma il diritto all'indennità resta. La somma viene depositata a tuo nome e il valore viene stabilito di nuovo, con la terna tecnica o dalla Commissione provinciale: può risultare più alto o più basso dell'offerta, e alcune maggiorazioni previste per chi accetta possono non spettare più. Restare in silenzio lascia andare avanti la procedura senza di te: è meglio decidere fin dall'inizio quale strada seguire."
+            }
+          },
+          {
+            "@type": "Question",
             "name": "Quanto costa farsi seguire?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -232,14 +248,23 @@
   <!-- Top Navigation Bar fissa sui toni del blu notte pieno -->
   <header id="site-header">
     <div id="header-inner" class="max-w-6xl mx-auto px-6 lg:px-8 py-4 sm:py-5 flex items-center justify-between gap-4 transition-all duration-200">
-      <a href="#" class="flex flex-col">
-        <span id="header-name" class="text-xl sm:text-2xl font-bold tracking-wide text-white leading-tight transition-all duration-200">
-          Federico Ponso
-        </span>
-        <div id="header-sub" class="text-[11px] font-bold mt-0.5 leading-snug">
-          <span class="text-white uppercase tracking-[0.18em] block sm:inline">Consulente Espropriativo</span>
-          <span class="hidden sm:inline text-slate-400"> · </span>
-          <span class="text-amber-300 italic block sm:inline font-semibold">Dalla parte dell'espropriato</span>
+      <a href="#" class="flex items-center gap-3 group">
+        <img
+          id="header-shield"
+          src="scudo-S3-fondo-scuro.svg"
+          alt="Simbolo scudo Federico Ponso"
+          width="64"
+          height="64"
+          class="h-[54px] w-[54px] sm:h-16 sm:w-16 object-contain shrink-0 transition-all duration-200"
+        />
+        <div class="flex flex-col">
+          <span id="header-name" class="text-xl sm:text-2xl font-bold tracking-wide text-white leading-tight transition-all duration-200 whitespace-nowrap">
+            Federico Ponso
+          </span>
+          <div id="header-sub" class="text-[11px] font-bold mt-0.5 leading-snug">
+            <span class="text-white uppercase tracking-[0.18em] block whitespace-nowrap">Consulente Espropriativo</span>
+            <span class="text-amber-300 italic block whitespace-nowrap font-semibold">Dalla parte dell'espropriato</span>
+          </div>
         </div>
       </a>
 
@@ -292,12 +317,14 @@
           <div class="relative w-72 sm:w-80 md:w-full max-w-sm">
             <img
               src="federico-ponso.jpg?v=20261031"
-              alt="Federico Ponso — Consulente Espropriativo, dalla parte dell'espropriato"
+              alt="Federico Ponso, consulente espropriativo"
               width="600"
               height="600"
               fetchpriority="high"
               decoding="async"
-              class="w-full aspect-square object-cover object-top rounded-2xl shadow-2xl border border-white/15"
+              oncontextmenu="return false"
+              draggable="false"
+              class="w-full aspect-square object-cover object-top rounded-2xl shadow-2xl border border-white/15 protected-image"
             />
           </div>
         </div>
@@ -348,36 +375,37 @@
   <!-- 2. SEZIONE CHI SONO CON AVATAR TONDO -->
   <section id="chi-sono" class="bg-[#EEF3F9] py-16 md:py-22 border-b border-navy-700/15">
     <div class="max-w-3xl mx-auto px-6 text-center">
-      <!-- Avatar Circolare con Badge Citazione Blu e Giallo Ambra -->
-      <div class="relative inline-block mb-5">
-        <img
-          src="federico-ponso.jpg?v=20261031"
-          alt="Federico Ponso — Consulente Espropriativo"
-          width="96"
-          height="96"
-          loading="lazy"
-          decoding="async"
-          class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mx-auto"
-        />
-        <span aria-hidden="true" class="absolute bottom-0 right-0 w-8 h-8 rounded-full bg-navy-800 text-amber-300 flex items-center justify-center font-serif text-lg font-bold shadow border-2 border-white">
-          “
-        </span>
-      </div>
-
       <h2 class="text-xl sm:text-2xl font-bold text-navy-900 tracking-wide">
         Federico Ponso
       </h2>
       <div class="text-xs font-bold mt-1 leading-snug">
-        <span class="text-navy-900 uppercase tracking-[0.18em] block sm:inline">Consulente Espropriativo</span>
-        <span class="hidden sm:inline text-slate-400"> · </span>
-        <span class="text-navy-800 italic block sm:inline font-semibold" style="color: #13233A;">Dalla parte dell'espropriato</span>
+        <span class="text-navy-900 uppercase tracking-[0.18em] block whitespace-nowrap">Consulente Espropriativo</span>
+        <span class="text-navy-800 italic block whitespace-nowrap font-semibold mt-0.5" style="color: #13233A;">Dalla parte dell'espropriato</span>
       </div>
 
       <p class="mt-5 text-base sm:text-lg text-slate-700 leading-relaxed max-w-2xl mx-auto">
         Ho sempre dedicato tempo agli altri, e intendo continuare a farlo. Quando gli espropri hanno toccato il mio territorio, ho scelto di stare dalla parte dei proprietari. Da anni affianco i proprietari coinvolti in espropri, occupazioni e servitù, lavorando insieme a tecnici, avvocati e realtà specializzate del settore. Le persone che ho seguito sanno di poter contare su di me: ancora oggi mi chiamano per informazioni o chiarimenti, e per loro ci sono sempre. Per me un rapporto di fiducia non finisce con la chiusura della pratica.
       </p>
 
-      <p class="mt-4 text-base font-bold text-navy-900 max-w-2xl mx-auto text-balance" style="text-wrap: balance;">
+      <!-- Avatar Circolare spostato dopo il primo paragrafo e prima di Ti seguo io -->
+      <div class="my-6 relative inline-block">
+        <img
+          src="federico-ponso.jpg?v=20261031"
+          alt="Federico Ponso, consulente espropriativo"
+          width="96"
+          height="96"
+          loading="lazy"
+          decoding="async"
+          oncontextmenu="return false"
+          draggable="false"
+          class="w-24 h-24 rounded-full object-cover object-top border-4 border-white shadow-md mx-auto protected-image"
+        />
+        <span aria-hidden="true" class="absolute bottom-0 right-0 w-8 h-8 rounded-full bg-navy-800 text-amber-300 flex items-center justify-center font-serif text-lg font-bold shadow border-2 border-white">
+          “
+        </span>
+      </div>
+
+      <p class="text-base font-bold text-navy-900 max-w-2xl mx-auto text-balance" style="text-wrap: balance;">
         Ti seguo io, in prima persona:<br class="hidden sm:inline">
         un volto, un nome e un numero di telefono a cui rispondo direttamente.
       </p>
@@ -404,7 +432,7 @@
           </p>
 
           <p class="text-sm sm:text-base text-slate-600 leading-relaxed bg-[#EEF3F9] p-5 rounded-xl border-l-4 border-amber-300">
-            Sono un consulente indipendente: posso collaborare con qualsiasi studio tecnico o legale, società di consulenza o realtà del settore, scegliendo sempre la soluzione migliore per te.
+            Sono un consulente indipendente: posso collaborare con qualsiasi studio tecnico o legale, società di consulenza o realtà del settore, scegliendo la soluzione più adatta a te.
           </p>
 
           <!-- Lista Feature con Icone Blu Navy e Giallo Ambra -->
@@ -496,6 +524,9 @@
             </div>
 
             <ul class="space-y-4 text-sm text-slate-200 leading-relaxed">
+              <li class="bg-white/10 p-4 rounded-xl border-l-4 border-amber-300">
+                <strong>Firmare di getto il modulo allegato alla lettera,</strong> magari perché la somma sembra ragionevole, senza aver controllato che l'offerta comprenda ogni voce.
+              </li>
               <li class="bg-white/10 p-4 rounded-xl border-l-4 border-amber-300">
                 Lasciar perdere perché qualcuno ti dice: «è un'opera pubblica, non metterti contro l'ente o lo Stato». Invece, quando ne vale la pena, conviene approfondire con chi conosce la materia.
               </li>
@@ -694,7 +725,7 @@
             <div class="ml-14 md:ml-0 md:w-1/2 md:pr-12">
               <div class="p-6 rounded-xl bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-navy-800">
                 <h3 class="text-base font-bold text-navy-900">Se necessario, terna tecnica (collegio peritale) o percorso legale</h3>
-                <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Se la proposta dell'ente resta incongrua, attiviamo la terna tecnica prevista dall'art. 21 del D.P.R. 327/2001 o il percorso legale più opportuno.</p>
+                <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Se la proposta dell'ente resta incongrua, ti affianco nel chiedere la terna tecnica prevista dall'art. 21 del D.P.R. 327/2001 o il percorso legale più opportuno.</p>
               </div>
             </div>
           </div>
@@ -711,6 +742,11 @@
               </div>
             </div>
           </div>
+        </div>
+
+        <!-- Postilla E dopo l'esproprio? -->
+        <div class="mt-12 p-6 rounded-xl bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-amber-300 text-sm sm:text-base text-slate-700 max-w-3xl mx-auto text-center shadow-sm">
+          <strong>E dopo l'esproprio?</strong> Ti resta un pezzo di terreno (il reliquato) o devi rifare recinzioni, cancelli, accessi o altri manufatti, per la casa o per l'azienda? Ti posso indirizzare anche dopo al professionista giusto per ogni cosa.
         </div>
       </div>
     </div>
@@ -905,6 +941,50 @@
 
         <details class="group bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-amber-300 rounded-xl p-6 transition-all" name="faq-accordion">
           <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base">
+            <span>Se accetto l'offerta, posso cambiare idea?</span>
+            <span class="ml-4 text-xs font-bold uppercase tracking-wider text-navy-700 group-open:hidden">Apri</span>
+            <span class="ml-4 text-xs font-bold uppercase tracking-wider text-slate-500 hidden group-open:inline">Chiudi</span>
+          </summary>
+          <p class="mt-3 pt-3 border-t border-navy-800/15 text-sm text-slate-700 leading-relaxed">
+            No. Una volta firmata e inviata all'ente, la dichiarazione è definitiva per legge e non può essere ritirata. Inoltre l'offerta si accetta così com'è: non è possibile aggiungere eccezioni o clausole. Per questo, prima di firmare, è utile controllare che l'offerta tenga conto di tutto: il terreno, quello che c'è sopra (colture, piante, manufatti) e il minor valore di ciò che rimane. Ci sono casi in cui accettare è la soluzione migliore: conta saperlo prima di firmare.
+          </p>
+        </details>
+
+        <details class="group bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-amber-300 rounded-xl p-6 transition-all" name="faq-accordion">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base">
+            <span>Se non rispondo all'offerta, perdo l'indennità?</span>
+            <span class="ml-4 text-xs font-bold uppercase tracking-wider text-navy-700 group-open:hidden">Apri</span>
+            <span class="ml-4 text-xs font-bold uppercase tracking-wider text-slate-500 hidden group-open:inline">Chiudi</span>
+          </summary>
+          <div class="mt-3 pt-3 border-t border-navy-800/15 space-y-4">
+            <p class="text-sm text-slate-700 leading-relaxed">
+              No. Se la lettera resta senza risposta nei termini indicati, l'offerta vale come non condivisa, ma il diritto all'indennità resta. La somma viene depositata a tuo nome e il valore viene stabilito di nuovo, con la terna tecnica o dalla Commissione provinciale: può risultare più alto o più basso dell'offerta, e alcune maggiorazioni previste per chi accetta possono non spettare più. Restare in silenzio lascia andare avanti la procedura senza di te: è meglio decidere fin dall'inizio quale strada seguire.
+            </p>
+            <!-- Linea del tempo orizzontale nello stile del sito (non a riquadri verticali) -->
+            <div class="pt-2">
+              <div class="text-xs font-bold text-navy-900 mb-2 uppercase tracking-wider">Cosa accade se non si risponde:</div>
+              <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 p-4 rounded-xl bg-white border border-slate-200">
+                <div class="flex items-center gap-3">
+                  <div class="w-3 h-3 rounded-full bg-navy-900 shrink-0"></div>
+                  <span class="text-xs font-bold text-navy-900">Lettera senza risposta</span>
+                </div>
+                <div class="hidden md:block flex-1 h-0.5 bg-slate-300 mx-2"></div>
+                <div class="flex items-center gap-3">
+                  <div class="w-3 h-3 rounded-full bg-navy-900 shrink-0"></div>
+                  <span class="text-xs font-bold text-navy-900">Deposito a tuo nome e nuova stima</span>
+                </div>
+                <div class="hidden md:block flex-1 h-0.5 bg-slate-300 mx-2"></div>
+                <div class="flex items-center gap-3">
+                  <div class="w-3 h-3 rounded-full bg-amber-400 border-2 border-navy-900 shrink-0"></div>
+                  <span class="text-xs font-bold text-navy-900">Pagamento o svincolo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="group bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-amber-300 rounded-xl p-6 transition-all" name="faq-accordion">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base">
             <span>Quanto costa farsi seguire?</span>
             <span class="ml-4 text-xs font-bold uppercase tracking-wider text-navy-700 group-open:hidden">Apri</span>
             <span class="ml-4 text-xs font-bold uppercase tracking-wider text-slate-500 hidden group-open:inline">Chiudi</span>
@@ -913,6 +993,190 @@
             Ogni pratica è diversa e le soluzioni per il compenso sono varie, anche legate al risultato, cioè calcolate sulla differenza ottenuta rispetto all'offerta iniziale, e se serve a scaglioni. Le definiamo insieme prima di iniziare, con chiarezza: nessuna sorpresa sui costi. L'importante è che tu sia tranquillo e che l'obiettivo resti uno solo: <strong>chiudere la pratica con l'ente nel modo migliore per te e nel giusto</strong>. Se sei soddisfatto tu, lo sono anch'io.
           </p>
         </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7bis. GLOSSARIO: LE PAROLE CHE TROVI NELLA NOTIFICA -->
+  <section id="glossario" class="bg-[#EEF3F9] py-20 md:py-24 border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <div class="inline-block px-3 py-1 rounded bg-navy-900 text-amber-300 text-xs font-bold uppercase tracking-[0.18em] mb-3">
+            Glossario espropriativo
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-navy-900">
+            Le parole che trovi nella notifica
+          </h2>
+          <p class="mt-2 text-sm sm:text-base text-slate-700">
+            Ti è arrivata una lettera piena di parole difficili? Eccole spiegate in modo semplice.
+          </p>
+        </div>
+
+        <!-- Campo di ricerca per parole chiave -->
+        <div class="w-full md:w-80">
+          <label for="glossary-search" class="sr-only">Cerca una parola</label>
+          <div class="relative">
+            <input
+              type="text"
+              id="glossary-search"
+              placeholder="Cerca una parola..."
+              class="w-full px-4 py-3 pl-10 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:outline-none focus:border-navy-800 shadow-sm"
+            >
+            <svg aria-hidden="true" class="w-5 h-5 text-slate-400 absolute left-3 top-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Avvertenza -->
+      <div class="mb-8 p-4 rounded-xl bg-white border-l-4 border-amber-400 text-xs sm:text-sm text-slate-700 leading-relaxed shadow-sm">
+        Le spiegazioni sono semplificate e hanno solo scopo informativo: non sono consigli per il singolo caso e non sostituiscono il parere di un avvocato o di un tecnico. Fa fede il testo di legge.
+      </div>
+
+      <!-- Lista dei termini (Glossario) -->
+      <div id="glossary-list" class="space-y-3">
+        <!-- Voci principali -->
+        <details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5 transition-all shadow-sm" data-term="esproprio" data-letter="E">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base">
+            <span>Esproprio</span>
+            <span class="text-xs text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">
+            Un ente prende la tua proprietà per costruire un'opera pubblica, come una strada o una ferrovia, e in cambio ti paga.
+          </p>
+        </details>
+
+        <details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5 transition-all shadow-sm" data-term="indennità provvisoria" data-letter="I">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base">
+            <span>Indennità provvisoria (art. 20)</span>
+            <span class="text-xs text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">
+            La prima somma offerta dall'ente per l'esproprio. È provvisoria perché può essere contestata e migliorata con una perizia o con la terna tecnica.
+          </p>
+        </details>
+
+        <details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5 transition-all shadow-sm" data-term="immissione in possesso" data-letter="I">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base">
+            <span>Immissione in possesso (art. 24)</span>
+            <span class="text-xs text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">
+            Il momento in cui l'ente acquisisce il possesso materiale del terreno per iniziare i lavori, anche prima che l'esproprio sia completato.
+          </p>
+        </details>
+
+        <details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5 transition-all shadow-sm" data-term="stato di consistenza" data-letter="S">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base">
+            <span>Stato di consistenza (art. 24)</span>
+            <span class="text-xs text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">
+            Il verbale in cui si descrive com'è fatto il terreno, quali piante ci sono, i manufatti e gli accessi prima dell'intervento. È fondamentale perché è la base su cui si calcola l'indennizzo.
+          </p>
+        </details>
+
+        <details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5 transition-all shadow-sm" data-term="reliquato" data-letter="R">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base">
+            <span>Reliquato</span>
+            <span class="text-xs text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">
+            Il pezzo di terreno che resta al proprietario dopo l'esproprio di una parte del fondo, quando risulta piccolo o scomodo da usare.
+          </p>
+        </details>
+
+        <details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5 transition-all shadow-sm hidden-extra" data-term="piano particellare" data-letter="P">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base">
+            <span>Piano particellare di esproprio</span>
+            <span class="text-xs text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">
+            Il documento e le mappe che elencano tutte le particelle di terreno toccate dall'opera e i relativi proprietari.
+          </p>
+        </details>
+
+        <details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5 transition-all shadow-sm hidden-extra" data-term="terna tecnica" data-letter="T">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base">
+            <span>Terna tecnica (art. 21)</span>
+            <span class="text-xs text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">
+            Il collegio di tre tecnici (uno nominato dall'ente, uno dal proprietario e uno scelto dal tribunale) che stabilisce il valore definitivo dell'indennizzo.
+          </p>
+        </details>
+
+        <details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5 transition-all shadow-sm hidden-extra" data-term="servitù" data-letter="S">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base">
+            <span>Servitù di pubblica utilità</span>
+            <span class="text-xs text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">
+            Un vincolo imposto sul terreno (es. passaggio di cavi elettrici o tubazioni) per cui la proprietà resta tua ma subisci una limitazione e hai diritto a un indennizzo.
+          </p>
+        </details>
+
+        <details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5 transition-all shadow-sm hidden-extra" data-term="accettazione con riserva" data-letter="A">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base">
+            <span>Accettazione con riserva</span>
+            <span class="text-xs text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">
+            Non è prevista. L'offerta si accetta così com'è, senza aggiungere eccezioni o clausole.
+          </p>
+        </details>
+
+        <details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5 transition-all shadow-sm hidden-extra" data-term="accordo bonario" data-letter="A">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base">
+            <span>Accordo bonario e cessione volontaria</span>
+            <span class="text-xs text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">
+            L'accordo con cui il proprietario accetta di cedere bonariamente il bene all'ente in cambio di un indennizzo spesso maggiorato rispetto al minimo di legge.
+          </p>
+        </details>
+
+        <details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5 transition-all shadow-sm hidden-extra" data-term="deprezzamento della parte residua" data-letter="D">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base">
+            <span>Deprezzamento della parte residua (art. 33)</span>
+            <span class="text-xs text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">
+            La perdita di valore subita dalla parte di terreno che resta al proprietario a causa dell'esproprio parziale.
+          </p>
+        </details>
+
+        <details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5 transition-all shadow-sm hidden-extra" data-term="occupazione temporanea" data-letter="O">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base">
+            <span>Occupazione temporanea (art. 49)</span>
+            <span class="text-xs text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">
+            L'utilizzo temporaneo di un'area (es. per cantieri o depositi materiali) per il tempo necessario alla realizzazione dell'opera, dietro pagamento di un'indennità.
+          </p>
+        </details>
+      </div>
+
+      <!-- Messaggio nessun risultato -->
+      <div id="glossary-empty" class="hidden mt-6 p-6 rounded-xl bg-white text-center border border-slate-200 shadow-sm">
+        <p class="text-base font-bold text-navy-900">Nessuna parola trovata.</p>
+        <p class="mt-1 text-sm text-slate-600">Scrivimi e ti spiego.</p>
+        <a href="#contatti" class="mt-4 inline-block px-6 py-2.5 rounded-lg bg-navy-900 text-amber-300 font-bold text-xs uppercase tracking-wider hover:bg-navy-800 transition-colors">
+          Contattami
+        </a>
+      </div>
+
+      <!-- Pulsante Mostra tutte le parole -->
+      <div class="mt-8 text-center">
+        <button
+          type="button"
+          id="glossary-toggle-btn"
+          class="inline-flex items-center justify-center px-8 py-3.5 rounded-lg bg-navy-900 hover:bg-navy-800 text-amber-300 font-bold text-xs uppercase tracking-[0.16em] transition-colors shadow-sm"
+        >
+          Mostra tutte le parole
+        </button>
       </div>
     </div>
   </section>
@@ -945,9 +1209,9 @@
               <span class="text-2xl font-bold text-navy-900">348 442 4717</span>
             </a>
 
-            <a href="mailto:office@federicoponso.it" class="block p-5 rounded-xl bg-white border border-slate-200 border-l-4 border-l-amber-300 hover:border-navy-700 transition-colors shadow-sm">
+            <a href="mailto:federico@federicoponso.it" class="block p-5 rounded-xl bg-white border border-slate-200 border-l-4 border-l-amber-300 hover:border-navy-700 transition-colors shadow-sm">
               <span class="text-xs font-bold uppercase tracking-[0.14em] text-navy-700 block mb-1">Indirizzo Email</span>
-              <span class="text-lg font-bold text-navy-900">office@federicoponso.it</span>
+              <span class="text-lg font-bold text-navy-900">federico@federicoponso.it</span>
             </a>
           </div>
         </div>
@@ -1047,7 +1311,8 @@
           <span class="font-bold text-white text-xl tracking-wide block">Federico Ponso</span>
           <span class="text-xs text-slate-400 font-normal block">Sede legale: Montegalda (VI) – P. IVA 02594850246</span>
           <p class="text-xs sm:text-sm text-slate-300 font-normal leading-relaxed max-w-xl pt-2">
-            Consulente Espropriativo — <span class="text-amber-300 font-bold italic">Dalla parte dell'espropriato</span>. Espropri, occupazioni temporanee, mitigazione acustica e servitù per pubblica utilità, anche per elettrodotti.
+            Consulente Espropriativo — <span class="text-amber-300 font-bold italic">Dalla parte dell'espropriato</span>.<br>
+            Espropri, occupazioni temporanee, mitigazione acustica e servitù per pubblica utilità, anche per elettrodotti.
           </p>
         </div>
 
@@ -1065,7 +1330,7 @@
         <div class="md:col-span-4 space-y-2">
           <span class="text-xs font-bold uppercase tracking-wider text-white block mb-2">Recapiti diretti</span>
           <p class="text-xs">Telefono e WhatsApp: <a href="tel:+393484424717" class="text-white font-bold hover:text-amber-300">348 442 4717</a></p>
-          <p class="text-xs">Email: <a href="mailto:office@federicoponso.it" class="text-white font-bold hover:text-amber-300">office@federicoponso.it</a></p>
+          <p class="text-xs">Email: <a href="mailto:federico@federicoponso.it" class="text-white font-bold hover:text-amber-300">federico@federicoponso.it</a></p>
           <p class="text-xs text-slate-400 pt-2 leading-relaxed">
             Nota informativa: le attività di perizia tecnica estimativa, terna tecnica e patrocinio legale sono svolte in collaborazione interdisciplinare con professionisti abilitati e avvocati iscritti ai rispettivi albi professionali.
           </p>
@@ -1088,7 +1353,7 @@
           <div class="p-5 rounded-xl border border-white/10 bg-white/[0.03] text-xs text-slate-300 leading-relaxed">
             <strong class="text-white font-bold text-sm block mb-1.5">Interventi privati:</strong>
             <p>
-              in rari casi lavoro anche per conto di società, per favorire accordi rapidi con i proprietari in interventi privati, senza dichiarazione di pubblica utilità. Lo dichiaro sempre fin dal primo contatto e, in quei casi, non faccio consulenza ai proprietari coinvolti nello stesso intervento.
+              può capitare che lavori anche per conto di società, per favorire accordi rapidi con i proprietari in interventi privati, senza dichiarazione di pubblica utilità. Lo dichiaro sempre fin dal primo contatto e, in quei casi, non faccio consulenza ai proprietari coinvolti nello stesso intervento.
             </p>
           </div>
         </div>
@@ -1106,7 +1371,7 @@
       <div id="informativa-privacy" class="py-8 border-b border-navy-800 text-xs text-slate-400 space-y-3 leading-relaxed">
         <div class="font-bold text-slate-200 uppercase tracking-wider mb-2">Informativa sul trattamento dei dati personali (art. 13 del Regolamento UE 2016/679 – GDPR)</div>
         <p>
-          <strong class="text-slate-200">Titolare del trattamento:</strong> Federico Ponso, sede legale Montegalda (VI), P. IVA 02594850246, email <a href="mailto:office@federicoponso.it" class="underline text-slate-200">office@federicoponso.it</a>, telefono 348 442 4717.
+          <strong class="text-slate-200">Titolare del trattamento:</strong> Federico Ponso, sede legale Montegalda (VI), P. IVA 02594850246, email <a href="mailto:federico@federicoponso.it" class="underline text-slate-200">federico@federicoponso.it</a>, telefono 348 442 4717.
         </p>
         <p>
           <strong class="text-slate-200">Dati trattati:</strong> nome, telefono ed eventuali altre informazioni (email, comune, opera, notizie sulla pratica) che l'utente fornisce tramite il modulo, WhatsApp, email o telefono.
@@ -1124,7 +1389,7 @@
           <strong class="text-slate-200">Conservazione:</strong> per il tempo necessario a gestire la richiesta e, se non segue alcun incarico, non oltre 24 mesi; in caso di incarico, per la durata dello stesso e per i tempi previsti dalla legge.
         </p>
         <p>
-          <strong class="text-slate-200">Diritti:</strong> l'interessato può chiedere in ogni momento accesso, rettifica, cancellazione, limitazione, opposizione e portabilità dei dati (artt. 15–22 del Regolamento) scrivendo a <a href="mailto:office@federicoponso.it" class="underline text-slate-200">office@federicoponso.it</a>, e può presentare reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener noreferrer" class="underline text-slate-200">www.garanteprivacy.it</a>).
+          <strong class="text-slate-200">Diritti:</strong> l'interessato può chiedere in ogni momento accesso, rettifica, cancellazione, limitazione, opposizione e portabilità dei dati (artt. 15–22 del Regolamento) scrivendo a <a href="mailto:federico@federicoponso.it" class="underline text-slate-200">federico@federicoponso.it</a>, e può presentare reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener noreferrer" class="underline text-slate-200">www.garanteprivacy.it</a>).
         </p>
         <p>
           <strong class="text-slate-200">Conferimento:</strong> facoltativo, ma necessario per poter essere ricontattati.
@@ -1223,7 +1488,7 @@ Messaggio: ${note}
 Informativa privacy: letta`;
 
       if (e.submitter?.dataset.mode === 'email') {
-        window.location.href = `mailto:office@federicoponso.it?subject=${encodeURIComponent('Richiesta incontro senza impegno - ' + name)}&body=${encodeURIComponent(text)}`;
+        window.location.href = `mailto:federico@federicoponso.it?subject=${encodeURIComponent('Richiesta incontro senza impegno - ' + name)}&body=${encodeURIComponent(text)}`;
       } else {
         window.open(`https://wa.me/393484424717?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
       }

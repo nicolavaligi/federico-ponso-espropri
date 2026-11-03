@@ -1,4 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
   <rect width="64" height="64" rx="14" fill="#0B1524"/>
-  <text x="32" y="43" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="28" fill="#FCD34D" text-anchor="middle" letter-spacing="0.5">FP</text>
+  <g transform="scale(0.7) translate(13, 13)">
+    <path d="M32 4 C48 4 56 12 56 24 C56 42 44 54 32 60 C20 54 8 42 8 24 C8 12 16 4 32 4 Z" fill="#0B1524" stroke="#FCD34D" stroke-width="3"/>
+    <text x="32" y="35" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="22" fill="#FCD34D" text-anchor="middle">FP</text>
+  </g>
 </svg>
