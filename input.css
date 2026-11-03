@@ -41,21 +41,15 @@ input, textarea, select, a, button, label, p strong {
   z-index: 1000;
   background-color: #0B1524;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 }
-#site-header.is-scrolled #header-inner {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-#site-header.is-scrolled #header-shield {
-  height: 36px;
-  width: 36px;
-}
-#site-header.is-scrolled #header-name {
-  font-size: 1.125rem;
-}
-#site-header.is-scrolled #header-sub {
-  font-size: 9px;
+/* Scrolling must never alter the header's layout height or document scroll position. */
+#header-inner, #header-name { transition: none; }
+#header-shield { transform-origin: center; transition: transform 0.2s ease; }
+#site-header.is-scrolled { box-shadow: 0 4px 20px rgba(0, 0, 0, .25); }
+#site-header.is-scrolled #header-shield { transform: scale(0.6666667); }
+@media (min-width: 640px) {
+  #site-header.is-scrolled #header-shield { transform: scale(0.5625); }
 }
 .mobile-nav-toggle {
   border: 1px solid hsla(0,0%,100%,.35);

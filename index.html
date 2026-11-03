@@ -39,7 +39,7 @@
 
   <!-- Preload immagine Hero (LCP Core Web Vitals) -->
   <link rel="preload" as="image" href="federico-ponso.jpg?v=20261103" fetchpriority="high">
-  <link rel="stylesheet" href="styles.css?v=20261103">
+  <link rel="stylesheet" href="styles.css?v=20261103-header2">
 
   <!-- Dati Strutturati Schema.org (@graph: ProfessionalService, Person, WebPage, FAQPage) -->
   <script type="application/ld+json">
@@ -248,7 +248,7 @@
 
   <!-- Top Navigation Bar fissa sui toni del blu notte pieno -->
   <header id="site-header">
-    <div id="header-inner" class="max-w-6xl mx-auto px-6 lg:px-8 py-4 sm:py-5 flex items-center justify-between gap-4 transition-all duration-200">
+    <div id="header-inner" class="max-w-6xl mx-auto px-6 lg:px-8 py-4 sm:py-5 flex items-center justify-between gap-4">
       <a href="#" class="flex items-center gap-3 group">
         <img
           id="header-shield"
@@ -256,10 +256,10 @@
           alt="Simbolo scudo Federico Ponso"
           width="64"
           height="64"
-          class="h-[54px] w-[54px] sm:h-16 sm:w-16 object-contain shrink-0 transition-all duration-200"
+          class="h-[54px] w-[54px] sm:h-16 sm:w-16 object-contain shrink-0"
         />
         <div class="flex flex-col">
-          <span id="header-name" class="text-xl sm:text-2xl font-bold tracking-wide text-white leading-tight transition-all duration-200 whitespace-nowrap">
+          <span id="header-name" class="text-xl sm:text-2xl font-bold tracking-wide text-white leading-tight whitespace-nowrap">
             Federico Ponso
           </span>
           <div id="header-sub" class="text-[11px] font-bold mt-0.5 leading-snug">
@@ -1975,16 +1975,25 @@
   <script src="glossario.js?v=20261103" defer></script>
   <!-- Script Invio Modulo e Header Fisso -->
   <script>
-    // Header fisso reattivo allo scroll
+    // Stable header geometry; separate thresholds prevent jitter near the top.
     const siteHeader = document.getElementById('site-header');
+    let headerCompact = false;
+    let headerFramePending = false;
     function updateHeaderOnScroll() {
-      if (window.scrollY > 20) {
-        siteHeader.classList.add('is-scrolled');
-      } else {
-        siteHeader.classList.remove('is-scrolled');
+      const scrollTop = Math.max(0, window.scrollY);
+      const nextCompact = headerCompact ? scrollTop > 8 : scrollTop > 64;
+      if (nextCompact !== headerCompact) {
+        headerCompact = nextCompact;
+        siteHeader.classList.toggle('is-scrolled', headerCompact);
       }
+      headerFramePending = false;
     }
-    window.addEventListener('scroll', updateHeaderOnScroll, { passive: true });
+    window.addEventListener('scroll', () => {
+      if (!headerFramePending) {
+        headerFramePending = true;
+        window.requestAnimationFrame(updateHeaderOnScroll);
+      }
+    }, { passive: true });
     updateHeaderOnScroll();
 
     // Menu mobile accessibile da tastiera e touch
