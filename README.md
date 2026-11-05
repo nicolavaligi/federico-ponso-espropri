@@ -31,8 +31,19 @@ La verifica visiva in browser non è stata completata: l'ambiente impedisce l'av
 Le attività seguenti restano legate alla pubblicazione effettiva, come indicato nelle note:
 
 - completare la verifica puntuale dei riferimenti normativi su Normattiva: il portale ha restituito errori nel caricamento dei singoli articoli durante questa sessione; le definizioni riprendono il PDF fornito e non costituiscono una validazione legale;
-- verificare il funzionamento reale di `federico@federicoponso.it` e dei due canali del modulo;
+- verificare il funzionamento reale di `office@federicoponso.it` e dei due canali del modulo;
 - aggiornare gli URL delle immagini social e JSON-LD dal percorso GitHub al dominio definitivo;
 - togliere `noindex, nofollow` e il blocco in `robots.txt` solo al passaggio in produzione; consentire anche i crawler degli assistenti AI;
 - aggiungere Aruba nell'informativa solo dopo conferma dell'hosting effettivo;
 - inviare la sitemap a Search Console e configurare Google Business Profile.
+
+## Integrazioni finali del 5 novembre 2026
+
+Applicate le note «ultime integrazioni» del 28 ottobre: testi esatti per opere, esempio concreto, FAQ e documenti del primo incontro; sede legale limitata al comune e indirizzo pubblico office@federicoponso.it anche nei dati strutturati e nell’invio del modulo. Confermati i testi già presenti su esperienza e territorio, la FAQ per affittuari, il pulsante mobile fisso e i colori ambra #FCD34D / #FBBF24 su blu #0B1524.
+
+Prima della pubblicazione:
+- registrare federicoponso.it e federicoponso.com e configurare un redirect permanente dal .com al .it presso l’hosting;
+- attivare office@federicoponso.it: fino ad allora le email inviate dal sito non arrivano;
+- Federico verifica con il commercialista se occorre un indirizzo completo, usando eventualmente uno studio o ufficio di appoggio;
+- sul dominio definitivo aggiornare gli URL delle immagini, rimuovere noindex e il blocco robots.txt;
+- provare insieme il modulo da telefono e confermare la ricezione reale su WhatsApp e sulla casella email.
