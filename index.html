@@ -6,14 +6,14 @@
   <!-- Promemoria pubblicazione su dominio definitivo (federicoponso.it + redirect da federicoponso.com):
        1. Sostituire meta robots="noindex, nofollow" con meta robots="index, follow, max-image-preview:large, max-snippet:-1" e aprire robots.txt (Allow: /)
        2. Aggiornare canonical, og:url, og:image, twitter:image e Schema.org image con https://www.federicoponso.it/ (compreso federico-ponso.jpg) al passaggio sul dominio definitivo
-       3. Verificare con il commercialista se indicare un ufficio di appoggio oltre al comune della sede legale Montegalda (VI)
+       3. Verificare con il commercialista se indicare un ufficio di appoggio oltre al comune della sede legale Montegalda (Vicenza)
        4. Testare da smartphone il modulo contatti verso WhatsApp e verso la casella attiva federico@federicoponso.it -->
   <meta name="robots" content="noindex, nofollow">
-  <title>Federico Ponso | Consulente espropri e indennità</title>
+  <title>Federico Ponso – Consulente Espropriativo | Espropri e indennità</title>
   <meta name="description" content="Consulenza e affiancamento ai proprietari per espropri, occupazioni temporanee, servitù e mitigazione acustica per pubblica utilità, con il coordinamento di tecnici e avvocati.">
   <meta name="author" content="Federico Ponso">
   <meta name="geo.region" content="IT-VI">
-  <meta name="geo.placename" content="Montegalda (VI)">
+  <meta name="geo.placename" content="Montegalda (Vicenza)">
   <meta name="theme-color" content="#0B1524">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
@@ -27,19 +27,21 @@
   <meta property="og:url" content="https://www.federicoponso.it/">
   <meta property="og:title" content="Federico Ponso — Consulente Espropriativo | Dalla parte dell'espropriato">
   <meta property="og:description" content="Hai ricevuto una notifica di esproprio, occupazione, servitù o mitigazione acustica? La legge dice “giusta indennità”. Io ti affianco perché sia giusta per te.">
-  <meta property="og:image" content="https://nicolavaligi.github.io/federico-ponso-espropri/federico-ponso-social.jpg?v=20261103">
+  <meta property="og:image" content="https://nicolavaligi.github.io/federico-ponso-espropri/federico-ponso-social.jpg?v=20261106">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Federico Ponso, consulente espropriativo">
 
   <!-- Twitter / X Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Federico Ponso — Consulente Espropriativo | Dalla parte dell'espropriato">
   <meta name="twitter:description" content="Hai ricevuto una notifica di esproprio, occupazione, servitù o mitigazione acustica? La legge dice “giusta indennità”. Io ti affianco perché sia giusta per te.">
-  <meta name="twitter:image" content="https://nicolavaligi.github.io/federico-ponso-espropri/federico-ponso-social.jpg?v=20261103">
+  <meta name="twitter:image" content="https://nicolavaligi.github.io/federico-ponso-espropri/federico-ponso-social.jpg?v=20261106">
   <meta name="twitter:image:alt" content="Federico Ponso, consulente espropriativo">
 
   <!-- Preload immagine Hero (LCP Core Web Vitals) -->
   <link rel="preload" as="image" href="federico-ponso.jpg?v=20261103" fetchpriority="high">
-  <link rel="stylesheet" href="styles.css?v=20261103-logo-fixed">
+  <link rel="stylesheet" href="styles.css?v=20261106">
 
   <!-- Dati Strutturati Schema.org (@graph: ProfessionalService, Person, WebPage, FAQPage) -->
   <script type="application/ld+json">
@@ -61,21 +63,45 @@
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Montegalda",
-          "addressRegion": "VI",
+          "addressRegion": "Vicenza",
           "addressCountry": "IT"
         },
         "founder": {
           "@id": "https://www.federicoponso.it/#person"
         },
         "areaServed": [
-          { "@type": "Country", "name": "Italia" },
-          { "@type": "AdministrativeArea", "name": "Nord Italia" },
-          { "@type": "AdministrativeArea", "name": "Centro Italia" },
-          { "@type": "AdministrativeArea", "name": "Veneto" },
-          { "@type": "AdministrativeArea", "name": "Lombardia" },
-          { "@type": "AdministrativeArea", "name": "Emilia-Romagna" },
-          { "@type": "AdministrativeArea", "name": "Piemonte" },
-          { "@type": "AdministrativeArea", "name": "Toscana" }
+          {
+            "@type": "Country",
+            "name": "Italia"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Nord Italia"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Centro Italia"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Veneto"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Lombardia"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Emilia-Romagna"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Piemonte"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Toscana"
+          }
         ],
         "knowsAbout": [
           "Esproprio per pubblica utilità",
@@ -158,6 +184,14 @@
           },
           {
             "@type": "Question",
+            "name": "Penso che la mia proprietà sia toccata da un'opera, ma non mi è arrivata nessuna notifica: cosa posso fare?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Può succedere: a volte l'avviso viene pubblicato invece che spedito, oppure la lettera è arrivata al vecchio proprietario. Il primo passo è chiedere all'ente i documenti con l'accesso agli atti: con una tua delega posso farlo io, oppure un professionista di fiducia."
+            }
+          },
+          {
+            "@type": "Question",
             "name": "Ci sono i soldi per pagare gli indennizzi?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -170,6 +204,14 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Certo, è un tuo diritto. Ma la materia ha regole, scadenze e criteri specifici: farsi affiancare da chi la conosce aiuta a non lasciare sul tavolo aspetti importanti."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Siamo in tanti ad aver ricevuto la notifica: possiamo incontrarci tutti insieme?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sì. Posso organizzare un incontro con i proprietari della stessa zona, oppure riunioni informative aperte a tutti. Ogni pratica, però, resta individuale e viene seguita esclusivamente per quel proprietario, nel rispetto della riservatezza."
             }
           },
           {
@@ -276,6 +318,7 @@
           <a href="#metodo" class="hover:text-amber-300 transition-colors">Come lavoro</a>
           <a href="#opere" class="hover:text-amber-300 transition-colors">Opere</a>
           <a href="#faq" class="hover:text-amber-300 transition-colors">Domande frequenti</a>
+          <a href="#glossario" class="hover:text-amber-300 transition-colors">Glossario</a>
         </nav>
         <a href="tel:+393484424717" class="mobile-header-phone font-bold tracking-wider text-amber-300 hover:text-white transition-colors whitespace-nowrap">
           348 442 4717
@@ -338,7 +381,7 @@
           </h1>
 
           <!-- Nuovo Motto in Evidenza + Citazione Codice Civile art. 834 -->
-          <div class="mt-5 p-5 rounded-xl bg-white/10 border-l-4 border-amber-300 text-left backdrop-blur-sm">
+          <div class="mt-5 p-5 rounded-xl bg-white/10 border-l-4 border-l-amber-300 text-left backdrop-blur-sm">
             <p class="text-lg sm:text-xl font-bold text-white leading-snug">
               «La legge dice “giusta indennità”. Io ti affianco perché sia giusta per te.»
             </p>
@@ -433,7 +476,7 @@
             Disponibile e diretto, e con onestà ti dico quando non conviene agire.
           </p>
 
-          <p class="text-sm sm:text-base text-slate-600 leading-relaxed bg-[#EEF3F9] p-5 rounded-xl border-l-4 border-amber-300">
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed bg-[#EEF3F9] p-5 rounded-xl border-l-4 border-l-amber-300">
             Sono un consulente indipendente: posso collaborare con qualsiasi studio tecnico o legale, società di consulenza o realtà del settore, scegliendo la soluzione più adatta a te.
           </p>
 
@@ -458,6 +501,11 @@
               </div>
             </div>
 
+<div class="flex items-start gap-4 p-4 rounded-xl border border-slate-200 hover:border-navy-700/50 transition-colors">
+ <div class="w-11 h-11 rounded-lg bg-navy-900 text-amber-300 flex items-center justify-center shrink-0 mt-0.5">
+ <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path stroke-linecap="round" d="M3 21v-3a6 6 0 0 1 12 0v3M16 4a3 3 0 0 1 0 6M18 13a6 6 0 0 1 3 5v3"/></svg></div>
+ <div><h3 class="text-base font-bold text-navy-900">Incontri con più proprietari</h3>
+ <p class="text-sm text-slate-600 mt-1 leading-relaxed">Quando un'opera tocca più proprietari della stessa zona, posso organizzare un incontro con tutti, oppure riunioni informative aperte a chiunque, per spiegare cosa fare quando arriva una notifica e confrontarsi insieme. Poi ogni proprietario ha la sua pratica, che seguo esclusivamente per lui, nel rispetto della riservatezza.</p></div></div>
             <!-- 2. Pagamento diretto a te per legge -->
             <div class="flex items-start gap-4 p-4 rounded-xl border border-slate-200 hover:border-navy-700/50 transition-colors">
               <div class="w-11 h-11 rounded-lg bg-navy-900 text-amber-300 flex items-center justify-center shrink-0 mt-0.5">
@@ -498,7 +546,7 @@
               <div>
                 <h3 class="text-base font-bold text-navy-900">Professionisti abilitati</h3>
                 <p class="text-sm text-slate-600 mt-1 leading-relaxed">
-                  Perizie e atti legali sono firmati da professionisti abilitati e da avvocati iscritti all'albo.
+                  Perizie e atti legali sono firmati da professionisti abilitati e da avvocati iscritti all'albo. Io non faccio perizie né atti legali: coordino chi li fa.
                 </p>
               </div>
             </div>
@@ -526,16 +574,16 @@
             </div>
 
             <ul class="space-y-4 text-sm text-slate-200 leading-relaxed">
-              <li class="bg-white/10 p-4 rounded-xl border-l-4 border-amber-300">
+              <li class="bg-white/10 p-4 rounded-xl border-l-4 border-l-amber-300">
                 <strong>Firmare di getto il modulo allegato alla lettera,</strong> magari perché la somma sembra ragionevole, senza aver controllato che l'offerta comprenda ogni voce.
               </li>
-              <li class="bg-white/10 p-4 rounded-xl border-l-4 border-amber-300">
-                Lasciar perdere perché qualcuno ti dice: «è un'opera pubblica, non metterti contro l'ente o lo Stato». Invece, quando ne vale la pena, conviene approfondire con chi conosce la materia.
+              <li class="bg-white/10 p-4 rounded-xl border-l-4 border-l-amber-300">
+                <strong>Lasciar perdere perché qualcuno ti dice:</strong> «è un'opera pubblica, non metterti contro l'ente o lo Stato». Invece, quando ne vale la pena, conviene approfondire con chi conosce la materia.
               </li>
-              <li class="bg-white/10 p-4 rounded-xl border-l-4 border-amber-300">
-                Accettare subito la prima offerta, senza prima capire se può essere migliorata: verificarlo è senza impegno.
+              <li class="bg-white/10 p-4 rounded-xl border-l-4 border-l-amber-300">
+                <strong>Accettare subito la prima offerta,</strong> senza prima capire se tiene conto di tutto: parlarne prima non ti impegna a nulla.
               </li>
-              <li class="bg-white/10 p-4 rounded-xl border-l-4 border-amber-300">
+              <li class="bg-white/10 p-4 rounded-xl border-l-4 border-l-amber-300">
                 <strong>Restare fermi dopo la notifica, aspettando:</strong> dalla notifica decorrono termini e scadenze precise, e con il passare del tempo si riducono gli strumenti e le possibilità per far valere i propri diritti.
               </li>
             </ul>
@@ -545,7 +593,7 @@
             </p>
 
             <!-- Riquadro Un consiglio -->
-            <div class="mt-5 p-4 rounded-xl bg-white/10 border-l-4 border-amber-300">
+            <div class="mt-5 p-4 rounded-xl bg-white/10 border-l-4 border-l-amber-300">
               <span class="inline-block px-2.5 py-0.5 rounded bg-navy-900 text-amber-300 text-[11px] font-bold uppercase tracking-[0.18em] mb-2">Un consiglio</span>
               <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
                 <strong>Diffida delle promesse troppo belle e di chi, purtroppo, scredita il lavoro degli altri:</strong> aumenti straordinari promessi prima ancora di aver visto la pratica, soldi subito in cambio del tuo indennizzo o il classico «io sono più bravo» possono portare a brutte sorprese. Io preferisco dirti subito la verità e, se non so qualcosa, mi informo e ti rispondo: l'obiettivo è uno solo, l'indennizzo più giusto per te, quello che ti spetta davvero, senza perdere tempo.
@@ -662,7 +710,8 @@
         </p>
       </div>
 
-      <div class="relative">
+      <div>
+        <div class="relative method-steps">
         <!-- Linea centrale colorata -->
         <div class="absolute left-5 md:left-1/2 top-4 bottom-4 w-0.5 bg-amber-300/50 md:-translate-x-1/2"></div>
 
@@ -673,7 +722,7 @@
               01
             </div>
             <div class="ml-14 md:ml-0 md:w-1/2 md:pr-12">
-              <div class="p-6 rounded-xl bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-navy-800">
+              <div class="p-6 rounded-xl bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-amber-300">
                 <h3 class="text-base font-bold text-navy-900">Primo incontro senza impegno e analisi della notifica ricevuta</h3>
                 <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Esaminiamo insieme gli atti notificati dall'ente e valutiamo subito se ci sono margini concreti e giustificati per negoziare l'indennizzo.</p>
               </div>
@@ -686,7 +735,7 @@
               02
             </div>
             <div class="ml-14 md:ml-0 md:w-1/2 md:pl-12">
-              <div class="p-6 rounded-xl bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-navy-800">
+              <div class="p-6 rounded-xl bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-amber-300">
                 <h3 class="text-base font-bold text-navy-900">Sopralluogo sul posto, fotografie e raccolta di tutta la documentazione</h3>
                 <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Verifico di persona lo stato dei luoghi, le colture, gli accessi e tutti gli elementi che le mappe catastali non riportano, in modo da fornire ai professionisti il quadro più completo possibile.</p>
               </div>
@@ -699,7 +748,7 @@
               03
             </div>
             <div class="ml-14 md:ml-0 md:w-1/2 md:pr-12">
-              <div class="p-6 rounded-xl bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-navy-800">
+              <div class="p-6 rounded-xl bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-amber-300">
                 <h3 class="text-base font-bold text-navy-900">Scelta del tecnico e dell'avvocato più adatti al caso specifico</h3>
                 <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Individuo nella mia rete di professionisti gli specialisti più qualificati per la natura specifica della tua proprietà.</p>
               </div>
@@ -712,9 +761,9 @@
               04
             </div>
             <div class="ml-14 md:ml-0 md:w-1/2 md:pl-12">
-              <div class="p-6 rounded-xl bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-navy-800">
+              <div class="p-6 rounded-xl bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-amber-300">
                 <h3 class="text-base font-bold text-navy-900">Perizia e trattativa con l'ente per l'accordo bonario</h3>
-                <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Presentiamo una perizia tecnica documentata e trattiamo direttamente con l'ente per raggiungere un accordo bonario equo e giusto per te.</p>
+                <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Con la perizia del tecnico, trattiamo direttamente con l'ente per raggiungere un accordo bonario equo e giusto per te.</p>
               </div>
             </div>
           </div>
@@ -725,9 +774,9 @@
               05
             </div>
             <div class="ml-14 md:ml-0 md:w-1/2 md:pr-12">
-              <div class="p-6 rounded-xl bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-navy-800">
+              <div class="p-6 rounded-xl bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-amber-300">
                 <h3 class="text-base font-bold text-navy-900">Se necessario, terna tecnica (collegio peritale) o percorso legale</h3>
-                <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Se la proposta dell'ente resta incongrua, ti affianco nel chiedere la terna tecnica prevista dall'art. 21 del D.P.R. 327/2001 o nel percorso legale più opportuno.</p>
+                <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Se la proposta dell'ente resta incongrua, ti affianco nel chiedere la terna tecnica prevista dall'art. 21 del D.P.R. 327/2001 o nel percorso legale con l'avvocato.</p>
               </div>
             </div>
           </div>
@@ -738,7 +787,7 @@
               06
             </div>
             <div class="ml-14 md:ml-0 md:w-1/2 md:pl-12">
-              <div class="p-6 rounded-xl bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-navy-800">
+              <div class="p-6 rounded-xl bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-amber-300">
                 <h3 class="text-base font-bold text-navy-900">Coordinamento continuo fino alla chiusura della pratica</h3>
                 <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">Ti affianco fino alla definizione dell'indennità e all'effettivo accredito sul tuo conto.</p>
               </div>
@@ -746,8 +795,9 @@
           </div>
         </div>
 
+        </div>
         <!-- Postilla E dopo l'esproprio? -->
-        <div class="mt-12 p-6 rounded-xl bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-amber-300 text-sm sm:text-base text-slate-700 max-w-3xl mx-auto text-center shadow-sm">
+        <div class="method-after p-6 rounded-xl bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-amber-300 text-sm sm:text-base text-slate-700 max-w-3xl mx-auto text-center shadow-sm">
           <strong>E dopo l'esproprio?</strong> Ti resta un pezzo di terreno (il reliquato) o devi rifare recinzioni, cancelli, accessi o altri manufatti, per la casa o per l'azienda? Ti posso indirizzare anche dopo al professionista giusto per ogni cosa.
         </div>
       </div>
@@ -831,7 +881,7 @@
           Oltre a queste, sto iniziando a seguire l'evolversi di numerose altre opere, molte delle quali ormai in fase di avvio.
         </p>
         <p class="pt-2 border-t border-white/15">
-          <strong class="text-amber-300">Enti con cui mi confronto:</strong> su queste e altre opere seguo pratiche nei confronti di enti quali <strong class="text-white">Autostrade per l'Italia</strong>, <strong class="text-white">RFI – Ferrovie dello Stato</strong>, <strong class="text-white">Cepav Due</strong>, <strong class="text-white">Iricav Due</strong>, <strong class="text-white">Autostrada Pedemontana Lombarda</strong>, <strong class="text-white">ANAS</strong>, <strong class="text-white">Autostrada Campogalliano Sassuolo (AutoCS)</strong>, <strong class="text-white"><span style="white-space: nowrap">E-Distribuzione</span></strong>, <strong class="text-white">Terna</strong>.
+          <strong class="text-white">Enti con cui mi confronto:</strong> su queste e altre opere seguo pratiche nei confronti di enti quali <strong class="text-white">Autostrade per l'Italia</strong>, <strong class="text-white">RFI – Ferrovie dello Stato – Italferr</strong>, <strong class="text-white">Cepav Due</strong>, <strong class="text-white">Iricav Due</strong>, <strong class="text-white">Autostrada Pedemontana Lombarda</strong>, <strong class="text-white">ANAS</strong>, <strong class="text-white">A4 Brescia–Padova</strong>, <strong class="text-white">A4 Padova–Venezia e Passante di Mestre</strong>, <strong class="text-white">A4 Venezia–Trieste</strong>, <strong class="text-white">Autostrada Campogalliano Sassuolo (AutoCS)</strong>, <strong class="text-white"><span style="white-space: nowrap">E-Distribuzione</span></strong>, <strong class="text-white">Terna</strong> e altri.
         </p>
         <p class="pt-2 border-t border-white/15 text-xs text-slate-300 italic">
           Opere ed enti sono citati solo per indicare l'esperienza maturata al fianco dei proprietari; non indicano incarichi ricevuti dagli enti né una loro approvazione.
@@ -863,6 +913,9 @@
             Quando arrivano le notifiche ai proprietari, l'iter è avviato. Aspettare sperando che si fermi fa solo perdere tempo prezioso.
           </p>
         </details>
+<details class="group bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-amber-300 rounded-xl p-6 transition-all" name="faq-accordion">
+<summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Penso che la mia proprietà sia toccata da un'opera, ma non mi è arrivata nessuna notifica: cosa posso fare?</span><span class="ml-4 text-xs font-bold uppercase tracking-wider text-navy-700 group-open:hidden">Apri</span><span class="ml-4 text-xs font-bold uppercase tracking-wider text-slate-500 hidden group-open:inline">Chiudi</span></summary>
+<p class="mt-3 pt-3 border-t border-navy-800/15 text-sm text-slate-700 leading-relaxed">Può succedere: a volte l'avviso viene pubblicato invece che spedito, oppure la lettera è arrivata al vecchio proprietario. Il primo passo è chiedere all'ente i documenti con l'accesso agli atti: con una tua delega posso farlo io, oppure un professionista di fiducia.</p></details>
 
         <details class="group bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-amber-300 rounded-xl p-6 transition-all" name="faq-accordion">
           <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base">
@@ -885,6 +938,9 @@
             Certo, è un tuo diritto. Ma la materia ha regole, scadenze e criteri specifici: farsi affiancare da chi la conosce aiuta a non lasciare sul tavolo aspetti importanti.
           </p>
         </details>
+<details class="group bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-amber-300 rounded-xl p-6 transition-all" name="faq-accordion">
+<summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Siamo in tanti ad aver ricevuto la notifica: possiamo incontrarci tutti insieme?</span><span class="ml-4 text-xs font-bold uppercase tracking-wider text-navy-700 group-open:hidden">Apri</span><span class="ml-4 text-xs font-bold uppercase tracking-wider text-slate-500 hidden group-open:inline">Chiudi</span></summary>
+<p class="mt-3 pt-3 border-t border-navy-800/15 text-sm text-slate-700 leading-relaxed">Sì. Posso organizzare un incontro con i proprietari della stessa zona, oppure riunioni informative aperte a tutti. Ogni pratica, però, resta individuale e viene seguita esclusivamente per quel proprietario, nel rispetto della riservatezza.</p></details>
 
         <details class="group bg-[#EEF3F9] border border-navy-800/15 border-l-4 border-l-amber-300 rounded-xl p-6 transition-all" name="faq-accordion">
           <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base">
@@ -996,735 +1052,743 @@
   <a class="inline-block mt-3 text-sm text-navy-800 underline" href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:2001-06-08;327" target="_blank" rel="noopener noreferrer">Consulta il D.P.R. 327/2001 su Normattiva</a></div>
   <div class="glossary-controls"><label for="glossary-search" class="block text-sm font-bold text-navy-900 mb-2">Cerca una parola</label>
     <input id="glossary-search" type="search" placeholder="Es. stato di consistenza" aria-controls="glossary-list" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm">
-    <button id="glossary-toggle-btn" type="button" aria-expanded="false" aria-controls="glossary-list" class="mt-3 px-5 py-3 rounded-lg bg-navy-900 text-amber-300 font-bold text-sm">Mostra tutte le parole</button>
+    <button id="glossary-toggle-btn" type="button" aria-expanded="false" aria-controls="glossary-list" class="mt-3 px-5 py-3 rounded-lg bg-navy-900 text-amber-300 font-bold text-sm" hidden>Mostra meno</button>
   </div>
 </div>
 <nav id="glossary-alphabet" aria-label="Lettere del glossario" hidden><a href="#glossary-Artart">Art.</a><a href="#glossary-A">A</a><a href="#glossary-B">B</a><a href="#glossary-C">C</a><a href="#glossary-D">D</a><a href="#glossary-E">E</a><a href="#glossary-F">F</a><a href="#glossary-G">G</a><a href="#glossary-I">I</a><a href="#glossary-L">L</a><a href="#glossary-M">M</a><a href="#glossary-N">N</a><a href="#glossary-O">O</a><a href="#glossary-P">P</a><a href="#glossary-Q">Q</a><a href="#glossary-R">R</a><a href="#glossary-S">S</a><a href="#glossary-T">T</a><a href="#glossary-U">U</a><a href="#glossary-V">V</a></nav>
 <p id="glossary-count" class="sr-only" role="status" aria-live="polite"></p>
 <div id="glossary-list"><h3 id="glossary-Artart" class="glossary-letter" data-group="Art.">Articoli di legge (D.P.R. 327/2001)</h3>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 3 – Non sei più il proprietario</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Se ti arriva una lettera per un bene che hai venduto o non è più tuo, devi dirlo all&#x27;ente nei termini di legge, indicando, se lo sai, il nuovo proprietario.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 9-11 – Vincolo preordinato all&#x27;esproprio</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il segno che il Comune o l&#x27;ente mette sul tuo terreno nei piani: da quel momento il terreno è destinato all&#x27;opera. Di solito ti avvisano e puoi fare osservazioni.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 11 – Avviso di avvio del procedimento</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La prima lettera che ti avvisa che la tua proprietà è toccata da un progetto. Puoi presentare osservazioni nei termini indicati nell&#x27;avviso. Se i proprietari sono più di 50, l&#x27;avviso può essere pubblicato invece che spedito.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 12 – Dichiarazione di pubblica utilità</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">L&#x27;atto che dice che l&#x27;opera serve a tutti. Da qui può partire l&#x27;esproprio.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 17 – Comunicazione di approvazione del progetto</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La lettera che ti dice che il progetto è stato approvato. Da quel momento puoi vedere i documenti e mandare all&#x27;ente tutto ciò che serve a stabilire il giusto valore della tua proprietà.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 20 – Indennità provvisoria</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La prima somma che l&#x27;ente ti offre. Non è ancora definitiva.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 20 – Acconto dell&#x27;80%</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La parte dell&#x27;indennità che puoi ricevere in anticipo se accetti l&#x27;offerta e lasci entrare l&#x27;ente, dichiarando che il bene è libero da ipoteche e altri pesi. Con l&#x27;accettazione, l&#x27;indennità diventa definitiva.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 21 – Terna tecnica</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Se non accetti l&#x27;offerta, puoi chiedere che il valore sia stimato da tre tecnici: uno scelto da te, uno nominato dall&#x27;ente e un terzo nominato dal presidente del tribunale. La richiesta va presentata, indicando il tuo tecnico, nei termini di legge indicati nell&#x27;offerta o nell&#x27;invito dell&#x27;ente.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 22-bis – Occupazione d&#x27;urgenza</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">L&#x27;ente entra nel terreno prima del decreto, per cominciare prima i lavori.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 23 – Decreto di esproprio</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">L&#x27;atto finale con cui la proprietà passa all&#x27;ente. Ti viene notificato, viene registrato nei registri immobiliari e un suo estratto viene pubblicato nella Gazzetta Ufficiale o nel Bollettino della Regione.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 24 – Stato di consistenza e immissione in possesso</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Una fotografia scritta di com&#x27;è il terreno o l&#x27;edificio in quel momento: colture, piante, recinzioni, costruzioni. Nelle lettere si chiama spesso «verbale di consistenza» o «verbale stato di consistenza». Su questa descrizione si basa poi la stima.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 26 – Pagamento o deposito dell&#x27;indennità</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">L&#x27;ente paga l&#x27;indennità al proprietario che l&#x27;ha accettata, oppure la deposita presso il Ministero dell&#x27;Economia e delle Finanze. Con l&#x27;ordinanza di pagamento si dispone il pagamento o lo svincolo.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 33 – Deprezzamento della parte residua</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Quando quello che ti resta vale meno di prima per colpa dell&#x27;esproprio.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 35 – Ritenuta sull&#x27;indennità</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Per le aree edificabili (zone A, B, C e D del piano del Comune), se il proprietario non è un&#x27;impresa, chi paga trattiene il 20% dell&#x27;indennità per le tasse. In dichiarazione dei redditi si può scegliere la tassazione ordinaria.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 39 – Reiterazione del vincolo</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Quando il vincolo sul terreno scade e l&#x27;ente lo rinnova. In questo caso la legge prevede un indennizzo, calcolato sul danno effettivo.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 41 – Commissione provinciale espropri</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">L&#x27;ufficio pubblico che stima il valore quando non si ricorre alla terna.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 42 – Indennità aggiuntiva</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Una somma in più per l&#x27;affittuario, il mezzadro o il compartecipante che coltiva direttamente il terreno da almeno un anno prima della dichiarazione di pubblica utilità e deve lasciarlo. Anche il proprietario che coltiva direttamente, come coltivatore diretto o IAP, ha diritto a una somma in più (art. 40).</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 42-bis – Acquisizione sanante</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Quando l&#x27;ente ha occupato o usato il terreno senza un esproprio valido e poi lo acquisisce con un atto a parte. In questo caso la legge prevede un indennizzo per il danno patrimoniale e non patrimoniale.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 44 – Servitù</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il terreno resta tuo, ma devi lasciar passare una linea elettrica, un tubo o un cavo.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 45 – Cessione volontaria</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Dopo l&#x27;accordo sul prezzo, sei tu a cedere il bene all&#x27;ente. Si può fare dalla dichiarazione di pubblica utilità fino all&#x27;esecuzione del decreto di esproprio, e in alcuni casi la legge prevede un aumento dell&#x27;indennità.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 46 – Retrocessione</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Se l&#x27;opera non viene realizzata o avviata entro dieci anni dall&#x27;esecuzione del decreto, o diventa impossibile, l&#x27;espropriato può chiedere di riavere il bene, pagando a sua volta un corrispettivo. In certi casi la retrocessione può riguardare anche solo una parte del terreno non usata.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 49 – Occupazione temporanea</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">L&#x27;ente usa il terreno per un periodo, per esempio per il cantiere, e poi te lo restituisce.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 50 – Indennità di occupazione</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La somma che ti spetta per il periodo in cui l&#x27;ente usa il tuo terreno, sia nell&#x27;occupazione temporanea sia in quella d&#x27;urgenza prima del pagamento. Per ogni anno è di regola un dodicesimo di quanto spetterebbe per l&#x27;esproprio.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 53 – Ricorso al TAR</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il ricorso al giudice amministrativo contro gli atti dell&#x27;esproprio, nei termini di legge.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Art." data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Art." data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Art. 54 – Opposizione alla stima</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il ricorso alla Corte d&#x27;appello se non sei d&#x27;accordo con la stima definitiva. Va presentata nei termini di legge, che sono brevi.</p>
 </details>
 <h3 id="glossary-A" class="glossary-letter" data-group="A">A</h3>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="A" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="A" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>A corpo e non a misura</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il prezzo è fissato per l&#x27;intero bene e non per metro quadro: piccole differenze di superficie, entro una tolleranza indicata nell&#x27;accordo, non cambiano la somma.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="A" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="A" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>A pena di decadenza</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Se non rispetti il termine scritto nella lettera, perdi la possibilità di fare quella cosa (per esempio presentare osservazioni).</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="A" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="A" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Abbandono della parte residua</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Quando il pezzo che resta è diventato inutilizzabile, in certi casi si può proporre all&#x27;ente, di solito con un accordo, di acquisire anche quello.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="A" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="A" data-popular="0"><summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Accesso agli atti</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary><p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La richiesta all&#x27;ente di vedere o avere copia dei documenti sulla tua proprietà, come il progetto o il piano particellare. Puoi farla tu o una persona di fiducia con una tua delega.</p></details>
+
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="A" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Accettazione con riserva</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Non è prevista. L&#x27;offerta si accetta così com&#x27;è, senza aggiungere eccezioni o clausole.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="A" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="A" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Acconto dell&#x27;80%</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 20 – La parte dell&#x27;indennità che puoi ricevere in anticipo se accetti l&#x27;offerta e lasci entrare l&#x27;ente, dichiarando che il bene è libero da ipoteche e altri pesi. Con l&#x27;accettazione, l&#x27;indennità diventa definitiva.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="A" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="A" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Accordo bonario</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">L&#x27;intesa con l&#x27;ente sul valore dell&#x27;indennità, senza contestazioni. Si può raggiungere anche dopo il decreto di esproprio e viene messa per iscritto in un «verbale di accordo amichevole». Con la firma, l&#x27;indennità concordata diventa definitiva.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="A" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="A" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Accordo transattivo</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Un accordo con cui le parti chiudono ogni possibile contestazione, ciascuna rinunciando a qualcosa. Spesso l&#x27;accordo amichevole ha anche questo valore.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="A" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="A" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Acquisizione sanante</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 42-bis – Quando l&#x27;ente ha occupato o usato il terreno senza un esproprio valido e poi lo acquisisce con un atto a parte. In questo caso la legge prevede un indennizzo per il danno patrimoniale e non patrimoniale.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="A" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="A" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Aggravio</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Alcuni atti di servitù prevedono un&#x27;ulteriore indennità se in futuro la società aggiunge cavi o potenzia la linea.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="A" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="A" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Albo pretorio</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La bacheca ufficiale del Comune, oggi su internet, dove vengono pubblicati avvisi e atti, anche quelli degli espropri.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="A" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="A" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Area edificabile</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il terreno su cui il piano del Comune permette di costruire. Si valuta, di regola, al valore di mercato.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="A" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="A" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Area non edificabile</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il terreno agricolo o comunque non costruibile. Si valuta al suo valore di mercato come terreno agricolo, tenendo conto delle colture effettivamente praticate e dei manufatti costruiti in modo regolare.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="A" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="A" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Aree in retrocessione</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">I terreni espropriati o occupati che alla fine non servono per l&#x27;opera, per esempio perché il progetto esecutivo è cambiato. Dopo il frazionamento possono essere restituiti al proprietario. Di solito è indicato nell&#x27;accordo o in un atto a parte, e la restituzione avviene con un atto notarile.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="A" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="A" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Atto di costituzione di servitù</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il contratto con cui accetti che una società (per esempio quella dell&#x27;energia elettrica) faccia passare la sua linea sul tuo terreno, in cambio di un&#x27;indennità.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="A" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="A" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Autorità espropriante</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Chi ha il potere di espropriare e firma i decreti. Può essere lo Stato, un Comune o una società che costruisce l&#x27;opera.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="A" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="A" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Avviso di avvio del procedimento</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 11 – La prima lettera che ti avvisa che la tua proprietà è toccata da un progetto. Puoi presentare osservazioni nei termini indicati nell&#x27;avviso.</p>
 </details>
 <h3 id="glossary-B" class="glossary-letter" data-group="B">B</h3>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="B" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="B" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Barriere antirumore</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">I pannelli o muri costruiti lungo strade e ferrovie per ridurre il rumore verso le case vicine. Si chiamano anche barriere acustiche o fonoassorbenti.</p>
 </details>
 <h3 id="glossary-C" class="glossary-letter" data-group="C">C</h3>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="C" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="C" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>CDP – Cassa Depositi e Prestiti</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">L&#x27;ente presso cui, in passato, venivano depositate le indennità non accettate. Molte lettere e la legge la citano ancora, ma oggi i depositi sono gestiti dal Ministero dell&#x27;Economia e delle Finanze (MEF).</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="C" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="C" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Certificato ipocatastale speciale ventennale</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il documento che ricostruisce, per gli ultimi vent&#x27;anni, i passaggi di proprietà e gli eventuali pesi sul bene (ipoteche, pignoramenti, servitù). Può essere rilasciato dalla Conservatoria dei registri immobiliari oppure sostituito da una certificazione notarile. Spesso viene chiesto per lo svincolo delle somme più alte.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="C" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="C" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Certificato ipotecario</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il documento che mostra se sul bene ci sono ipoteche o altri pesi negli ultimi vent&#x27;anni. Vedi anche «Certificato ipocatastale speciale ventennale».</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="C" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="C" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Certificazione notarile</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il documento firmato da un notaio che attesta chi è il proprietario del bene e se ci sono pesi negli ultimi vent&#x27;anni. Sostituisce il certificato ipocatastale.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="C" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="C" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Cessione volontaria</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 45 – Dopo l&#x27;accordo sul prezzo, sei tu a cedere il bene all&#x27;ente. Si può fare dalla dichiarazione di pubblica utilità fino all&#x27;esecuzione del decreto di esproprio, e in alcuni casi la legge prevede un aumento dell&#x27;indennità.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="C" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="C" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>CIPE e CIPESS</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il comitato del Governo che approva i progetti delle grandi opere pubbliche, spesso con valore di dichiarazione di pubblica utilità. Dal 2021 si chiama CIPESS. Le sue delibere sono pubblicate nella Gazzetta Ufficiale.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="C" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="C" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Clausole approvate specificamente</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Artt. 1341 e 1342 del Codice civile – Le clausole che, per legge, vanno approvate con una firma a parte, per esempio decadenze, limiti o la scelta del tribunale competente.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="C" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="C" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Coltivatore diretto e IAP</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Chi lavora la terra come attività principale. Per l&#x27;indennità aggiuntiva questa condizione va dimostrata con documenti, per esempio certificati e contratto d&#x27;affitto.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="C" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="C" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Commissario straordinario</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Per alcune grandi opere il Governo nomina un commissario con poteri speciali, che approva i progetti e firma gli atti.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="C" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="C" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Commissione provinciale espropri</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 41 – L&#x27;ufficio pubblico che stima il valore quando non si ricorre alla terna.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="C" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="C" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Comproprietari</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Quando il bene è di più persone. Le lettere arrivano a tutti e, per accettare o firmare, di solito devono essere d&#x27;accordo tutti.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="C" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="C" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Comunicazione di approvazione del progetto</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 17 – La lettera che ti dice che il progetto è stato approvato. Da quel momento puoi vedere i documenti e mandare all&#x27;ente tutto ciò che serve a stabilire il giusto valore della tua proprietà.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="C" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="C" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Concedente, concessionaria e contraente generale</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Nelle lettere trovi spesso più nomi. Il concedente affida l&#x27;opera, la concessionaria la costruisce e la gestisce, il contraente generale esegue i lavori e spesso gestisce anche gli espropri e i contatti con te. Negli atti di servitù, invece, la «parte concedente» sei tu.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="C" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="C" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Condivisione dell&#x27;indennità</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La comunicazione scritta con cui dici all&#x27;ente, nei termini indicati nella lettera, se sei d&#x27;accordo con l&#x27;offerta. Non è l&#x27;unica occasione per un accordo: se non rispondi, l&#x27;indennità si considera non condivisa e la procedura va avanti.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="C" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="C" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Condizione sospensiva</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Un effetto che si produce solo quando succede un certo fatto. Per esempio, il decreto di esproprio trasferisce la proprietà solo quando viene notificato ed eseguito.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="C" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="C" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Conferenza di servizi</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La riunione in cui enti e Comuni esaminano e approvano il progetto. È uno dei momenti in cui si raccolgono le osservazioni.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="C" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="C" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Conservatoria dei registri immobiliari</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">L&#x27;ufficio pubblico (oggi presso l&#x27;Agenzia delle Entrate) dove sono registrati i passaggi di proprietà, le ipoteche e gli altri pesi sugli immobili.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="C" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="C" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Convenzione di concessione</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il contratto con cui lo Stato affida a una società la costruzione e la gestione di un&#x27;opera, per esempio un&#x27;autostrada, e spesso le delega anche i poteri per gli espropri.</p>
 </details>
 <h3 id="glossary-D" class="glossary-letter" data-group="D">D</h3>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="D" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="D" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Danni da cantiere</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">I danni causati durante i lavori a terreni, colture, strade, recinzioni o edifici. Di solito vengono valutati a parte.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="D" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="D" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Decreto ablativo</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Un altro nome del decreto di esproprio: è l&#x27;atto che «toglie» (in latino «aufero») la proprietà al privato.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="D" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="D" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Decreto di esproprio</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 23 – L&#x27;atto finale con cui la proprietà passa all&#x27;ente. Ti viene notificato, viene registrato nei registri immobiliari e un suo estratto viene pubblicato nella Gazzetta Ufficiale o nel Bollettino della Regione.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="D" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="D" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Decreto di occupazione d&#x27;urgenza</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">L&#x27;atto con cui l&#x27;ente decide di entrare subito nel terreno e ti dice quanto ti offre.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="D" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="D" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Delega</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Puoi non andare di persona all&#x27;immissione in possesso e mandare una persona di fiducia con un foglio firmato da te.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="D" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="D" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Demolizione</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Quando un edificio, o una parte, deve essere abbattuto per far posto all&#x27;opera. Se è stato costruito in modo regolare, rientra nell&#x27;esproprio ed è indennizzato al suo valore di mercato.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="D" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="D" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Depositi definitivi</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Le somme depositate presso il Ministero dell&#x27;Economia e delle Finanze a nome dei proprietari, in attesa dello svincolo.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="D" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="D" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Deposito e svincolo</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Se non accetti, i soldi vengono depositati a tuo nome presso lo Stato (Ministero dell&#x27;Economia e delle Finanze). Lo svincolo è la pratica per ritirarli.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="D" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="D" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Deprezzamento della parte residua</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 33 – Quando quello che ti resta vale meno di prima per colpa dell&#x27;esproprio.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="D" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="D" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Destinazione urbanistica</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Com&#x27;è classificata l&#x27;area nel piano del Comune (agricola, edificabile…). Cambia molto il valore e a volte va indicata nella richiesta di svincolo.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="D" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="D" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Dichiarazione di accettazione</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il modulo con cui dici all&#x27;ente che sei d&#x27;accordo con l&#x27;offerta. Spesso è già allegato alla lettera. Una volta firmato e inviato è definitivo per legge e non può essere ritirato.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="D" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="D" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Dichiarazione di pubblica utilità</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 12 – L&#x27;atto che dice che l&#x27;opera serve a tutti. Da qui può partire l&#x27;esproprio.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="D" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="D" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Ditta</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Nelle lettere dell&#x27;ente sei tu: il proprietario, o tutti i proprietari insieme. Non vuol dire che hai un&#x27;azienda.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="D" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="D" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Documenti per lo svincolo</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Di solito servono documento d&#x27;identità e codice fiscale, l&#x27;atto con cui hai avuto il bene (compravendita, successione, donazione…) e, per le somme più alte, un certificato che dimostri che non ci sono ipoteche. Per le società servono anche i documenti della Camera di Commercio.</p>
 </details>
 <h3 id="glossary-E" class="glossary-letter" data-group="E">E</h3>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="E" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="E" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Elaborati grafico-descrittivi</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">I disegni e le tabelle allegati alla lettera, che mostrano quale parte della tua proprietà è interessata.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="E" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="E" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Elenco ditte</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La lista dei proprietari toccati dall&#x27;opera, con i dati catastali di ciascuno. I dati devono corrispondere a quelli del catasto.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="E" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="E" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Elettrodotto interrato o aereo</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La linea elettrica può passare sotto terra, in un cavo, oppure sopra, con pali o tralicci. Cambiano i limiti per il terreno.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="E" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="E" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Eredi e successione</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Se il bene è ancora intestato a una persona che non c&#x27;è più, gli eredi devono fare o completare la successione per poter ricevere l&#x27;indennità.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="E" data-popular="1">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="E" data-popular="1">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Esproprio</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Un ente prende la tua proprietà per costruire un&#x27;opera pubblica, come una strada o una ferrovia, e in cambio ti paga.</p>
 </details>
 <h3 id="glossary-F" class="glossary-letter" data-group="F">F</h3>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="F" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="F" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Fascia di asservimento</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La striscia di terreno lungo la linea o il tubo, dove ci sono limiti a costruire o piantare.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="F" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="F" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Foglio e mappale</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il «codice» del tuo terreno al catasto, come un indirizzo sulla mappa.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="F" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="F" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Fondo asservito</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il tuo terreno su cui c&#x27;è la servitù.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="F" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="F" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Fondo intercluso</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il terreno rimasto senza un accesso alla strada dopo l&#x27;opera. Di solito si prevede un nuovo accesso o un indennizzo.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="F" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="F" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Formale offerta</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La lettera con cui l&#x27;ente ti propone ufficialmente la somma. Spesso arriva insieme alla comunicazione dell&#x27;art. 17.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="F" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="F" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Frazionamento</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il disegno che divide il terreno in due, la parte che va all&#x27;ente e quella che resta a te. Dopo il frazionamento le superfici diventano definitive.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="F" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="F" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Frutti pendenti</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il raccolto ancora sulla pianta o nel campo al momento dell&#x27;occupazione, che non è stato possibile raccogliere. Viene considerato nell&#x27;indennità.</p>
 </details>
 <h3 id="glossary-G" class="glossary-letter" data-group="G">G</h3>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="G" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="G" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Gazzetta Ufficiale e Bollettino Ufficiale della Regione</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">I giornali ufficiali dello Stato e della Regione, che si consultano gratis anche su internet. Lì vengono pubblicati gli atti più importanti: le approvazioni dei progetti delle grandi opere, le proroghe della pubblica utilità, gli avvisi rivolti a molti proprietari e gli estratti dei decreti di esproprio. Dalla pubblicazione possono partire dei termini, per esempio quelli per l&#x27;opposizione dei terzi.</p>
 </details>
 <h3 id="glossary-I" class="glossary-letter" data-group="I">I</h3>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="I" data-popular="3">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="I" data-popular="3">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Immissione in possesso</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il giorno in cui l&#x27;ente entra davvero nel tuo terreno. Ti viene comunicato prima, con data e ora, nei termini previsti dalla legge.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="I" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="I" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>In contraddittorio</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Con entrambe le parti presenti, tu (o chi ti rappresenta) e il tecnico dell&#x27;ente.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="I" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="I" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>In nome e per conto (procura speciale)</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Spesso la lettera non arriva dall&#x27;ente, ma da una società che agisce per lui con una procura. Ha lo stesso valore.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="I" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="I" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Indennità aggiuntiva</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 42 – Una somma in più per l&#x27;affittuario, il mezzadro o il compartecipante che coltiva direttamente il terreno da almeno un anno prima della dichiarazione di pubblica utilità e deve lasciarlo. Anche il proprietario che coltiva direttamente, come coltivatore diretto o IAP, ha diritto a una somma in più (art. 40).</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="I" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="I" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Indennità definitiva</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La somma stabilita in modo definitivo: quella che hai accettato, oppure quella fissata dalla stima.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="I" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="I" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Indennità definitiva e immutabile</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La somma concordata non cambierà più.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="I" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="I" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Indennità definitiva e onnicomprensiva</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Una somma che comprende tutto: esproprio, servitù, occupazioni, danni e ogni altra voce. Se l&#x27;accordo è scritto così, dopo non si può chiedere altro per quella procedura.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="I" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="I" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Indennità di asservimento</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La somma che ti spetta per la servitù: il terreno resta tuo, ma con dei limiti.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="I" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="I" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Indennità di esproprio</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La somma che l&#x27;ente ti deve per la proprietà che perdi. Per legge deve essere una «giusta indennità», legata al valore reale del bene.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="I" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="I" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Indennità di occupazione d&#x27;urgenza</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 22-bis e 50 – Una somma in più per il periodo in cui l&#x27;ente usa il tuo terreno prima di pagarti l&#x27;indennità di esproprio.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="I" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="I" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Indennità di occupazione temporanea</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La somma che ti spetta per il periodo in cui l&#x27;ente usa il terreno, per esempio per il cantiere, prima di restituirtelo. Per ogni anno è di regola un dodicesimo di quanto spetterebbe per l&#x27;esproprio.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="I" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="I" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Indennità per fabbricati da demolire</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La somma per gli edifici, o le parti di edificio costruite in modo regolare, che vanno abbattuti per far posto all&#x27;opera.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="I" data-popular="2">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="I" data-popular="2">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Indennità provvisoria</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 20 – La prima somma che l&#x27;ente ti offre. Non è ancora definitiva.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="I" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="I" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Infissi fonoisolanti</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Finestre e porte speciali che riducono il rumore dentro casa. Si montano quando le barriere antirumore non bastano, e l&#x27;ente può offrire un&#x27;indennità per questi lavori.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="I" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="I" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Interessi</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">In alcuni casi previsti dalla legge, per esempio sui ritardi nei pagamenti, sono dovuti anche gli interessi.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="I" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="I" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Interferenze</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">I punti in cui l&#x27;opera tocca strade, accessi, canali, linee o impianti esistenti, che vanno spostati o rifatti.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="I" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="I" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Interventi diretti sul ricettore</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">I lavori fatti sulla casa stessa per ridurre il rumore, come nuovi infissi più isolanti, quando le barriere non bastano.</p>
 </details>
 <h3 id="glossary-L" class="glossary-letter" data-group="L">L</h3>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="L" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="L" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Livelli di progettazione</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Con le regole precedenti al 2023 le opere pubbliche passavano per tre fasi: progetto preliminare o di fattibilità, progetto definitivo, progetto esecutivo. Con il Codice dei contratti pubblici del 2023 le fasi sono due: progetto di fattibilità tecnica ed economica ed esecutivo. Nelle lettere si trovano le sigle PFTE, PD e PE.</p>
 </details>
 <h3 id="glossary-M" class="glossary-letter" data-group="M">M</h3>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="M" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="M" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Maggiori e minori occupazioni</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Le differenze tra le aree previste nel progetto approvato e quelle usate davvero con il progetto esecutivo. Le aree in più vengono di solito cedute con un atto notarile, quelle non usate possono tornare al proprietario.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="M" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="M" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Mancato impulso</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Se non accetti l&#x27;offerta e non chiedi la terna tecnica, l&#x27;ente deposita la somma e chiede la stima alla Commissione provinciale.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="M" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="M" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Manleva</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">L&#x27;impegno del proprietario a tenere indenne l&#x27;ente se altre persone chiedono qualcosa per lo stesso bene: per esempio comproprietari o affittuari, ma anche una banca o un altro istituto di credito che ha un&#x27;ipoteca sul bene, o un creditore che ha fatto un pignoramento. Con la manleva, se l&#x27;ente dovesse pagare qualcosa a loro, potrebbe chiederlo al proprietario. Per questo, prima di firmare, ipoteche e altri pesi devono essere già sistemati o dichiarati.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="M" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="M" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Manufatti</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Tutto ciò che è stato costruito sul terreno oltre alla casa: recinzioni, cancelli, muretti, pozzi, tettoie, capannoni, impianti di irrigazione. Vanno descritti nel verbale e considerati nella stima.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="M" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="M" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>MEF – Ministero dell&#x27;Economia e delle Finanze</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il ministero presso cui, oggi, vengono depositate a tuo nome le indennità non accettate, tramite le Ragionerie territoriali dello Stato. Nelle lettere il servizio è spesso chiamato «Servizio depositi definitivi». Da lì si ritirano i soldi con lo svincolo.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="M" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="M" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Memorie scritte</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Le osservazioni presentate per iscritto, con eventuali documenti, entro i termini dell&#x27;avviso.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="M" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="M" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Mitigazione acustica</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Le opere contro il rumore vicino a strade e ferrovie, come le barriere antirumore.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="M" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="M" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Monitoraggio di rumore e vibrazioni</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Le misure fatte prima, durante e dopo i lavori per controllare che rumore e vibrazioni restino nei limiti.</p>
 </details>
 <h3 id="glossary-N" class="glossary-letter" data-group="N">N</h3>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="N" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="N" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Non sei più il proprietario?</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 3 – Se ti arriva una lettera per un bene che hai venduto o non è più tuo, devi dirlo all&#x27;ente nei termini di legge, indicando, se lo sai, il nuovo proprietario.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="N" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="N" data-popular="0"><summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Notifica al vecchio proprietario</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary><p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Le lettere arrivano a chi risulta proprietario al catasto. Se il bene è stato venduto da poco, possono arrivare al vecchio proprietario e il nuovo non riceve nulla. Il nuovo proprietario può allora chiedere l&#x27;accesso agli atti, anche con una delega, dimostrando l&#x27;acquisto.</p></details>
+
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="N" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Notifica di esproprio</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La lettera ufficiale con cui l&#x27;ente ti comunica un atto dell&#x27;esproprio. Dalla data in cui la ricevi partono i termini.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="N" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="N" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Numero di piano (N.P.)</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il numero che identifica la tua proprietà nel piano particellare. Tienilo a portata di mano quando parli con l&#x27;ente.</p>
 </details>
 <h3 id="glossary-O" class="glossary-letter" data-group="O">O</h3>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="O" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="O" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Occupazione d&#x27;urgenza</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 22-bis – L&#x27;ente entra nel terreno prima del decreto, per cominciare prima i lavori.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="O" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="O" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Occupazione senza titolo</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Quando l&#x27;ente usa il tuo terreno senza un atto valido o oltre i tempi previsti. In questi casi può spettare un risarcimento.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="O" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="O" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Occupazione temporanea</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 49-50 – L&#x27;ente usa il terreno per un periodo, per esempio per il cantiere, e poi te lo restituisce.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="O" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="O" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Opere di mitigazione e di compensazione</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Le prime riducono i disagi dell&#x27;opera (barriere antirumore, verde, schermature); le seconde danno qualcosa in cambio al territorio (piste ciclabili, parchi, nuove strade).</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="O" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="O" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Opposizione alla stima</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 54 – Il ricorso alla Corte d&#x27;appello se non sei d&#x27;accordo con la stima definitiva. Va presentata nei termini di legge, che sono brevi.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="O" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="O" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Opposizione dei terzi</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 23 – Dopo che l&#x27;estratto del decreto di esproprio è pubblicato nella Gazzetta Ufficiale o nel Bollettino della Regione, chi vanta diritti sul bene (per esempio un creditore) può opporsi nei termini di legge. Dopo, quei diritti si possono far valere solo sull&#x27;indennità.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="O" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="O" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Ordinanza di occupazione temporanea</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">L&#x27;atto con cui l&#x27;ente autorizza l&#x27;uso temporaneo del tuo terreno. Prima può arrivarti un avviso, con i termini per fare osservazioni.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="O" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="O" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Ordinanza di pagamento</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 26 – L&#x27;atto con cui l&#x27;ente dispone il pagamento dell&#x27;indennità al proprietario, oppure lo svincolo della parte già depositata.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="O" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="O" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Osservazioni</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Quello che puoi scrivere all&#x27;ente, con documenti, se non sei d&#x27;accordo. Ci sono tempi precisi, scritti nella lettera.</p>
 </details>
 <h3 id="glossary-P" class="glossary-letter" data-group="P">P</h3>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="P" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="P" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Parte concedente</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Nell&#x27;atto di servitù sei tu, cioè chi concede il passaggio.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="P" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="P" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Particella</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il singolo appezzamento di terreno o edificio registrato al catasto, indicato con un numero. Si chiama anche «mappale».</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="P" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="P" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>PEC</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La posta elettronica certificata. Ha lo stesso valore di una raccomandata: anche qui i termini partono dalla consegna.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="P" data-popular="6">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="P" data-popular="6">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Piano particellare</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La mappa e l&#x27;elenco dei terreni toccati dall&#x27;opera, con le superfici da occupare o espropriare.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="P" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="P" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Piena e libera proprietà</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La prova che il bene è tuo e non ha ipoteche, debiti o altri pesi. Serve per ricevere il pagamento.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="P" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="P" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Plusvalenza</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il guadagno tra quanto hai pagato il bene e quanto ricevi come indennità. In alcuni casi è tassato.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="P" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="P" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Progetto definitivo (PD)</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Nelle opere progettate con le regole precedenti al 2023, la fase in cui l&#x27;opera è disegnata con precisione, insieme al piano particellare. La sua approvazione di solito vale come dichiarazione di pubblica utilità ed è il momento in cui arriva la comunicazione dell&#x27;art. 17. Con le regole attuali questa fase non c&#x27;è più.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="P" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="P" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Progetto esecutivo (PE)</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il progetto dettagliato con cui si costruisce davvero. Può modificare in parte il progetto approvato prima, e per questo le aree occupate possono risultare in più o in meno.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="P" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="P" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Progetto preliminare (PP) o di fattibilità tecnica ed economica (PFTE)</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La prima fase del progetto: indica il tracciato e le scelte principali. Oggi si chiama «progetto di fattibilità tecnica ed economica». Con la sua approvazione può essere messo il vincolo sui terreni e, per le opere progettate con le regole in vigore dal 2023, di solito viene dichiarata la pubblica utilità.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="P" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="P" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Proroga della pubblica utilità</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Quando viene allungato il tempo a disposizione per completare gli espropri. Succede spesso nelle opere lunghe, e la proroga viene di solito pubblicata nella Gazzetta Ufficiale.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="P" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="P" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Pubblicazione dell&#x27;avviso</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 11 – Quando i proprietari da avvisare sono più di 50, l&#x27;avviso può essere pubblicato all&#x27;albo del Comune, su quotidiani e sul sito della Regione, invece che spedito a ognuno. I termini partono dalla pubblicazione, anche se non ti è arrivata nessuna lettera.</p>
 </details>
 <h3 id="glossary-Q" class="glossary-letter" data-group="Q">Q</h3>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="Q" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="Q" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Quietanza liberatoria</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Firmandola dichiari di aver ricevuto tutto e di non avere altro da chiedere. Il modulo di svincolo può contenere anche la rinuncia a contestare la stima.</p>
 </details>
 <h3 id="glossary-R" class="glossary-letter" data-group="R">R</h3>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="R" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="R" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Raccomandata A.R.</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La lettera con ricevuta di ritorno: la data in cui la ritiri, o in cui risulta consegnata, conta per i termini.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="R" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="R" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Ragioneria territoriale dello Stato</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">L&#x27;ufficio del Ministero dell&#x27;Economia e delle Finanze, presente in ogni provincia, che gestisce i depositi delle indennità e il loro svincolo.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="R" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="R" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Reiterazione del vincolo</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 39 – Quando il vincolo sul terreno scade e l&#x27;ente lo rinnova. In questo caso la legge prevede un indennizzo, calcolato sul danno effettivo.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="R" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="R" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Relata di notifica</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il foglio in fondo alla lettera che dimostra quando e come ti è stata consegnata. Da quella data possono partire i termini.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="R" data-popular="5">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="R" data-popular="5">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Reliquato</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il pezzo di terreno che ti resta, spesso piccolo o scomodo da usare. Se la parte che resta perde valore, la legge ne tiene conto (art. 33).</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="R" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="R" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Rendita catastale</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il valore fiscale che il catasto assegna a un edificio. Non è il valore di mercato e non va confuso con l&#x27;indennità.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="R" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="R" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Responsabile del procedimento</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La persona dell&#x27;ente che segue la pratica, indicata nelle lettere. È a lei che ci si rivolge per informazioni.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="R" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="R" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Retrocessione</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 46-48 – Se l&#x27;opera non viene realizzata o avviata entro dieci anni dall&#x27;esecuzione del decreto, o diventa impossibile, l&#x27;espropriato può chiedere di riavere il bene, pagando a sua volta un corrispettivo. In certi casi la retrocessione può riguardare anche solo una parte del terreno non usata.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="R" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="R" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Ricettore</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">L&#x27;edificio che «riceve» il rumore dell&#x27;opera e che va protetto.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="R" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="R" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Ricorso al TAR</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 53 – Il ricorso al giudice amministrativo contro gli atti dell&#x27;esproprio, nei termini di legge.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="R" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="R" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Rideterminazione dell&#x27;indennità</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Dopo il frazionamento si misurano le superfici esatte, e l&#x27;indennità può essere ricalcolata, in più o in meno.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="R" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="R" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Rimessa in pristino</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">L&#x27;obbligo di rimettere com&#x27;erano recinzioni, strade o altri manufatti danneggiati dai lavori.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="R" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="R" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Rinuncia all&#x27;opposizione alla stima</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Con questa clausola, contenuta spesso negli accordi e nei moduli di svincolo, il proprietario rinuncia a contestare in tribunale la stima dell&#x27;indennità.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="R" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="R" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Ritenuta del 20%</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 35 – Per le aree edificabili (zone A, B, C e D del piano del Comune), se il proprietario non è un&#x27;impresa, chi paga trattiene il 20% dell&#x27;indennità per le tasse. In dichiarazione dei redditi si può scegliere la tassazione ordinaria.</p>
 </details>
 <h3 id="glossary-S" class="glossary-letter" data-group="S">S</h3>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="S" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="S" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Servitù inamovibile</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Con questa clausola rinunci a chiedere in futuro di spostare la linea, anche se ti servisse per costruire.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="S" data-popular="8">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="S" data-popular="8">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Servitù o asservimento</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 44 – Il terreno resta tuo, ma devi lasciar passare una linea elettrica, un tubo o un cavo.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="S" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="S" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Servitù per immissioni acustiche</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Quando la casa resta tua ma, per il rumore della nuova linea, l&#x27;ente deve fare lavori sull&#x27;edificio (per esempio cambiare le finestre) e ti offre un&#x27;indennità per questo vincolo.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="S" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="S" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Soprassuoli</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Quello che sta sopra il terreno e ha un valore: alberi, frutteti, vigneti, siepi, boschi. Vanno indicati nel verbale e considerati nella stima.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="S" data-popular="4">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="S" data-popular="4">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Stato di consistenza</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 24 – Una fotografia scritta di com&#x27;è il terreno o l&#x27;edificio in quel momento: colture, piante, recinzioni, costruzioni. Nelle lettere si chiama spesso «verbale di consistenza» o «verbale stato di consistenza». Su questa descrizione si basa poi la stima.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="S" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="S" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Subalterno (sub.)</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il numero che distingue le singole unità dentro lo stesso edificio, per esempio i diversi appartamenti o il garage.</p>
 </details>
 <h3 id="glossary-T" class="glossary-letter" data-group="T">T</h3>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="T" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="T" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Termini</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">I giorni indicati nelle lettere dell&#x27;ente. Servono per fare osservazioni, per comunicare se condividi l&#x27;indennità, per chiedere la terna tecnica o per fare ricorso. Non sono l&#x27;unica occasione per un accordo: se non rispondi, l&#x27;indennità si considera non condivisa e la procedura va avanti. Cambiano da atto ad atto e sono scritti nell&#x27;avviso, nell&#x27;offerta o nel decreto. Decorrono di solito dal ricevimento della lettera o dalla pubblicazione.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="T" data-popular="7">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="T" data-popular="7">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Terna tecnica</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 21 – Se non accetti l&#x27;offerta, puoi chiedere che il valore sia stimato da tre tecnici: uno scelto da te, uno nominato dall&#x27;ente e un terzo nominato dal presidente del tribunale. La richiesta va presentata, indicando il tuo tecnico, nei termini di legge indicati nell&#x27;offerta o nell&#x27;invito dell&#x27;ente.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="T" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="T" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Testimoni</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Se non ci sei, l&#x27;ente fa lo stesso il sopralluogo, alla presenza di due testimoni che non lavorano per lui.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="T" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="T" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Testimoniale di stato</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Prima dei lavori, un tecnico visita la casa o l&#x27;edificio vicino al cantiere e descrive, con foto, com&#x27;è. Serve a dimostrare eventuali danni causati dopo dai lavori. Puoi farti rappresentare da un tecnico di tua fiducia.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="T" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="T" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Tipo mappale</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il disegno tecnico che aggiorna la mappa del catasto, per esempio dopo una costruzione o una demolizione.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="T" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="T" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Titolari di diritti reali o personali</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Oltre al proprietario, anche altre persone che hanno diritti sul bene, come l&#x27;usufruttuario o l&#x27;affittuario. Possono partecipare al sopralluogo.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="T" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="T" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Titolo di provenienza</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il documento che dimostra come il bene è diventato tuo: acquisto, eredità, donazione o divisione.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="T" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="T" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Trascrizione e voltura</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 23 – Dopo il decreto, il passaggio di proprietà viene registrato nei registri immobiliari e al catasto. Lo fa l&#x27;ente.</p>
 </details>
 <h3 id="glossary-U" class="glossary-letter" data-group="U">U</h3>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="U" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="U" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Ufficiale giudiziario</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il pubblico ufficiale che consegna personalmente gli atti più importanti, come i decreti. La consegna è attestata nella relata di notifica.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="U" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="U" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Urgenza e indifferibilità</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">La dichiarazione che l&#x27;opera va fatta presto e permette all&#x27;ente di occupare i terreni prima del decreto di esproprio.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="U" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="U" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Usufrutto e nuda proprietà</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">L&#x27;usufruttuario può usare il bene e goderne i frutti, il nudo proprietario ne è il padrone. L&#x27;indennità spetta al proprietario; l&#x27;usufruttuario può far valere il suo diritto su quella somma, che di regola si divide in base ai rispettivi diritti.</p>
 </details>
 <h3 id="glossary-V" class="glossary-letter" data-group="V">V</h3>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="V" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="V" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Valore agricolo medio (VAM)</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Un valore fissato ogni anno per zona e tipo di coltura. Dal 2011 non si usa più per calcolare l&#x27;indennità di esproprio dei terreni agricoli, per la quale si guarda al valore reale. Resta in uso in alcuni casi, per esempio per l&#x27;indennità aggiuntiva di chi coltiva.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="V" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="V" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Valore venale</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il valore di mercato del bene, cioè quanto varrebbe se lo vendessi oggi. È la base per calcolare l&#x27;indennità.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="V" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="V" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Valutazione di impatto ambientale (VIA)</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Lo studio che verifica gli effetti dell&#x27;opera su ambiente, rumore e paesaggio, e decide le opere per ridurli.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="V" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="V" data-popular="0"><summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Vendita dopo le prime comunicazioni</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary><p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Se il bene viene venduto dopo aver ricevuto le prime comunicazioni dell&#x27;ente (capita spesso con mitigazione acustica e servitù), di regola l&#x27;indennità spetta al nuovo proprietario, che lo dimostra con l&#x27;atto di acquisto. Nell&#x27;atto di vendita ci si può accordare diversamente.</p></details>
+
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="V" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Verbale</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il foglio dove si scrive cosa è stato visto e fatto quel giorno. Firmarlo non vuol dire accettare l&#x27;offerta.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="V" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="V" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Verbale di accordo amichevole</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il documento in cui tu e l&#x27;ente mettete per iscritto l&#x27;accordo sull&#x27;indennità (di esproprio, di asservimento o di occupazione). Di solito contiene l&#x27;importo complessivo, come e quando verrà pagato e le dichiarazioni del proprietario. Diventa valido quando lo firma anche l&#x27;ente.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="V" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="V" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Vincolo preordinato all&#x27;esproprio</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Art. 9-11 – Il segno che il Comune o l&#x27;ente mette sul tuo terreno nei piani: da quel momento il terreno è destinato all&#x27;opera. Di solito ti avvisano e puoi fare osservazioni.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="V" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="V" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Visura catastale</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">Il documento del catasto con i dati del bene: proprietari, foglio, particella, superficie, rendita. Si scarica anche online.</p>
 </details>
-<details class="glossary-item group bg-white border border-slate-200 rounded-xl p-5" data-letter="V" data-popular="0">
+<details class="glossary-item group bg-white border border-slate-200 border-l-4 border-l-amber-300 rounded-xl p-5" data-letter="V" data-popular="0">
   <summary class="flex items-center justify-between cursor-pointer font-bold text-navy-900 text-base"><span>Voci dell&#x27;offerta</span><span aria-hidden="true" class="ml-4 text-slate-400">+</span></summary>
   <p class="mt-3 pt-3 border-t border-slate-100 text-sm text-slate-700 leading-relaxed">L&#x27;offerta è spesso divisa in più voci: esproprio, asservimento, occupazione temporanea, occupazione d&#x27;urgenza, manufatti, soprassuoli, frutti pendenti, fabbricati da demolire, deprezzamento della parte residua (art. 33). Ogni voce corrisponde a una diversa parte del bene o a un diverso danno.</p>
-</details></div>
+</details>
+</div>
+<div class="glossary-bottom-control"><button id="glossary-toggle-bottom" type="button" aria-expanded="false" aria-controls="glossary-list" class="px-5 py-3 rounded-lg bg-navy-900 text-amber-300 font-bold text-sm">Mostra tutte le parole</button></div>
 <p id="glossary-empty" class="mt-6 text-navy-900" hidden>Nessuna parola trovata. <a href="#contatti" class="underline font-bold">Scrivimi e ti spiego.</a></p>
 </div></section>
 
@@ -1856,7 +1920,7 @@
       <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-8 border-b border-navy-800">
         <div class="md:col-span-6 space-y-2">
           <span class="font-bold text-white text-xl tracking-wide block">Federico Ponso</span>
-          <span class="text-xs text-slate-400 font-normal block">Sede legale: Montegalda (VI) – P. IVA 02594850246</span>
+          <span class="text-xs text-slate-400 font-normal block">Sede legale: Montegalda (Vicenza) – P. IVA 02594850246</span>
           <p class="text-xs sm:text-sm text-slate-300 font-normal leading-relaxed max-w-xl pt-2">
             Consulente Espropriativo — <span class="text-amber-300 font-bold italic">Dalla parte dell'espropriato</span>.<br>
             Espropri, occupazioni temporanee, mitigazione acustica e servitù per pubblica utilità, anche per elettrodotti.
@@ -1870,7 +1934,8 @@
             <li><a href="#servizi" class="hover:text-amber-300 transition-colors">Di cosa mi occupo</a></li>
             <li><a href="#metodo" class="hover:text-amber-300 transition-colors">Come lavoro</a></li>
             <li><a href="#opere" class="hover:text-amber-300 transition-colors">Opere</a></li>
-            <li><a href="#faq" class="hover:text-amber-300 transition-colors">Domande frequenti</a></li>
+            <li><a href="#faq" class="hover:text-amber-300 transition-colors">Domande frequenti</a>
+          <a href="#glossario" class="hover:text-amber-300 transition-colors">Glossario</a></li>
             <li><a href="#glossario" class="hover:text-amber-300 transition-colors">Glossario</a></li>
           </ul>
         </div>
@@ -1880,7 +1945,7 @@
           <p class="text-xs">Telefono e WhatsApp: <a href="tel:+393484424717" class="text-white font-bold hover:text-amber-300">348 442 4717</a></p>
           <p class="text-xs">Email: <a href="mailto:federico@federicoponso.it" class="text-white font-bold hover:text-amber-300">federico@federicoponso.it</a></p>
           <p class="text-xs text-slate-400 pt-2 leading-relaxed">
-            Nota informativa: le attività di perizia tecnica estimativa, terna tecnica e patrocinio legale sono svolte in collaborazione interdisciplinare con professionisti abilitati e avvocati iscritti ai rispettivi albi professionali.
+            Nota informativa: le attività di perizia tecnica estimativa, terna tecnica e patrocinio legale sono svolte da professionisti abilitati e da avvocati iscritti ai rispettivi albi professionali.
           </p>
         </div>
       </div>
@@ -1890,15 +1955,15 @@
         <!-- Prima riga: due riquadri separati e affiancati della stessa larghezza -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <!-- Accordi bonari con gli enti -->
-          <div class="p-5 rounded-xl border border-white/10 bg-white/[0.03] text-xs text-slate-300 leading-relaxed">
+          <div class="p-5 rounded-xl border border-white/10 border-l-4 border-l-amber-300 bg-white/[0.03] text-xs text-slate-300 leading-relaxed">
             <strong class="text-white font-bold text-sm block mb-1.5">Accordi bonari con gli enti:</strong>
             <p>
-              a volte mi confronto direttamente con enti e società che realizzano opere pubbliche e gestiscono espropri, occupazioni temporanee e servitù. Non sempre è possibile, ma quando la pratica lo consente è una strada per raggiungere un accordo bonario giusto per te, senza perizie o terne tecniche e in tempi più brevi.
+              a volte mi confronto direttamente con enti e società che realizzano opere pubbliche e gestiscono espropri, occupazioni temporanee e servitù. Non sempre è possibile, ma quando la pratica lo consente è una strada per raggiungere un accordo bonario giusto per te, senza arrivare alla terna tecnica e in tempi più brevi.
             </p>
           </div>
 
           <!-- Interventi privati -->
-          <div class="p-5 rounded-xl border border-white/10 bg-white/[0.03] text-xs text-slate-300 leading-relaxed">
+          <div class="p-5 rounded-xl border border-white/10 border-l-4 border-l-amber-300 bg-white/[0.03] text-xs text-slate-300 leading-relaxed">
             <strong class="text-white font-bold text-sm block mb-1.5">Interventi privati:</strong>
             <p>
               può capitare che lavori anche per conto di società, per favorire accordi rapidi con i proprietari in interventi privati, senza dichiarazione di pubblica utilità. Lo dichiaro sempre fin dal primo contatto e, in quei casi, non faccio consulenza ai proprietari coinvolti nello stesso intervento.
@@ -1907,10 +1972,10 @@
         </div>
 
         <!-- Seconda riga: Sei un professionista? a tutta larghezza -->
-        <div class="p-5 rounded-xl border border-white/10 bg-white/[0.03] text-xs text-slate-300 leading-relaxed">
+        <div class="p-5 rounded-xl border border-white/10 border-l-4 border-l-amber-300 bg-white/[0.03] text-xs text-slate-300 leading-relaxed">
           <strong class="text-white font-bold text-sm block mb-1.5">Sei un professionista?</strong>
           <p>
-            Se un tuo cliente è coinvolto in un esproprio, un'occupazione temporanea, una servitù o una mitigazione acustica e non puoi seguire questa parte, o se vuoi proporre una collaborazione, parliamone. Il cliente resta tuo: io mi occupo solo di questa parte.
+            Se un tuo cliente è coinvolto in un esproprio, un'occupazione temporanea, una servitù o una mitigazione acustica, o se vuoi proporre una collaborazione, parliamone. Il cliente resta tuo.
           </p>
         </div>
       </div>
@@ -1919,7 +1984,7 @@
       <div id="informativa-privacy" class="py-8 border-b border-navy-800 text-xs text-slate-400 space-y-3 leading-relaxed">
         <div class="font-bold text-slate-200 uppercase tracking-wider mb-2">Informativa sul trattamento dei dati personali (art. 13 del Regolamento UE 2016/679 – GDPR)</div>
         <p>
-          <strong class="text-slate-200">Titolare del trattamento:</strong> Federico Ponso, sede legale Montegalda (VI), P. IVA 02594850246, email <a href="mailto:federico@federicoponso.it" class="underline text-slate-200">federico@federicoponso.it</a>, telefono 348 442 4717.
+          <strong class="text-slate-200">Titolare del trattamento:</strong> Federico Ponso, sede legale Montegalda (Vicenza), P. IVA 02594850246, email <a href="mailto:federico@federicoponso.it" class="underline text-slate-200">federico@federicoponso.it</a>, telefono 348 442 4717.
         </p>
         <p>
           <strong class="text-slate-200">Dati trattati:</strong> nome, telefono ed eventuali altre informazioni (email, comune, opera, notizie sulla pratica) che l'utente fornisce tramite il modulo, WhatsApp, email o telefono.
@@ -1951,7 +2016,7 @@
         <div>
           <span class="block sm:inline font-bold text-slate-300">Federico Ponso</span>
           <span class="hidden sm:inline"> – </span>
-          <span>Sede legale: Montegalda (VI) – P. IVA 02594850246 — Tutti i diritti riservati.</span>
+          <span>Sede legale: Montegalda (Vicenza) – P. IVA 02594850246 — Tutti i diritti riservati.</span>
           <p class="mt-2 leading-relaxed">Testi, glossario e immagini sono protetti dal diritto d’autore. È vietata la riproduzione, anche parziale, senza autorizzazione.</p>
         </div>
         <span class="text-amber-300 font-bold italic">Dalla parte dell'espropriato</span>
@@ -1972,7 +2037,7 @@
     </svg>
   </a>
 
-  <script src="glossario.js?v=20261103" defer></script>
+  <script src="glossario.js?v=20261106" defer></script>
   <!-- Script Invio Modulo e Header Fisso -->
   <script>
     // Stable header geometry; separate thresholds prevent jitter near the top.

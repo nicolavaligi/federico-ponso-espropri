@@ -153,3 +153,27 @@ section[id], div[id], .glossary-letter { scroll-margin-top: 7rem; }
   #header-sub { font-size: 8px; }
   #header-inner > div { gap: .25rem; }
 }
+/* Updates requested in the November review. */
+#header-inner > a > div { gap: 3px; }
+#header-sub { margin-top: 0; display: flex; flex-direction: column; gap: 3px; }
+#header-name, #header-sub > span { line-height: 1.2; }
+#header-inner > div { margin-left: auto; }
+#header-inner nav { align-items: center; }
+.method-steps > .absolute { top: -12px; bottom: -12px; }
+.method-after { margin-top: 4rem; }
+#glossary-alphabet a { border-left: 4px solid #fcd34d; }
+.glossary-bottom-control { display: flex; justify-content: center; margin-top: 1.5rem; }
+@media(max-width:639px) {
+ #header-inner { flex-wrap: nowrap; }
+ #header-inner > a { gap: 6px; }
+ #header-inner > div { gap: 6px; }
+}
+@media(max-width:374px) {
+ #header-inner { gap: 4px; }
+ #header-name { font-size: 15px; }
+ #header-sub { font-size: 7px; }
+ #header-inner > a { gap: 4px; }
+ #header-inner > div { gap: 4px; }
+ .mobile-header-phone { font-size: 10px; }
+ #header-inner .mobile-nav-toggle { width: 28px; }
+}

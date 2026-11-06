@@ -1,6 +1,7 @@
 (() => {
   const search = document.getElementById('glossary-search');
   const toggle = document.getElementById('glossary-toggle-btn');
+  const bottomToggle = document.getElementById('glossary-toggle-bottom');
   const list = document.getElementById('glossary-list');
   const items = [...list.querySelectorAll('details')];
   const headings = [...list.querySelectorAll('.glossary-letter')];
@@ -26,16 +27,22 @@
     alphabet.hidden = !expanded || filtering;
     document.getElementById('glossary-empty').hidden = visible !== 0;
     document.getElementById('glossary-count').textContent = `${visible} voci disponibili`;
-    toggle.textContent = expanded ? 'Mostra meno' : 'Mostra tutte le parole';
+    toggle.hidden = !expanded;
+    bottomToggle.textContent = expanded ? 'Mostra meno' : 'Mostra tutte le parole';
+    bottomToggle.setAttribute('aria-expanded', String(expanded));
     toggle.setAttribute('aria-expanded', String(expanded));
   }
   search.addEventListener('input', render);
-  toggle.addEventListener('click', () => {
+  function toggleList(event) {
+    const restoreFocus = expanded && event.currentTarget === bottomToggle;
     expanded = !expanded;
     search.value = '';
     items.forEach(item => { item.open = false; });
     render();
-  });
+    if (restoreFocus) { search.focus({ preventScroll: true }); document.getElementById('glossario').scrollIntoView({ block: 'start' }); }
+  }
+  toggle.addEventListener('click', toggleList);
+  bottomToggle.addEventListener('click', toggleList);
   mobile.addEventListener('change', render);
   alphabet.addEventListener('click', event => {
     const link = event.target.closest('a');
